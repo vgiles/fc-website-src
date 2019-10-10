@@ -7,5 +7,7 @@ menu: main
 weight: 1
 ---
 
-# Exploratory music and sound for games, new media, and interactive experiences
-Faulty Cat is a music production company.
+# Faulty Cat Productions
+Exploratory music and sound for games, new media, and interactive experiences. 
+
+Website in development.
