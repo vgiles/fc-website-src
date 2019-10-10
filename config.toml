@@ -1,7 +1,3 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-
 baseurl = "/"
 title = "Faulty Cat Productions"
 author = "Vincent Giles"
@@ -11,31 +7,31 @@ defaultContentLanguage = "en"
 language = "en-US"
 paginate = 3
 
-theme = "hugo-piercer-theme"
-themesDir = "../themes"
+theme = "piercer"
+themesDir = "./themes"
 
 [privacy]
     [privacy.googleAnalytics]
         anonymizeIP = true
-        disable = false
+        disable = true
         respectDoNotTrack = true
         useSessionStorage = false
     [privacy.instagram]
-        disable = false
+        disable = true
         simple = false
     [privacy.twitter]
         disable = false
         enableDNT = true
         simple = false
     [privacy.vimeo]
-        disable = false
+        disable = true
         simple = false
     [privacy.youtube]
-        disable = false
+        disable = true
         privacyEnhanced = true
 
 [params]
-    description = "Piercer is a fast and customizable theme for Hugo. Designed with a mobile-first philosophy and with accessibility in mind."
+    description = "Exploratory music and sound for games, new media, and interactive experiences."
     favicon = "favicon.ico"
     logo = ""
 
@@ -65,7 +61,7 @@ themesDir = "../themes"
     h1 = "3.052em"
 
 [params.googlefonts]
-    font = ""
+    font = "Open Sans Condensed"
 
 [params.serviceWorker]
     enable = true
@@ -83,7 +79,7 @@ themesDir = "../themes"
     kit = ""
 
 [params.form]
-    show = true
+    show = false
     netlify = false
     action = ""
     method = "POST"
@@ -99,36 +95,36 @@ themesDir = "../themes"
 
 [params.contact]
     show = true
-    email = "example@hugo.com"
-    phone = "123456789+"
-    skype = "live:example"
-    address = "P. Sherman 42, Wallaby Way, Sydney"
+    email = "vincent.giles@me.com"
+    # phone = ""
+    skype = "live:vincent.giles_1"
+    address = "Melbourne, VIC, AU"
 
 [params.date]
     format = ""
 
 [params.social]
-    twitter = "#"
-    facebook = "#"
-    github = "#"
-    gitlab = "#"
-    codepen = "#"
-    instagram = "#"
-    pinterest = "#"
-    youtube = "#"
-    linkedin = ""
-    weibo = ""
-    mastodon = ""
-    tumblr = ""
-    flickr = ""
-    "500px" = ""
-    rss = "#"
+    twitter = "@VincentGiles"
+    # facebook = "#"
+    # github = "#"
+    # gitlab = "#"
+    # codepen = "#"
+    # instagram = "#"
+    # pinterest = "#"
+    # youtube = "#"
+    # linkedin = ""
+    # weibo = ""
+    # mastodon = ""
+    # tumblr = ""
+    # flickr = ""
+    # "500px" = ""
+    # rss = "#"
 
 [params.copy]
-    message = ""
+    message = "Copyright 2019 Faulty Cat"
 
 [params.agreement]
-    message = "Piercer uses <a href=\"#\" alt=\"font awesome\">Font Awesome</a>. The content of the home page comes from <a href=\"#\" alt=\"Wikipedia\">Wikipedia</a>. The content of the blog posts and the about page comes from the <a href=\"#\" alt=\"Hugo Example Site\">Hugo Example Site</a>. The Dracula's image is scary."
+    message = "Faulty Cat uses <a href=\"#\" alt=\"font awesome\">Font Awesome</a>."
 
 [params.notfound]
-    message = ""
+    message = "Oh no. :("
