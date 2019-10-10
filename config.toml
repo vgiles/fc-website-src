@@ -6,6 +6,7 @@ enableRobotsTXT = true
 defaultContentLanguage = "en"
 language = "en-US"
 paginate = 3
+staticDir = ["static"]
 
 theme = "piercer"
 themesDir = "./themes"
