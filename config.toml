@@ -62,7 +62,7 @@ themesDir = "./themes"
     h1 = "3.052em"
 
 [params.googlefonts]
-    font = "Open Sans Condensed"
+    font = "Open Sans"
 
 [params.serviceWorker]
     enable = true
