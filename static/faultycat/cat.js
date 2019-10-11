@@ -1,17 +1,19 @@
-// function preload() {
-//     for (let i = 0; i < imgCount; i++) {
-//         var passStr = './img_' + i + '.jpg';
-//         images[i] = loadImage(passStr);
-//     }
-// }
+// Code based on Photo Drawer by Sayama
+// https://www.openprocessing.org/sketch/657254
+
+
+let img;
+
+function preload() {
+    img = loadImage("fc.jpg");
+}
 
 
 function setup() {
     createCanvas(100, 100);
-    frameRate(20);
+    frameRate(30);
     background(0);
-
-    initImage("cat.jpg");
+    initImage();
 }
 
 
@@ -23,25 +25,24 @@ function draw() {
         col = color(red(col), green(col), blue(col), 120);
         let size = map(brightness(col), 0, 255, width * 0.01, width * 0.07);
         fill(col);
-        noStroke();
-        ellipse(x, y, size, size);
+        // stroke();
+        strokeWeight(0.2); 
+        rect(x, y, size, size);
     }
 }
 
 
-// function initImage(index) {
-//     if (index >= images.length) index = 0;
-//     img = images[index];
+function initImage() {
 
-//     //rezsizeCanvas
-//     var wRatio = img.width / windowWidth;
-//     var hRatio = img.height / windowHeight;
+    //rezsizeCanvas
+    var wRatio = img.width / windowWidth;
+    var hRatio = img.height / windowHeight;
 
-//     if (wRatio < hRatio) resizeCanvas(int(img.width / hRatio), int(windowHeight));
-//     else resizeCanvas(int(windowWidth), int(img.height / wRatio));
+    if (wRatio < hRatio) resizeCanvas(int((img.width / hRatio) * 0.75), int(windowHeight * 0.75));
+    else resizeCanvas(int(windowWidth * 0.75), int((img.height / wRatio) * 0.75));
 
-//     img.resize(width, height);
+    img.resize(width, height);
 
-// }
+}
 
 
