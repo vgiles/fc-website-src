@@ -68,7 +68,7 @@ themesDir = "./themes"
     enable = true
 
 [params.header]
-    show = true
+    show = false
 
 [params.cta]
     show = false
