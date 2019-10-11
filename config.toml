@@ -40,7 +40,7 @@ themesDir = "./themes"
     postcss = false
 
 [params.palette]
-    text = "#fdfdfd"
+    text = "#666699"
     background = "#FFBF00"
     accent = "#44475a"
     foreground = "#f8f8f2"
