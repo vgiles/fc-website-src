@@ -37,7 +37,7 @@ function draw() {
 }
 
 function doggo() {
-    rectMode(CORNER);
+    ellipseMode(CENTER);
     strokeWeight(0.8);
     let rows = height / 70;
     let cols = width / 70;
@@ -46,7 +46,7 @@ function doggo() {
             let col = img.get(i, j);
             col = color(red(col), green(col), blue(col), 120);
             fill(col);											
-            rect(i, j, 50, 50);
+            ellipse(i, j, 50, 50);
         }
     }
 }
