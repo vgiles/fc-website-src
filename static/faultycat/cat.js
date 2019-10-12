@@ -14,10 +14,10 @@ function setup() {
     frameRate(30);
     background(0);
     initImage();
+    noLoop();
 }
 
-
-function draw() {
+function fc() {
     for (let i = 0; i < 50; i++) {
         let x = int(random(width));
         let y = int(random(height));
@@ -25,11 +25,37 @@ function draw() {
         col = color(red(col), green(col), blue(col), 120);
         let size = map(brightness(col), 0, 255, width * 0.01, width * 0.07);
         fill(col);
-        // stroke();
         strokeWeight(0.2); 
         rect(x, y, size, size);
     }
 }
+
+function draw() {
+    //fc();
+    doggo();
+    //genMusic(); // to do
+}
+
+function doggo() {
+    rectMode(CORNER);
+    strokeWeight(0.8);
+    let rows = height / 70;
+    let cols = width / 70;
+    for (var i = 0; i < width; i += cols) {				
+        for (var j = 0; j < height; j += rows) {
+            let col = img.get(i, j);
+            col = color(red(col), green(col), blue(col), 120);
+            fill(col);											
+            rect(i, j, 50, 50);
+        }
+    }
+}
+
+function genMusic() {
+    
+}
+
+
 
 
 function initImage() {
