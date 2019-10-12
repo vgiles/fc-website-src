@@ -42,7 +42,7 @@ themesDir = "./themes"
 [params.palette]
     text = "#666699"
     background = "#FFBF00"
-    accent = "#e6b800"
+    accent = "#ffeb99"
     foreground = "#666699"
     separator = "#6272a4"
     cyan = "#8be9fd"
