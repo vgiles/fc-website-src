@@ -77,7 +77,7 @@ themesDir = "./themes"
 
 [params.fa]
     disable = false
-    kit = ""
+    kit = "20af4c713a"
 
 [params.form]
     show = false
