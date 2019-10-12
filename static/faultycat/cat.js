@@ -32,7 +32,7 @@ function mouseClicked() {
 function draw() {
     //fc();
     doggo();
-    genMusic(); // to do
+    //genMusic(); // to do
     fcText();
 }
 
