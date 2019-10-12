@@ -3,6 +3,8 @@
 
 
 let img;
+var osc1;
+var synth;
 
 function preload() {
     img = loadImage("fc.jpg");
@@ -11,48 +13,74 @@ function preload() {
 
 function setup() {
     createCanvas(100, 100);
-    frameRate(30);
-    background(0);
+    frameRate(1);
+    background("rgba(255, 191, 0, 0)");
     initImage();
     noLoop();
+    osc1 = new p5.Oscillator();
+    synth = new p5.PolySynth();
 }
 
-function fc() {
-    for (let i = 0; i < 50; i++) {
-        let x = int(random(width));
-        let y = int(random(height));
-        let col = img.get(x, y);
-        col = color(red(col), green(col), blue(col), 120);
-        let size = map(brightness(col), 0, 255, width * 0.01, width * 0.07);
-        fill(col);
-        strokeWeight(0.2); 
-        rect(x, y, size, size);
+function mouseClicked() {
+    if (!playing) {
+        synth.play();
+    } else {
+        synth.stop();
     }
 }
+// function fc() { // depreciated
+//     for (let i = 0; i < 50; i++) {
+//         let x = int(random(width));
+//         let y = int(random(height));
+//         let col = img.get(x, y);
+//         col = color(red(col), green(col), blue(col), 120);
+//         let size = map(brightness(col), 0, 255, width * 0.01, width * 0.07);
+//         fill(col);
+//         strokeWeight(0.2); 
+//         rect(x, y, size, size);
+//     }
+// }
 
 function draw() {
     //fc();
     doggo();
-    //genMusic(); // to do
+    genMusic(); // to do
+    fcText();
+}
+
+function mouseClicked() {
+
+}
+
+function fcText() {
+    fill(30,30 , 0, 120);
+    textSize(20);
+    textAlign(CENTER);
+    text("Faulty Cat Productions. Click for sound.\nWebsite coming soon", width / 2, height - (height * 0.19));
+    //text("Website coming soon.", width/2, height - (height*0.14));
 }
 
 function doggo() {
     ellipseMode(CENTER);
-    strokeWeight(0.8);
+    noStroke();
     let rows = height / 70;
     let cols = width / 70;
-    for (var i = 0; i < width; i += cols) {				
-        for (var j = 0; j < height; j += rows) {
-            let col = img.get(i, j);
-            col = color(red(col), green(col), blue(col), 120);
+    for (var x = 0; x < width; x += cols) {				
+        for (var y = 0; y < height-100; y += rows) {
+            blendMode(LIGHTEST);
+            let col = img.get(x, y);
+            col = color(red(col), green(col), blue(col), 80);
             fill(col);											
-            ellipse(i, j, rows, cols);
+            ellipse(x, y, rows, cols);
         }
     }
 }
 
 function genMusic() {
-    
+    var midiNoteNumber = 70;
+    var freq = midiToFreq(midiNoteNumber); // Convert MIDI note to frequency
+    // Play note number 70 with velocity 1, starting now, for a duration of 1s
+    synth.play(freq, 0.8, 2, 1);
 }
 
 
@@ -64,10 +92,10 @@ function initImage() {
     var wRatio = img.width / windowWidth;
     var hRatio = img.height / windowHeight;
 
-    if (wRatio < hRatio) resizeCanvas(int((img.width / hRatio) * 0.75), int(windowHeight * 0.75));
-    else resizeCanvas(int(windowWidth * 0.75), int((img.height / wRatio) * 0.75));
+    if (wRatio < hRatio) {resizeCanvas(int((img.width / hRatio) * 0.75), int(windowHeight * 0.75)+100);}
+    else {resizeCanvas(int(windowWidth * 0.75), int((img.height / wRatio) * 0.75));}
 
-    img.resize(width, height);
+    img.resize(width, height-100);
 
 }
 
