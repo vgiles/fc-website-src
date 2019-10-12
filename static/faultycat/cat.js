@@ -57,7 +57,6 @@ function fcText() {
     textSize(20);
     textAlign(CENTER);
     text("Faulty Cat Productions.\nWebsite coming soon", width / 2, height - (height * 0.19));
-    //text("Website coming soon.", width/2, height - (height*0.14));
 }
 
 function doggo() {
