@@ -62,13 +62,13 @@ themesDir = "./themes"
     h1 = "3.052em"
 
 [params.googlefonts]
-    font = "Inconsolata"
+    font = "Monda"
 
 [params.serviceWorker]
     enable = false
 
 [params.header]
-    show = false
+    show = true
 
 [params.cta]
     show = false
@@ -85,7 +85,7 @@ themesDir = "./themes"
     action = ""
     method = "POST"
     section = "Contact me!"
-    disclaimer = "Elit anim sit labore tempor exercitation in ad cupidatat."
+    disclaimer = "Here is a disclaimer"
     inputNameName = "Name"
     inputNameLabel = "Name"
     inputNamePlaceholder = "Your Name"
@@ -102,10 +102,10 @@ themesDir = "./themes"
     address = "Melbourne, VIC, AU"
 
 [params.date]
-    format = ""
+    format = "January 2, 2019"
 
 [params.social]
-    twitter = "@VincentGiles"
+    twitter = "https://www.twitter.com/VincentGiles"
     # facebook = "#"
     # github = "#"
     # gitlab = "#"
