@@ -65,7 +65,7 @@ themesDir = "./themes"
     font = "Open Sans"
 
 [params.serviceWorker]
-    enable = true
+    enable = false
 
 [params.header]
     show = false
