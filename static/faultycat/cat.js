@@ -7,7 +7,7 @@ var osc1;
 var synth;
 
 function preload() {
-    img = loadImage("fc.jpg");
+    img = loadImage("../faultycat/fc.jpg");
 }
 
 
