@@ -56,7 +56,7 @@ function fcText() {
     fill(30,30 , 0, 120);
     textSize(20);
     textAlign(CENTER);
-    text("Faulty Cat Productions. Click for sound.\nWebsite coming soon", width / 2, height - (height * 0.19));
+    text("Faulty Cat Productions.\nWebsite coming soon", width / 2, height - (height * 0.19));
     //text("Website coming soon.", width/2, height - (height*0.14));
 }
 
