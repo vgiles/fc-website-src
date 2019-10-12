@@ -46,7 +46,7 @@ function doggo() {
             let col = img.get(i, j);
             col = color(red(col), green(col), blue(col), 120);
             fill(col);											
-            ellipse(i, j, 50, 50);
+            ellipse(i, j, rows, cols);
         }
     }
 }
