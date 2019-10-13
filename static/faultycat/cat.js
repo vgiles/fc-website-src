@@ -61,6 +61,11 @@ function doggo() {
             ellipse(x, y, rows, cols);
         }
     }
+    strokeWeight(0.8);
+    stroke(45);
+    // blendMode(LIGHTEST);
+    fill("rgba(255, 255, 255, 0.0)");
+    ellipse(width/2, height/2-100, width, height-100);
 }
 
 function genMusic() {
@@ -80,7 +85,7 @@ function initImage() {
     var hRatio = img.height / windowHeight;
 
     if (wRatio < hRatio) {resizeCanvas(int((img.width / hRatio) * 0.75), int(windowHeight * 0.75)+100);}
-    else {resizeCanvas(int(windowWidth * 0.75), int((img.height / wRatio) * 0.75));}
+    else {resizeCanvas(int(windowWidth * 0.75), int((img.height / wRatio) * 0.75) + 100);}
 
     img.resize(width, height-100);
 
