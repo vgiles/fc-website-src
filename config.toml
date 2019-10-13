@@ -2,7 +2,7 @@
 baseurl = "https://www.faultycat.com.au"
 languageCode = "en-us"
 title = "Faulty Cat Productions"
-theme = "hugo-artists-theme"
+theme = "./themes/hugo-artists-theme"
 
 [params]
 
