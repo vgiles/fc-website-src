@@ -1,104 +1,118 @@
-title = "Faulty Cat Productions"
-baseURL = "/"
+# Site settings
+baseurl = "https://www.faultycat.com.au"
 languageCode = "en-us"
-theme = "airspace-hugo"
+title = "Faulty Cat Productions"
+theme = "hugo-artists-theme"
 
-# The site's parameters
 [params]
-  home = "Home"
-  
-  [menu]
 
-    [[menu.header]]
-      weight = 2
-      name = "Work"
-      url = "work"
-    [[menu.header]]
-      weight = 3
-      name = "Blog"
-      url = "blog"
-    [[menu.header]]
-      weight = 4
-      name = "Service"
-      url = "service"
-    [[menu.header]]
-      weight = 5
-      name = "Contact"
-      url = "contact"
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
 
-    [[menu.footer]]
-      weight = 1
-      name = "About us"
-      url = "#"
-    [[menu.footer]]
-      weight = 2
-      name = "Contact us"
-      url = "contact"
-    [[menu.footer]]
-      weight = 3
-      name = "How it works"
-      url = "work"
-    [[menu.footer]]
-      weight = 4
-      name = "Blog"
-      url = "blog"
-    [[menu.footer]]
-      weight = 5
-      name = "Terms"
-      url = "#"
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Vincent Giles"
+	description = "Exploratory composer and producer of music and sound for games, new media, and interactive experiences"
 
-  [params.slider]
-    enable = true
-    title = "Music and Sound Design"
-    subtitle = "Exploratory music and sound for games, new media, and interactive experiences."
-    bgImage = "img/slider-bg.jpg"
-    btnText = "Discover Our Projects"
-    url = "#"
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	email = "your@email.com"
 
-  [params.wrapper]
-    enable = true
-    image = "img/wrapper-img.png"
-    title = "About Us"
-    italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-    paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id"
 
-  [params.blog]
-    enable = false
-    title = "Get The Latest On What We're doing"
-    subtitle = "Catch up with us, anytime and anywhere"
+	# Header an navigation
+	#
+	# To change the header background the 'hero-bg-jpg' at 'static/img'.
+	# Do the same with the logo ('logo.svg').
+	# But keep the original filename!
+	[params.header]
+		title = "Faulty Cat Productions"
+		shortBio = "Music for games, new media, and interactive experiences"
 
-  [params.feature]
-    enable = false
-    title = "We believe in great ideas"
-    bgImage = "img/feature-bg.jpg"
-    content = "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
-    [params.feature.button]
-      caption = "View Works"
-      url = "#"
 
-  [params.call]
-    enable = false
-    bgImage = "img/call-to-action-bg.jpg"
-    title = "We design delightful digital experiences."
-    paragraph = "Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
-    [params.call.button]
-      url = "#"
-      text = "tell us your story"
+	# About section
+	#
+	# Replace the 'avatar.jpg' under 'static/img' with your own image.
+	[params.about]
+		title = "About me"
+		bio = "**Travis specializes in making things** for human people. Most of the things he makes are [digital interfaces](//travisneilson.com/), but he also puts effort into crafting [next-level beats](//soundcloud.com/travis-neilson) and [YouTube videos](//youtube.com/user/devtipsfordesigners) about making codes happen."
 
-  [params.contact]
-    enable = true
-    title = "Drop us a note"
-    subtitle = "Don’t just take our word for it. Check out some of our latest work."
-    [params.contact.form]
-      name = "Your name"
-      email = "Your email"
-      subject = "Your subject"
-      message = "Your message"
-      button = "Send message"
-    [params.contact.box]
-      title = "Stop by for a visit"
-      address = "North Main Street, Brooklyn Australia"
-      email = "Email: contact@mail.com"
-      phone = "Phone: +88 01672 506 744"
-    # [params.contact.gmaps]
-    #   title = "We Also Count in Google Maps"
+		[[params.about.skills]]
+			name = "Communication"
+			value = 9
+
+		[[params.about.skills]]
+			name = "Organization"
+			value = 7
+
+		[[params.about.skills]]
+			name = "Learning"
+			value = 10
+
+		[[params.about.skills]]
+			name = "Teaching"
+			value = 6
+
+		[[params.about.skills]]
+			name = "Planning"
+			value = 7
+
+		[[params.about.skills]]
+			name = "Visual Design"
+			value = 5
+
+		[[params.about.skills]]
+			name = "UX Design"
+			value = 8
+
+		[[params.about.skills]]
+			name = "Programming"
+			value = 6
+
+	# Contact secion
+	[params.contact]
+		title = "Contact"
+
+		# The following social network icons are available:
+		# 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin'
+		# 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
+		[[params.contact.social]]
+			icon = "twitter"
+			link = "//twitter.com/devtipsshow"
+
+		[[params.contact.social]]
+			icon = "dribbble"
+			link = "//dribbble.com/travisneilson"
+
+		[[params.contact.social]]
+			icon = "behance"
+			link = "//www.behance.net/travisneilson"
+
+		[[params.contact.social]]
+			icon = "youtube"
+			link = "//www.youtube.com/DevTipsForDesigners"
+
+		[[params.contact.social]]
+			icon = "linkedin"
+			link = "//www.linkedin.com/in/travisneilson"
+
+
+	[params.form]
+		title = "Let's work together"
+		# Form fields
+		name = "Your Name"
+		email = "Your Email"
+		message = "Tell me about your project"
+		buttonText = "Send"
+
+
+	[params.footer]
+		copyright = "Published under the Unlicense License."
