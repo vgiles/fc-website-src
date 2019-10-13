@@ -25,7 +25,7 @@ theme = "hugo-artists-theme"
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-	email = "your@email.com"
+	email = "vincent.giles@me.com"
 
 
 	# Header an navigation
@@ -35,47 +35,47 @@ theme = "hugo-artists-theme"
 	# But keep the original filename!
 	[params.header]
 		title = "Faulty Cat Productions"
-		shortBio = "Music for games, new media, and interactive experiences"
+		shortBio = "Exploratory music for games, new media, and interactive experiences"
 
 
 	# About section
 	#
 	# Replace the 'avatar.jpg' under 'static/img' with your own image.
 	[params.about]
-		title = "About me"
-		bio = "**Travis specializes in making things** for human people. Most of the things he makes are [digital interfaces](//travisneilson.com/), but he also puts effort into crafting [next-level beats](//soundcloud.com/travis-neilson) and [YouTube videos](//youtube.com/user/devtipsfordesigners) about making codes happen."
+		title = "Vincent Giles"
+		bio = "_Website currently under development._<br />Vincent Giles is a composer and producer of exploratory music. He discovers new ways to do creative things for human experiences."
 
-		[[params.about.skills]]
-			name = "Communication"
-			value = 9
+		# [[params.about.skills]]
+		# 	name = "Communication"
+		# 	value = 9
 
-		[[params.about.skills]]
-			name = "Organization"
-			value = 7
+		# [[params.about.skills]]
+		# 	name = "Organization"
+		# 	value = 7
 
-		[[params.about.skills]]
-			name = "Learning"
-			value = 10
+		# [[params.about.skills]]
+		# 	name = "Learning"
+		# 	value = 10
 
-		[[params.about.skills]]
-			name = "Teaching"
-			value = 6
+		# [[params.about.skills]]
+		# 	name = "Teaching"
+		# 	value = 6
 
-		[[params.about.skills]]
-			name = "Planning"
-			value = 7
+		# [[params.about.skills]]
+		# 	name = "Planning"
+		# 	value = 7
 
-		[[params.about.skills]]
-			name = "Visual Design"
-			value = 5
+		# [[params.about.skills]]
+		# 	name = "Visual Design"
+		# 	value = 5
 
-		[[params.about.skills]]
-			name = "UX Design"
-			value = 8
+		# [[params.about.skills]]
+		# 	name = "UX Design"
+		# 	value = 8
 
-		[[params.about.skills]]
-			name = "Programming"
-			value = 6
+		# [[params.about.skills]]
+		# 	name = "Programming"
+		# 	value = 6
 
 	# Contact secion
 	[params.contact]
@@ -86,27 +86,27 @@ theme = "hugo-artists-theme"
 		# 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
 		[[params.contact.social]]
 			icon = "twitter"
-			link = "//twitter.com/devtipsshow"
+			link = "//twitter.com/VincentGiles"
 
-		[[params.contact.social]]
-			icon = "dribbble"
-			link = "//dribbble.com/travisneilson"
+		# [[params.contact.social]]
+		# 	icon = "dribbble"
+		# 	link = "//dribbble.com/travisneilson"
 
-		[[params.contact.social]]
-			icon = "behance"
-			link = "//www.behance.net/travisneilson"
+		# [[params.contact.social]]
+		# 	icon = "behance"
+		# 	link = "//www.behance.net/travisneilson"
 
 		[[params.contact.social]]
 			icon = "youtube"
-			link = "//www.youtube.com/DevTipsForDesigners"
+			link = "//www.youtube.com/composervince"
 
-		[[params.contact.social]]
-			icon = "linkedin"
-			link = "//www.linkedin.com/in/travisneilson"
+		# [[params.contact.social]]
+		# 	icon = "linkedin"
+		# 	link = "//www.linkedin.com/in/travisneilson"
 
 
 	[params.form]
-		title = "Let's work together"
+		title = "Let's make something together"
 		# Form fields
 		name = "Your Name"
 		email = "Your Email"
@@ -115,4 +115,4 @@ theme = "hugo-artists-theme"
 
 
 	[params.footer]
-		copyright = "Published under the Unlicense License."
+		copyright = "Content Copyright 2019 Faulty Cat Productions except where noted. Designt published under the Unlicense License."
