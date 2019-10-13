@@ -1,131 +1,104 @@
-baseurl = "/"
 title = "Faulty Cat Productions"
-author = "Vincent Giles"
-googleAnalytics = ""
-enableRobotsTXT = true
-defaultContentLanguage = "en"
-language = "en-US"
-paginate = 3
-staticDir = ["static"]
+baseURL = "/"
+languageCode = "en-us"
+theme = "airspace-hugo"
 
-theme = "piercer"
-themesDir = "./themes"
-
-[privacy]
-    [privacy.googleAnalytics]
-        anonymizeIP = true
-        disable = true
-        respectDoNotTrack = true
-        useSessionStorage = false
-    [privacy.instagram]
-        disable = true
-        simple = false
-    [privacy.twitter]
-        disable = false
-        enableDNT = true
-        simple = false
-    [privacy.vimeo]
-        disable = true
-        simple = false
-    [privacy.youtube]
-        disable = true
-        privacyEnhanced = true
-
+# The site's parameters
 [params]
-    description = "Exploratory music and sound for games, new media, and interactive experiences."
-    favicon = "favicon.ico"
-    logo = ""
+  home = "Home"
+  
+  [menu]
 
-[params.postcss]
-    postcss = false
+    [[menu.header]]
+      weight = 2
+      name = "Work"
+      url = "work"
+    [[menu.header]]
+      weight = 3
+      name = "Blog"
+      url = "blog"
+    [[menu.header]]
+      weight = 4
+      name = "Service"
+      url = "service"
+    [[menu.header]]
+      weight = 5
+      name = "Contact"
+      url = "contact"
 
-[params.palette]
-    text = "#666699"
-    background = "#FFBF00"
-    accent = "#ffeb99"
-    foreground = "#666699"
-    separator = "#6272a4"
-    cyan = "#8be9fd"
-    green = "#50fa7b"
-    orange = "#ffb86c"
-    pink = "#ff79c6"
-    purple = "#bd93f9"
-    red = "#ff5555"
-    yellow = "#f1fa8c"
+    [[menu.footer]]
+      weight = 1
+      name = "About us"
+      url = "#"
+    [[menu.footer]]
+      weight = 2
+      name = "Contact us"
+      url = "contact"
+    [[menu.footer]]
+      weight = 3
+      name = "How it works"
+      url = "work"
+    [[menu.footer]]
+      weight = 4
+      name = "Blog"
+      url = "blog"
+    [[menu.footer]]
+      weight = 5
+      name = "Terms"
+      url = "#"
 
-[params.fontsizes]
-    base = "1em"
-    p = "1.25em"
-    h4 = "1.563em"
-    h3 = "1.953em"
-    h2 = "2.441em"
-    h1 = "3.052em"
+  [params.slider]
+    enable = true
+    title = "Music and Sound Design"
+    subtitle = "Exploratory music and sound for games, new media, and interactive experiences."
+    bgImage = "img/slider-bg.jpg"
+    btnText = "Discover Our Projects"
+    url = "#"
 
-[params.googlefonts]
-    font = "Monda"
+  [params.wrapper]
+    enable = true
+    image = "img/wrapper-img.png"
+    title = "About Us"
+    italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
+    paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id"
 
-[params.serviceWorker]
+  [params.blog]
     enable = false
+    title = "Get The Latest On What We're doing"
+    subtitle = "Catch up with us, anytime and anywhere"
 
-[params.header]
-    show = true
+  [params.feature]
+    enable = false
+    title = "We believe in great ideas"
+    bgImage = "img/feature-bg.jpg"
+    content = "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+    [params.feature.button]
+      caption = "View Works"
+      url = "#"
 
-[params.cta]
-    show = false
-    message = "Learn more!"
-    link = "https://github.com/danielkvist/hugo-piercer-theme#readme"
+  [params.call]
+    enable = false
+    bgImage = "img/call-to-action-bg.jpg"
+    title = "We design delightful digital experiences."
+    paragraph = "Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+    [params.call.button]
+      url = "#"
+      text = "tell us your story"
 
-[params.fa]
-    disable = false
-    kit = "20af4c713a"
-
-[params.form]
-    show = false
-    netlify = false
-    action = ""
-    method = "POST"
-    section = "Contact me!"
-    disclaimer = "Here is a disclaimer"
-    inputNameName = "Name"
-    inputNameLabel = "Name"
-    inputNamePlaceholder = "Your Name"
-    inputEmailName = "Email"
-    inputEmailLabel = "Email"
-    inputEmailPlaceholder = "Your Email"
-    SubmitValue = ""
-
-[params.contact]
-    show = true
-    email = "vincent.giles@me.com"
-    # phone = ""
-    skype = "live:vincent.giles_1"
-    address = "Melbourne, VIC, AU"
-
-[params.date]
-    format = "January 2, 2019"
-
-[params.social]
-    twitter = "https://www.twitter.com/VincentGiles"
-    # facebook = "#"
-    # github = "#"
-    # gitlab = "#"
-    # codepen = "#"
-    # instagram = "#"
-    # pinterest = "#"
-    # youtube = "#"
-    # linkedin = ""
-    # weibo = ""
-    # mastodon = ""
-    # tumblr = ""
-    # flickr = ""
-    # "500px" = ""
-    # rss = "#"
-
-[params.copy]
-    message = "Copyright 2019 Faulty Cat"
-
-[params.agreement]
-    message = "Faulty Cat uses <a href=\"#\" alt=\"font awesome\">Font Awesome</a>."
-
-[params.notfound]
-    message = "Oh no. :("
+  [params.contact]
+    enable = true
+    title = "Drop us a note"
+    subtitle = "Don’t just take our word for it. Check out some of our latest work."
+    [params.contact.form]
+      name = "Your name"
+      email = "Your email"
+      subject = "Your subject"
+      message = "Your message"
+      button = "Send message"
+    [params.contact.box]
+      title = "Stop by for a visit"
+      address = "North Main Street, Brooklyn Australia"
+      email = "Email: contact@mail.com"
+      phone = "Phone: +88 01672 506 744"
+    # [params.contact.gmaps]
+    #   title = "We Also Count in Google Maps"
