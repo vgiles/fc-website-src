@@ -7,7 +7,7 @@ var osc1;
 var synth;
 
 function preload() {
-    img = loadImage("fc.jpg");
+    img = loadImage("../faultycat/fc.jpg");
 }
 
 
@@ -28,23 +28,11 @@ function mouseClicked() {
         synth.stop();
     }
 }
-// function fc() { // depreciated
-//     for (let i = 0; i < 50; i++) {
-//         let x = int(random(width));
-//         let y = int(random(height));
-//         let col = img.get(x, y);
-//         col = color(red(col), green(col), blue(col), 120);
-//         let size = map(brightness(col), 0, 255, width * 0.01, width * 0.07);
-//         fill(col);
-//         strokeWeight(0.2); 
-//         rect(x, y, size, size);
-//     }
-// }
 
 function draw() {
     //fc();
     doggo();
-    genMusic(); // to do
+    //genMusic(); // to do
     fcText();
 }
 
@@ -56,8 +44,7 @@ function fcText() {
     fill(30,30 , 0, 120);
     textSize(20);
     textAlign(CENTER);
-    text("Faulty Cat Productions. Click for sound.\nWebsite coming soon", width / 2, height - (height * 0.19));
-    //text("Website coming soon.", width/2, height - (height*0.14));
+    text("Faulty Cat Productions.\nWebsite coming soon", width / 2, height - (height * 0.19));
 }
 
 function doggo() {
@@ -74,6 +61,11 @@ function doggo() {
             ellipse(x, y, rows, cols);
         }
     }
+    strokeWeight(0.8);
+    stroke(45);
+    // blendMode(LIGHTEST);
+    fill("rgba(255, 255, 255, 0.0)");
+    ellipse(width/2, height/2-100, width, height-100);
 }
 
 function genMusic() {
@@ -93,7 +85,7 @@ function initImage() {
     var hRatio = img.height / windowHeight;
 
     if (wRatio < hRatio) {resizeCanvas(int((img.width / hRatio) * 0.75), int(windowHeight * 0.75)+100);}
-    else {resizeCanvas(int(windowWidth * 0.75), int((img.height / wRatio) * 0.75));}
+    else {resizeCanvas(int(windowWidth * 0.75), int((img.height / wRatio) * 0.75) + 100);}
 
     img.resize(width, height-100);
 

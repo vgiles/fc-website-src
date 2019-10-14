@@ -1,7 +1,7 @@
 # Site settings
-baseurl = "https://www.faultycat.com.au/"
+baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "Faulty Cat Productions"
+title = "Hugo Artists Theme"
 theme = "hugo-artists-theme"
 
 [params]
@@ -11,8 +11,8 @@ theme = "hugo-artists-theme"
 
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Vincent Giles"
-	description = "Exploratory composer and producer of music and sound for games, new media, and interactive experiences"
+	name = "Your name"
+	description = "Your description"
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
@@ -25,7 +25,7 @@ theme = "hugo-artists-theme"
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-	email = "vincent.giles@me.com"
+	email = "your@email.com"
 
 
 	# Header an navigation
@@ -34,79 +34,79 @@ theme = "hugo-artists-theme"
 	# Do the same with the logo ('logo.svg').
 	# But keep the original filename!
 	[params.header]
-		title = "Faulty Cat Productions"
-		shortBio = "Exploratory music for games, new media, and interactive experiences"
+		title = "Artists Theme"
+		shortBio = "Thinker // Designer // YouTuber"
 
 
 	# About section
 	#
 	# Replace the 'avatar.jpg' under 'static/img' with your own image.
 	[params.about]
-		title = "Vincent Giles: Composer and Producer"
-		bio = "_Website currently under development._<br />Vincent Giles is a composer and producer of exploratory music, discovering new ways to do creative things for human experiences."
+		title = "About me"
+		bio = "**Travis specializes in making things** for human people. Most of the things he makes are [digital interfaces](//travisneilson.com/), but he also puts effort into crafting [next-level beats](//soundcloud.com/travis-neilson) and [YouTube videos](//youtube.com/user/devtipsfordesigners) about making codes happen."
 
 		[[params.about.skills]]
 			name = "Communication"
 			value = 9
 
 		[[params.about.skills]]
-			name = "Empathy"
-			value = 9
+			name = "Organization"
+			value = 7
 
 		[[params.about.skills]]
-			name = "Flexibility"
-			value = 9
+			name = "Learning"
+			value = 10
 
 		[[params.about.skills]]
 			name = "Teaching"
 			value = 6
 
-		# [[params.about.skills]]
-		# 	name = "Planning"
-		# 	value = 7
+		[[params.about.skills]]
+			name = "Planning"
+			value = 7
 
-		# [[params.about.skills]]
-		# 	name = "Visual Design"
-		# 	value = 5
+		[[params.about.skills]]
+			name = "Visual Design"
+			value = 5
 
-		# [[params.about.skills]]
-		# 	name = "UX Design"
-		# 	value = 8
+		[[params.about.skills]]
+			name = "UX Design"
+			value = 8
 
-		# [[params.about.skills]]
-		# 	name = "Programming"
-		# 	value = 6
+		[[params.about.skills]]
+			name = "Programming"
+			value = 6
 
 	# Contact secion
 	[params.contact]
-		title = "Connect with Faulty Cat"
+		title = "Contact"
 
 		# The following social network icons are available:
 		# 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin'
 		# 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
 		[[params.contact.social]]
 			icon = "twitter"
-			link = "//twitter.com/VincentGiles"
+			link = "//twitter.com/devtipsshow"
 
 		[[params.contact.social]]
-			icon = "instagram"
-			link = "//instagram.com/composervince"
+			icon = "dribbble"
+			link = "//dribbble.com/travisneilson"
 
 		[[params.contact.social]]
-			icon = "soundcloud"
-			link = "//www.soundcloud.com/vince-giles"
+			icon = "behance"
+			link = "//www.behance.net/travisneilson"
 
 		[[params.contact.social]]
 			icon = "youtube"
-			link = "//www.youtube.com/composervince"
+			link = "//www.youtube.com/DevTipsForDesigners"
 
-		# [[params.contact.social]]
-		# 	icon = "linkedin"
-		# 	link = "//www.linkedin.com/in/travisneilson"
+		[[params.contact.social]]
+			icon = "linkedin"
+			link = "//www.linkedin.com/in/travisneilson"
 
 
 	[params.form]
-		title = "Let's make something together"
+		title = "Let's work together"
 		# Form fields
 		name = "Your Name"
 		email = "Your Email"
@@ -115,4 +115,4 @@ theme = "hugo-artists-theme"
 
 
 	[params.footer]
-		copyright = "Content Copyright 2019 Faulty Cat Productions except where noted. Design published under the Unlicense License."
+		copyright = "Published under the Unlicense License."
