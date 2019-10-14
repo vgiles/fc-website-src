@@ -88,13 +88,13 @@ theme = "hugo-artists-theme-sub"
 			icon = "twitter"
 			link = "//twitter.com/VincentGiles"
 
-		# [[params.contact.social]]
-		# 	icon = "dribbble"
-		# 	link = "//dribbble.com/travisneilson"
+		[[params.contact.social]]
+			icon = "instagram"
+			link = "//dribbble.com/composervince"
 
-		# [[params.contact.social]]
-		# 	icon = "behance"
-		# 	link = "//www.behance.net/travisneilson"
+		[[params.contact.social]]
+			icon = "soundcloud"
+			link = "//www.soundcloud.com/vince-giles"
 
 		[[params.contact.social]]
 			icon = "youtube"
