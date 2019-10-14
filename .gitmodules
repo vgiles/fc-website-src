@@ -1,6 +1,6 @@
-[submodule "themes/piercer"]
-	path = themes/piercer
-	url = https://github.com/danielkvist/hugo-piercer-theme.git
+# [submodule "themes/piercer"]
+# 	path = themes/piercer
+# 	url = https://github.com/danielkvist/hugo-piercer-theme.git
 [submodule "themes/hugo-artists-theme"]
 	path = themes/hugo-artists-theme
 	url = https://github.com/vgiles/hugo-artists-theme.git
