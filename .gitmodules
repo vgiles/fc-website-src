@@ -3,4 +3,4 @@
 	url = https://github.com/danielkvist/hugo-piercer-theme.git
 [submodule "themes/hugo-artists-theme-sub"]
 	path = themes/hugo-artists-theme-sub
-	url = https://github.com/digitalcraftsman/hugo-artists-theme
+	url = https://github.com/digitalcraftsman/hugo-artists-theme.git
