@@ -1,8 +1,8 @@
 # Site settings
-baseurl = "https://www.faultycat.com.au"
+baseurl = "/"
 languageCode = "en-us"
 title = "Faulty Cat Productions"
-theme = "../themes/hugo-artists-theme"
+theme = "hugo-artists-theme"
 
 [params]
 
