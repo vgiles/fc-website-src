@@ -17,8 +17,8 @@ function setup() {
     background("rgba(255, 191, 0, 0)");
     initImage();
     noLoop();
-    // osc1 = new p5.Oscillator();
-    // synth = new p5.PolySynth();
+    osc1 = new p5.Oscillator();
+    synth = new p5.PolySynth();
 }
 
 // function mouseClicked() {
@@ -33,7 +33,7 @@ function draw() {
     //fc();
     doggo();
     //genMusic(); // to do
-    fcText();
+    // fcText();
 }
 
 function mouseClicked() {
@@ -48,24 +48,26 @@ function fcText() {
 }
 
 function doggo() {
-    ellipseMode(CENTER);
-    noStroke();
+    rectMode(CENTER);
+    //noStroke();
+    let wcircle = (width/2)*TWO_PI;
+    let hcircle = (height/2)*TWO_PI;
     let rows = height / 70;
     let cols = width / 70;
-    for (var x = 0; x < width; x += cols) {				
-        for (var y = 0; y < height-100; y += rows) {
+    for (var x = 0; x < wcircle; x += cols) {				
+        for (var y = 0; y < hcircle; y += rows) {
             blendMode(LIGHTEST);
             let col = img.get(x, y);
             col = color(red(col), green(col), blue(col), 80);
             fill(col);											
-            ellipse(x, y, rows, cols);
+            rect(x, y, rows, cols);
         }
     }
-    strokeWeight(0.8);
-    stroke(45);
-    // blendMode(LIGHTEST);
-    fill("rgba(255, 255, 255, 0.0)");
-    ellipse(width/2, height/2-100, width, height-100);
+    // strokeWeight(0.8);
+    // stroke(45);
+    // // blendMode(LIGHTEST);
+    // fill("rgba(255, 255, 255, 0.0)");
+    // ellipse(width/2, height/2, width, height);
 }
 
 function genMusic() {
@@ -84,10 +86,10 @@ function initImage() {
     var wRatio = img.width / windowWidth;
     var hRatio = img.height / windowHeight;
 
-    if (wRatio < hRatio) {resizeCanvas(int((img.width / hRatio) * 0.75), int(windowHeight * 0.75)+100);}
-    else {resizeCanvas(int(windowWidth * 0.75), int((img.height / wRatio) * 0.75) + 100);}
+    if (wRatio < hRatio) {resizeCanvas(int((img.width / hRatio) * 0.75), int(windowHeight * 0.75));}
+    else {resizeCanvas(int(windowWidth * 0.75), int((img.height / wRatio) * 0.75));}
 
-    img.resize(width, height-100);
+    img.resize(width, height);
 
 }
 
