@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "/"
+baseurl = "https://www.faultycat.com.au"
 languageCode = "en-us"
 title = "Faulty Cat Productions"
 theme = "hugo-artists-theme"
@@ -42,8 +42,8 @@ theme = "hugo-artists-theme"
 	#
 	# Replace the 'avatar.jpg' under 'static/img' with your own image.
 	[params.about]
-		title = "Vincent Giles"
-		bio = "_Website currently under development._<br />Vincent Giles is a composer and producer of exploratory music. He discovers new ways to do creative things for human experiences."
+		title = "Vincent Giles: Composer and Producer"
+		bio = "_Website currently under development._<br />Vincent Giles is a composer and producer of exploratory music, discovering new ways to do creative things for human experiences."
 
 		# [[params.about.skills]]
 		# 	name = "Communication"
@@ -79,7 +79,7 @@ theme = "hugo-artists-theme"
 
 	# Contact secion
 	[params.contact]
-		title = "Contact Faulty Cat"
+		title = "Connect with Faulty Cat"
 
 		# The following social network icons are available:
 		# 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin'
@@ -115,4 +115,4 @@ theme = "hugo-artists-theme"
 
 
 	[params.footer]
-		copyright = "Content Copyright 2019 Faulty Cat Productions except where noted. Designt published under the Unlicense License."
+		copyright = "Content Copyright 2019 Faulty Cat Productions except where noted. Design published under the Unlicense License."
