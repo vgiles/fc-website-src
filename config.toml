@@ -45,21 +45,21 @@ theme = "hugo-artists-theme"
 		title = "Vincent Giles: Composer and Producer"
 		bio = "_Website currently under development._<br />Vincent Giles is a composer and producer of exploratory music, discovering new ways to do creative things for human experiences."
 
-		# [[params.about.skills]]
-		# 	name = "Communication"
-		# 	value = 9
+		[[params.about.skills]]
+			name = "Communication"
+			value = 9
 
-		# [[params.about.skills]]
-		# 	name = "Organization"
-		# 	value = 7
+		[[params.about.skills]]
+			name = "Empathy"
+			value = 9
 
-		# [[params.about.skills]]
-		# 	name = "Learning"
-		# 	value = 10
+		[[params.about.skills]]
+			name = "Flexibility"
+			value = 9
 
-		# [[params.about.skills]]
-		# 	name = "Teaching"
-		# 	value = 6
+		[[params.about.skills]]
+			name = "Teaching"
+			value = 6
 
 		# [[params.about.skills]]
 		# 	name = "Planning"
