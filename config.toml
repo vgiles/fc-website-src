@@ -90,7 +90,7 @@ theme = "hugo-artists-theme"
 
 		[[params.contact.social]]
 			icon = "instagram"
-			link = "//dribbble.com/composervince"
+			link = "//instagram.com/composervince"
 
 		[[params.contact.social]]
 			icon = "soundcloud"
