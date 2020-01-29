@@ -43,7 +43,7 @@ theme = "hugo-artists-theme"
 	# Replace the 'avatar.jpg' under 'static/img' with your own image.
 	[params.about]
 		title = "Vincent Giles: Composer and Producer"
-		bio = "_Website currently under development._<br /> Vincent Giles is a composer and producer of exploratory music, discovering new ways to do creative things for human experiences."
+		bio = "<i>Website currently under development.</i><br /> Vincent Giles is a composer and producer of exploratory music, discovering new ways to do creative things for human experiences."
 
 		[[params.about.skills]]
 			name = "Communication"
