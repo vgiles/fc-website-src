@@ -11,7 +11,7 @@ theme = "hugo-artists-theme"
 
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Vincent Giles"
+	name = "Vincent Giles - Faulty Cat Productions"
 	description = "Exploratory composer and producer of music and sound for games, new media, and interactive experiences"
 
 	# Since this template is static, the contact form uses www.formspree.io as a
@@ -60,7 +60,7 @@ theme = "hugo-artists-theme"
 		[[params.about.skills]]
 			name = "Flexibility"
 			value = 9
-			
+
 		[[params.about.skills]]
 			name = "Communication"
 			value = 7
@@ -73,6 +73,9 @@ theme = "hugo-artists-theme"
 			name = "Grant Writing"
 			value = 6
 
+		[[params.about.skills]]
+			name = "Programming"
+			value = 2
 	# Contact secion
 	[params.contact]
 		title = "Connect"
@@ -111,4 +114,4 @@ theme = "hugo-artists-theme"
 
 
 	[params.footer]
-		copyright = "Content Copyright 2020 Faulty Cat Productions except where noted. Design published under the Unlicense License."
+		copyright = "Content Copyright 2020 Faulty Cat Productions except where noted. Design published under the Unlicense License. Portrait by Emily Churchill."

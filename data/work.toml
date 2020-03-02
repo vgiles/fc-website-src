@@ -1,0 +1,10 @@
+# Section title
+title = "Work"
+
+[[projects]]
+    name = "Study #2: Responsive Graphics and Analogue Synthesis"
+    folder = "proj-1"
+
+[[projects]]
+name = "KKPO: Responsive Graphics and Analogue Synthesis"
+folder = "proj-2"
