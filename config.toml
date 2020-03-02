@@ -43,7 +43,7 @@ theme = "hugo-artists-theme"
 	# Replace the 'avatar.jpg' under 'static/img' with your own image.
 	[params.about]
 		title = "Vincent Giles: Faulty Cat Productions"
-		bio = "Vincent Giles is a composer, sound designer, and producer of exploratory music. Faulty Cat Productions is my way of discovering new ways to do creative things for human experiences."
+		bio = "**Vincent Giles** is a composer, sound designer, and producer of exploratory music. **Faulty Cat Productions** is my way of discovering new ways to do creative things for human experiences."
 
 		[[params.about.skills]]
 			name = "Composition"
@@ -111,4 +111,4 @@ theme = "hugo-artists-theme"
 
 
 	[params.footer]
-		copyright = "Content Copyright 2019 Faulty Cat Productions except where noted. Design published under the Unlicense License."
+		copyright = "Content Copyright 2020 Faulty Cat Productions except where noted. Design published under the Unlicense License."
