@@ -8,3 +8,11 @@ title = "Work"
 [[projects]]
 name = "KKPO: Responsive Graphics and Analogue Synthesis"
 folder = "proj-2"
+
+[[projects]]
+name = "Zizek Square: generative text piece"
+folder = "proj-3"
+
+[[projects]]
+name = "How ought one live? Generative score with javascript"
+folder = "proj-4"
