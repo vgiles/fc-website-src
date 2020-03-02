@@ -50,17 +50,17 @@ theme = "hugo-artists-theme"
 			value = 9
 
 		[[params.about.skills]]
+			name = "Sound Design"
+			value = 8
+
+		[[params.about.skills]]
 			name = "Empathy"
 			value = 9
 
 		[[params.about.skills]]
 			name = "Flexibility"
 			value = 9
-
-		[[params.about.skills]]
-			name = "Sound Design"
-			value = 8
-
+			
 		[[params.about.skills]]
 			name = "Communication"
 			value = 7
