@@ -74,8 +74,8 @@ theme = "hugo-artists-theme"
 			value = 6
 
 		[[params.about.skills]]
-			name = "Programming"
-			value = 2
+			name = "Curation"
+			value = 6
 	# Contact secion
 	[params.contact]
 		title = "Connect"
