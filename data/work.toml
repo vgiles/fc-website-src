@@ -2,6 +2,10 @@
 title = "Work"
 
 [[projects]]
+    name = "Filtered Noise: Electronic Music Podcast"
+    folder = "proj-0"
+
+[[projects]]
     name = "Study #2: Responsive Graphics and Analogue Synthesis"
     folder = "proj-1"
 
