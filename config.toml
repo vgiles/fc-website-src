@@ -12,7 +12,7 @@ theme = "hugo-artists-theme"
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
 	name = "Faulty Cat Productions: About"
-	description = "Exploratory music composer, producer, sound designer for games, film, new media, installation, and interactivity."
+	description = "Exploratory music composer, producer, sound designer, for games, film, new media, installation, and interactivity."
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
@@ -43,7 +43,7 @@ theme = "hugo-artists-theme"
 	# Replace the 'avatar.jpg' under 'static/img' with your own image.
 	[params.about]
 		title = "About Faulty Cat Productions"
-		bio = "**Vincent Giles** is a [composer](https://www.vgiles.net), sound designer, and [producer](https://www.tilde.net.au) of exploratory music. **Faulty Cat Productions** is my way of discovering new ways to do creative things for human experiences."
+		bio = "**Vincent Giles** is a [composer](https://www.vgiles.net), sound designer, and [producer](https://www.tilde.net.au) of exploratory music. **Faulty Cat Productions** is a way of discovering new ways to do creative things for human experiences."
 
 		[[params.about.skills]]
 			name = "Composition"
