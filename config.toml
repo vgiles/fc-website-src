@@ -58,16 +58,16 @@ theme = "hugo-artists-theme"
 			value = 9
 
 		[[params.about.skills]]
-			name = "Flexibility"
+			name = "Production"
 			value = 9
 
 		[[params.about.skills]]
 			name = "Communication"
-			value = 7
+			value = 8
 
 		[[params.about.skills]]
 			name = "Project Management"
-			value = 7
+			value = 8
 
 		[[params.about.skills]]
 			name = "Grant Writing"
