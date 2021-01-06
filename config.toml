@@ -25,7 +25,7 @@ theme = "hugo-artists-theme"
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-	email = "faultycatproductions@gmail.com"
+	email = "hi@faultycat.com.au"
 
 
 	# Header an navigation
@@ -54,11 +54,15 @@ theme = "hugo-artists-theme"
 			value = 8
 
 		[[params.about.skills]]
-			name = "Empathy"
+			name = "Production"
 			value = 9
 
 		[[params.about.skills]]
-			name = "Production"
+			name = "Project Management"
+			value = 8
+
+		[[params.about.skills]]
+			name = "Empathy"
 			value = 9
 
 		[[params.about.skills]]
@@ -66,16 +70,12 @@ theme = "hugo-artists-theme"
 			value = 8
 
 		[[params.about.skills]]
-			name = "Project Management"
-			value = 8
+			name = "Grant-Writing"
+			value = 7
 
 		[[params.about.skills]]
-			name = "Grant Writing"
-			value = 6
-
-		[[params.about.skills]]
-			name = "Curation"
-			value = 6
+			name = "New Media Technologies"
+			value = 7
 
 	# # Podcast
 	# [params.podcast]
@@ -120,4 +120,4 @@ theme = "hugo-artists-theme"
 
 
 	[params.footer]
-		copyright = "Content Copyright 2020 Faulty Cat Productions except where noted. Design published under the Unlicense License. Portrait by Emily Churchill."
+		copyright = "Content Copyright 2020-2021 Faulty Cat Productions except where noted. Design published under the Unlicense License. Portrait by Emily Churchill."
