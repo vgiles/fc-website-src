@@ -1,4 +1,0 @@
-AuthName "values"
-            AuthType Basic
-            AuthUserFile /home/username/values/.htpasswds
-            Require valid-user 
