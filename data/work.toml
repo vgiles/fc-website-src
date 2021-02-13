@@ -2,6 +2,10 @@
 title = "Work"
 
 [[projects]]
+    name = "GGJ2021: The Kid Who Stole Christmas"
+    folder = "proj-6"
+
+[[projects]]
     name = "Filtered Noise: Electronic Music Podcast"
     folder = "proj-0"
 
