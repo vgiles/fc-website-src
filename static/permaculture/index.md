@@ -1,3 +1,10 @@
+<html>
+
+<head>
+    <meta name="robots" content="noindex">
+</head>
+<body>
+
 # Resources for Permaculture
 ## Book List
 
@@ -61,7 +68,19 @@
 
 [Rainwater Harvesting Pt 2](http://booktopia.kh4ffx.net/c/1426261/585979/9632?prodsku=40354273&u=https%3A%2F%2Fwww.booktopia.com.au%2Frainwater-harvesting-for-drylands-and-beyond-volume-2-brad-lancaster%2Fbook%2F9780977246441.html%3Futm_source%3DECN%26utm_medium%3DCSE%26utm_campaign%3DECN_CPC)
 
+[Four Season Harvest](https://booktopia.kh4ffx.net/9moxe)
 
+[The Forest Garden Greenhouse](https://booktopia.kh4ffx.net/n3oOV)
+
+[Barefoot Investor](https://booktopia.kh4ffx.net/bz2Zg)
+
+[Your Money or Your Life](https://booktopia.kh4ffx.net/OQ4NZ)
+
+[Efficient Hot Water](https://shop.ata.org.au/shop/efficient-hot-water)
+
+[Solar Electricity, Plan Your Own Solar Electricity](https://shop.ata.org.au/shop/solar-electricity)
+
+[Seed Savers Handbook](http://seedsavers.net/product/seed-savers-handbook/)
 
 ## Video List
 
@@ -91,8 +110,6 @@
 
 [Dryland Harvesting Home Hacks](https://youtu.be/KcAMXm9zITg)
 
-
-
 ## Recipes (more week by week)
 <!-- reorganise at some stage -->
 
@@ -108,7 +125,7 @@
 
 ## Week 1: Intro
 
-[Link to PDFs](InsertLinkHere)
+[Link to PDFs](https://www.dropbox.com/sh/uq235o2pa0oyo3m/AADsU5GjJcFtL6ZujbZxTn98a?dl=0)
 
 [Permaculture Principles](https://permacultureprinciples.com/)
 
@@ -127,6 +144,8 @@
 [Writing a Goal Statement](https://www.milkwood.net/2015/10/26/permaculture-design-process-1-writing-a-goal-statement/)
 
 ## Week 2: Principle 1
+
+[Link to PDFs](https://www.dropbox.com/sh/orbzgb5k06827r4/AACu3i3iQ5ttU8hoIeVAYqVOa?dl=0)
 
 [Principle 1](https://permacultureprinciples.com/principles/_1/)
 
@@ -202,13 +221,71 @@
 
 [Article: Being IN Nature Is Good For Learning](https://theconversation.com/being-in-nature-is-good-for-learning-heres-how-to-get-kids-off-screens-and-outside-104935)
 
-[Article: Nature = Gooderer You](https://greatergood.berkeley.edu/article/item/how_nature_makes_you_kinder_happier_more_creative)
-
+[Article: Nature is good for other stuff](https://greatergood.berkeley.edu/article/item/how_nature_makes_you_kinder_happier_more_creative)
 
 ## Q&A Number 1
 
+[Composting in apartment](https://www.upontherooftop.com.au/blogs/whats-going-on-up-on-the-rooftop/compost-because-soil-is-everything)
+
+[Bush rat management](https://www.youtube.com/watch?v=FSkD3wsBaOI)
+
+[Hay vs Straw](https://homegrownfun.com/difference-between-straw-and-hay/)
+
+[Endemic agriculture vs permaculture](https://www.goodfood.com.au/recipes/news/after-200-years-an-ancient-grain-is-back-on-the-menu-20200618-h1otwg)
+
+[same as above](https://vimeo.com/254508763)
+
+[Rental permaculture](https://www.milkwood.net/2020/03/31/8-weeks-to-victory-an-8-week-veggie-patch-from-scratch-in-a-rental/)
+
+[RP 2](https://www.milkwood.net/2015/12/02/bare-ground-surplus-permaculture-renting/)
+
+[Cute Instagram 1](https://www.instagram.com/theurbannanna/)
+
+[Cute Instagram 2](https://www.instagram.com/koren.helbig/)
+
+[Small space/Rental garden inspiration](https://www.youtube.com/watch?v=dlNpf3O_MsE&t=1s)
+
+[Small space/Rental garden inspiration](https://www.abc.net.au/gardening/factsheets/balcony-bounty/12801774)
+
+[Small space/Rental garden inspiration](https://www.abc.net.au/gardening/factsheets/a-bountiful-balcony/9433796)
+
+[Small space/Rental garden inspiration](https://www.youtube.com/watch?v=BXzz5b7kVQM)
+
+[home made water tank guage](https://www.youtube.com/watch?v=kSTS-F6Kxjo)
+
+[managing oxalis](https://www.almanac.com/weeds-indicator-plants)
+
+[managing oxalis](https://www.permaculturenews.org/2017/04/14/using-weeds-read-soil-basic-concepts-get-started/)
+
+[managing oxalis](http://byronshirechemicalfreelandcare.org/weed-values/weeds-as-environmental-indicators/)
+
+[managing oxalis](https://www.booktopia.com.au/weeds-and-what-they-tell-us-ehrenfried-e-pfeiffer/book/9780863159251.html)
+
+[rat management](https://www.youtube.com/watch?v=FSkD3wsBaOI)
+
+[manage gorse](https://www.youtube.com/watch?v=3VZSJKbzyMc)
+
+[manage blackberries](https://happenfilms.com/film/from-weedy-forests-to-grassy-woodlands/)
+
+[predatory bugs](https://bugsforbugs.com.au/)
+
+[soil building](https://www.youtube.com/watch?v=oE8us929ido)
+
+[fruit tree pruning](https://www.youtube.com/watch?v=oUkm1ycnqWk&feature=emb_title)
+
+[internal livestock fencing](https://www.booktopia.com.au/holistic-management-handbook-third-edition-jody-butterfield/book/9781610919760.html)
+
+[beneficial insects](https://www.milkwood.net/2020/05/18/creating-a-resilient-garden-with-pollinators-good-bugs-lizards-and-more/)
+
+[companion planting for caterpillar control](https://deepgreenpermaculture.com/2020/08/25/companion-planting-with-land-cress-for-natural-caterpillar-control/)
+
+[holistic decision making](https://holisticdecisionmaking.org/)
+
+[scale of permanence](https://smallfarms.cornell.edu/2016/04/scale-of-permanence/)
 
 ## Week 3: Principle 2
+
+[Link to PDFs](https://www.dropbox.com/sh/vqequ0n2xzz6jva/AADhetopIGb6ScvRBOCKVTVJa?dl=0)
 
 [WWW: Principle 2](https://permacultureprinciples.com/principles/_2/)
 
@@ -216,13 +293,15 @@
 
 [WWW/Video: Flow of Energy Through Ecosystems](https://www.youtube.com/watch?v=TitrRpMUt0I)
 
+### Food Preserving
+
 [Audio: Energy](https://soundcloud.com/formidablevegetable/02-energy?in=formidablevegetable/sets/permaculture-a-rhymers-manual)
 
 [Article: Wild Fermentation](https://www.wildfermentation.com/)
 
 [Article: Milkwood Easy Kraut](https://www.milkwood.net/2016/05/09/making-simple-sauerkraut-whatever-greens-youve-got/)
 
-[Article: Milwood Drying Apple etc.](https://www.milkwood.net/2012/02/20/drying-apple-pear-and-nashi/)
+[Article: Milkwood Drying Apple etc.](https://www.milkwood.net/2012/02/20/drying-apple-pear-and-nashi/)
 
 [Article: Home Canning For Beginners](https://www.motherearthnews.com/real-food/home-canning-for-beginners-zmaz92aszshe)
 
@@ -240,17 +319,89 @@
 
 [Article: Food Grade v Food Safe](https://www.maximumyield.com/food-grade-vs-food-safe-what-gardeners-need-to-know/2/3444)
 
+### Rainwater Harvesting
+
 [ARticle: Harvesting Rainwater](https://www.harvestingrainwater.com/)
 
 [Article: The Tankulator](http://tankulator.ata.org.au/)
 
 [Article: Rainwater Treatment guide](https://www.health.nsw.gov.au/environment/water/Documents/Rainwater-Treatment-Guide.pdf)
 
-[ARticle: Tank Comparison](https://www.milkwood.net/2011/02/14/water-tank-comparisons-for-drinking-water-defining-clean-and-green/)
+[Article: Tank Comparison](https://www.milkwood.net/2011/02/14/water-tank-comparisons-for-drinking-water-defining-clean-and-green/)
 
 [Article: Water Resources](https://www.milkwood.net/tag/water/)
 
 [Article: Recycled Plastic Drum](https://deepgreenpermaculture.com/diy-instructions/recycled-plastic-drum-rainwater-tank/)
 
+### Greenhouse/Growing
+
+[Article: Make a Mini Greenhouse](https://www.wikihow.com/Make-a-Mini-Greenhouse)
+
+[Article: Making Cold Frames from Glass Doors](https://www.milkwood.net/2012/09/13/making-cold-frames-from-glass-doors/)
+
+[Article: 7 DIY Small Greenhouse Ideas](https://www.mnn.com/your-home/organic-farming-gardening/stories/7-diy-small-greenhouse-ideas)
+
+[Article: How to use a greenhouse](https://garden.lovetoknow.com/wiki/How_to_Use_a_Greenhouse)
+
+[Article: How to make the best ever seed raising mix](https://www.milkwood.net/2015/05/11/how-to-make-best-ever-seed-raising-mix/)
+
+### Long Term Food Storage
+
+[ARticle: Long Term Food Storage](https://www.self-reliance.com/2015/02/basic-long-term-food-storage/)
+
+[Article: How to make Passata](https://www.milkwood.net/2015/04/07/how-to-make-passata/)
+
+[Article: How to store and protect food longterm](https://www.motherearthnews.com/real-food/food-preservation/store-protect-food-long-term-zm0z18aszsphe)
+
+[Article: Long term food storage guide](https://homesteadlaunch.com/long-term-food-storage/)
+
+[Article: Storing the season: drying summer medicinal herbs](https://www.milkwood.net/2015/02/19/storing-season-drying-summer-medicinal-herbs/)
+
+[Article: Whole pickled green tomatoes](https://www.milkwood.net/2011/04/04/whole-pickled-green-tomatoes/)
+
+### Money stuff
+
+[Activity: Your Money or your life](http://newroadmap.pbworks.com/f/StudyGuide-ver-BSG1-ORIGINAL.pdf)
+
+[WWW: ASIC, Money Smart](https://www.moneysmart.gov.au/managing-your-money/budgeting/how-to-do-a-budget)
+
+[WWW: Your Money or your life](https://www.moneysmart.gov.au/managing-your-money/budgeting/how-to-do-a-budget)
 
 
+### Energy Audit your home
+
+[Article: Do a Home Energy Audit (AU)](https://www.sa.gov.au/topics/energy-and-environment/using-saving-energy/home-energy-audits/do-a-home-energy-audit)
+
+[Article: DIY Home Energy Audit (US)](https://www.energy.gov/energysaver/home-energy-audits/do-it-yourself-home-energy-audits)
+
+[Article: Renewable Energy Support (EU)](https://climatepolicyinfohub.eu/renewable-energy-support-policies-europe)
+
+[ARticle: Renewable Power Incentives (AU)](https://www.energy.gov.au/rebates/renewable-power-incentives)
+
+[Article: Solar Hot Water](https://www.solarhotwaterquotes.com.au/start-here/)
+
+[Article: Solar 101 (AU)](https://www.solarquotes.com.au/solar101.html)
+
+[Article: Solar Incentives (US)](https://www.energysage.com/solar/cost-benefit/solar-incentives-and-rebates/)
+
+[Article: Solar Feasibility Calc (AU)](https://renew.org.au/resources/sunulator/)
+
+### Grow Beans/Storage Crops
+
+[Article: Storage Crops, top 3 beans to grow in a biointensive system](https://www.milkwood.net/2016/03/21/storage-crops-3-top-beans-grow-biointensive-system/)
+
+[Article: broad beans](https://www.gardenclinic.com.au/how-to-grow-article/broad-beans?pid=44194)
+
+[Article: Green Manure Fact Sheet](https://www.abc.net.au/gardening/factsheets/green-manure/9440370)
+
+[Article: Grow and Save Bean Seeds](https://www.seedsavers.org/grow-bean)
+
+[Article: Make The Most of Legumes to Fix and Keep Nitrogen in Your Soil](http://eap.mcgill.ca/MagRack/COG/COG_E_97_02.htm)
+
+[Article: Nitrogen Fixing Bacteria](https://www.tropicalpermaculture.com/nitrogen-fixing-bacteria.html)
+
+[Article: Health benefits beans](https://www.medicalnewstoday.com/articles/320192.php)
+
+[WWW: Gardenate: best seeds for climate](https://www.gardenate.com/)
+
+</body>
