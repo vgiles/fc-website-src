@@ -139,7 +139,7 @@
 
 [Holistic Decision Making](https://www.holisticdecisionmaking.org/introducing-holistic-management-part-2/)
 
-[SMART Goals](https://www.mindtools.com/pages/article/smart-goals.htm)
+[SMArT Goals](https://www.mindtools.com/pages/article/smart-goals.htm)
 
 [Writing a Goal Statement](https://www.milkwood.net/2015/10/26/permaculture-design-process-1-writing-a-goal-statement/)
 
@@ -321,7 +321,7 @@
 
 ### Rainwater Harvesting
 
-[ARticle: Harvesting Rainwater](https://www.harvestingrainwater.com/)
+[Article: Harvesting Rainwater](https://www.harvestingrainwater.com/)
 
 [Article: The Tankulator](http://tankulator.ata.org.au/)
 
@@ -347,7 +347,7 @@
 
 ### Long Term Food Storage
 
-[ARticle: Long Term Food Storage](https://www.self-reliance.com/2015/02/basic-long-term-food-storage/)
+[Article: Long Term Food Storage](https://www.self-reliance.com/2015/02/basic-long-term-food-storage/)
 
 [Article: How to make Passata](https://www.milkwood.net/2015/04/07/how-to-make-passata/)
 
@@ -376,7 +376,7 @@
 
 [Article: Renewable Energy Support (EU)](https://climatepolicyinfohub.eu/renewable-energy-support-policies-europe)
 
-[ARticle: Renewable Power Incentives (AU)](https://www.energy.gov.au/rebates/renewable-power-incentives)
+[Article: Renewable Power Incentives (AU)](https://www.energy.gov.au/rebates/renewable-power-incentives)
 
 [Article: Solar Hot Water](https://www.solarhotwaterquotes.com.au/start-here/)
 
