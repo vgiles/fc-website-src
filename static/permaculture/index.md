@@ -6,6 +6,12 @@
 <body>
 
 # Resources for Permaculture
+
+## Misc
+
+[Reusable DIY Sponges](https://www.frankie.com.au/article/frankie-exclusive-diy-reusable-sponges-560705?utm_medium=email&utm_campaign=FRA_Newsletter_20210209&utm_content=FRA_Newsletter_20210209+CID_258d79ec1b796411e54873313f78a30d&utm_source=E%20news&utm_term=cloth%20sponges)
+
+
 ## Book List
 
 [Permaculture Principles](https://au.permacultureprinciples.com/product/principles-and-pathways/)
