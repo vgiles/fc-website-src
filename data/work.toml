@@ -14,8 +14,8 @@ title = "Work"
     folder = "proj-1"
 
 [[projects]]
-    name = "KKPO: Responsive Graphics and Analogue Synthesis"
-    folder = "proj-2"
+    name = "Community Art: Let Me Count The Ways (Portland, 2014)"
+    folder = "proj-7"
 
 [[projects]]
     name = "Zizek Square: generative text piece"
@@ -28,3 +28,7 @@ title = "Work"
 [[projects]]
     name = "How ought one live? Generative score with javascript"
     folder = "proj-5"
+
+[[projects]]
+    name = "Public Art: Heard/Unheard:Flux (Portland, 2013)"
+    folder = "proj-8"
