@@ -88,6 +88,22 @@
 
 [Seed Savers Handbook](http://seedsavers.net/product/seed-savers-handbook/)
 
+[Homegrown Sprouts](https://booktopia.kh4ffx.net/gV4j0)
+
+[How Can I Grow and Use Sprouts as Living Food?](https://herbsarespecial.com.au/)
+
+[How to Grow Microgreens for Fun and Profit](https://practicalgrowing.com/)
+
+[No More Throw-away People](https://www.abebooks.com/9781893520028/Throw-Away-People-Co-Production-Imperative-2nd-1893520021/plp)
+
+[JEremy Rifkin](https://www.foet.org/books/)
+
+[Susanna Lyle](https://booktopia.kh4ffx.net/9WGEdQ)
+
+[Fruit and Nuts](https://www.goodreads.com/book/show/6822450-the-ultimate-fruit-and-nuts)
+
+[SPICES AND SUCH](https://booktopia.kh4ffx.net/2GDqa)
+
 ## Video List
 
 [One Straw Revolution](https://www.youtube.com/watch?v=rj7nrOjhMtk)
@@ -115,6 +131,10 @@
 [WWW/Video: Flow of Energy Through Ecosystems](https://www.youtube.com/watch?v=TitrRpMUt0I)
 
 [Dryland Harvesting Home Hacks](https://youtu.be/KcAMXm9zITg)
+
+[Third Industrial Revolution: Sharing](https://youtu.be/QX3M8Ka9vUA)
+
+
 
 ## Recipes (more week by week)
 <!-- reorganise at some stage -->
@@ -409,5 +429,97 @@
 [Article: Health benefits beans](https://www.medicalnewstoday.com/articles/320192.php)
 
 [WWW: Gardenate: best seeds for climate](https://www.gardenate.com/)
+
+## Week 4: Principle 3
+
+[PDFs](https://www.dropbox.com/sh/fmv0kd0u1j22y60/AADuLRMLC-Qh0Zt0vi1YIDXra?dl=0)
+
+[Principle 3: Obtain a Yield](https://permacultureprinciples.com/principles/_3/?ref=3)
+
+[Audio](https://soundcloud.com/formidablevegetable/03-yield?in=formidablevegetable/sets/permaculture-a-rhymers-manual)
+
+[article: growing super microgreens in garden beds](https://www.milkwood.net/2015/11/02/growing-super-microgreens-in-garden-beds/)
+
+[article: green harvest sprouting, wheatgrass, and microgreen](https://greenharvest.com.au/DownLoads/SproutingBooklet.pdf)
+
+[article: grow shit on your bench](https://themicrogardener.com/how-to-garden-on-your-benchtop-grow-sprouts/)
+
+[recipe: seed raising mix](https://www.milkwood.net/2015/05/11/how-to-make-best-ever-seed-raising-mix/)
+
+[recipe ideas: sprouts](https://gnowfglins.com/food-preparation/recipes/four-ways-to-use-sprouted-beans/)
+
+[article: sprout some shit, here's why](https://wholefully.com/sprouting-101/)
+
+[article: sprouting some more shit 1010](https://sproutpeople.org/growing-sprouts/sprouting-basics/)
+
+[article: some bigs words about sprouting](https://www.trueleafmarket.com/blogs/articles/sprouting-and-microgreening-with-mucilaginous-seeds)
+
+[article: collaborative economy](https://ec.europa.eu/growth/single-market/services/collaborative-economy_en)
+
+[article: peer to peer solar trading](https://www.energymatters.com.au/misc/peer-to-peer-solar-energy-trading-guide/)
+
+[article: sharing the harvest](https://www.milkwood.net/2015/10/19/sharing-the-harvest-kiamas-first-crop-and-swap/)
+
+[article: the time bank solution](https://ssir.org/articles/entry/the_time_bank_solution)
+
+[article/site: top 30 sharing economy sites](https://www.ratecity.com.au/top-30-sharing-economy-sites)
+
+[www: community exchange systems](https://www.community-exchange.org/)
+
+[www: ces (AU)](https://www.communityexchange.net.au/)
+
+[www: crop swap (AU)](https://www.cropswap.sydney/)
+
+[www: crop swap (CA)](https://www.facebook.com/groups/cropswapvancouver/)
+
+[www: freecycle](https://www.freecycle.org/)
+
+[www: repair cafe](https://repaircafe.org/)
+
+[www: timebanking (AU)](https://www.timebanking.com.au/)
+
+[www: timebanking (USA)](https://timebanks.org/)
+
+[www: crop swap app (mainly US)](https://www.cropswapapp.com/)
+
+[article: attracting wild animals for the good o' the garden](https://permaculturenews.org/2014/08/28/attracting-wild-animals-for-the-good-of-the-garden-which-why-and-how/)
+
+[article: wildlife friendly fencing](https://www.wires.org.au/wildlife-info/wildlife-factsheets/making-friendly-fencing)
+
+[article: I'm a plant, bad rats, don't eat me](https://www.milkwood.net/2012/08/13/how-not-to-get-eaten-by-rats-if-youre-a-seedling/)
+
+[article: food, nwf](https://www.nwf.org/Garden-for-Wildlife/Food)
+
+[article: possum security](https://littleveggiepatchco.com.au/blogs/news/7893605-possum-security)
+
+[article: wildlife friendly netting](https://www.wires.org.au/wildlife-info/wildlife-factsheets/wildlife-friendly-netting)
+
+[article: wildlife friendly gardens](https://www.wires.org.au/wildlife-info/wildlife-factsheets/wildlife-friendly-gardens)
+
+[video: wildlife friendly netting](https://www.youtube.com/watch?v=p-GIUFeknOc)
+
+[video: wildlife friendly netting](https://www.youtube.com/watch?v=ke0FSO5a094)
+
+[article: grow some herbs](https://seedtopantryschool.com/how-to-grow-herbs-fast-for-almost-free/)
+
+[article: propagate rosemary](https://growagoodlife.com/propagate-rosemary-plant-from-stem-cuttings/)
+
+[article: make a herb spiral](https://www.familyfoodgarden.com/how-to-build-a-herb-spiral/)
+
+[article: plants that attract sexy bugs](https://permaculturenews.org/2014/10/04/plants-attract-beneficial-insects/)
+
+[article: ten easy to grow a simple kitchen herb garden or something](https://www.motherearthliving.com/herb-gardening/10-easy-to-grow-herbs-simple-kitchen-herb-garden)
+
+[article: my herb brings all the bees to the yard, and they're like, buzz buzz buzz](https://theconversation.com/the-common-herb-that-could-bring-bees-buzzing-to-your-garden-81140)
+
+[www: plants for the future](https://pfaf.org/)
+
+[article: 12 vegies that are weird, so grow them](https://www.naturallivingideas.com/weird-fruits-veggies-to-grow-at-home/)
+
+[article: seeds to sow now (AU)](https://www.diggers.com.au/seeds-to-sow-now/)
+
+[www: gardenate (worldwide)](https://www.gardenate.com/)
+
+[article: work life balance](https://www.mindtools.com/pages/article/work-life-balance.htm)
 
 </body>
