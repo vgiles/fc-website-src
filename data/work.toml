@@ -2,6 +2,10 @@
 title = "Work"
 
 [[projects]]
+    name = "Malahang Lantern Festival (2021)"
+    folder = "proj-9"
+
+[[projects]]
     name = "GGJ2021: The Kid Who Stole Christmas"
     folder = "proj-6"
 
@@ -28,7 +32,3 @@ title = "Work"
 [[projects]]
     name = "Public Art: Heard/Unheard:Flux (Portland, 2013)"
     folder = "proj-8"
-
-[[projects]]
-    name = "Malahang Lantern Festival (2021)"
-    folder = "proj-9"
