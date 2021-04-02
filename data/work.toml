@@ -10,10 +10,6 @@ title = "Work"
     folder = "proj-0"
 
 [[projects]]
-    name = "Study #2: Responsive Graphics and Analogue Synthesis"
-    folder = "proj-1"
-
-[[projects]]
     name = "Community Art: Let Me Count The Ways (Portland, 2014)"
     folder = "proj-7"
 
@@ -32,3 +28,7 @@ title = "Work"
 [[projects]]
     name = "Public Art: Heard/Unheard:Flux (Portland, 2013)"
     folder = "proj-8"
+
+[[projects]]
+    name = "Malahang Lantern Festival (2021)"
+    folder = "proj-9"
