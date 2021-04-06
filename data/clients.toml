@@ -2,6 +2,11 @@
 title = "Services"
 
 [[list]]
+    name   = "Production Services"
+    title  = "About"
+    quote  = "**Faulty Cat Productions** offers a range of services across audio and production including **Editing**, **Mixing**, **Sound Design**, **Composition**, **Project Management**, and **Consultation**. Use the left and right arrows to scroll through summaries of these services."
+
+[[list]]
     name   = "Audio"
     title  = "Production"
     quote  = "**Audio Editing** and refinement for software, voiceover, podcasts, media. **Mixing** projects focusing on exploratory techniques that add unique character to your project."
