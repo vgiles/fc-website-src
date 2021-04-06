@@ -1,7 +1,27 @@
 # Section title
-title = "Clients"
+title = "Services"
 
 [[list]]
-    name   = "Scott Summers"
-    title  = "Director of Design, OnToText Ind."
-    quote  = "**While we all felt that Travis was a great** asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often."
+    name   = "Audio"
+    title  = "Production"
+    quote  = "**Audio Editing** and refinement for software, voiceover, podcasts, media. **Mixing** projects focusing on exploratory techniques that add unique character to your project."
+
+[[list]]
+    name   = "Audio"
+    title  = "Sound Design"
+    quote  = "**Sound Design** for interactive media, games, film, installation, galleries."
+
+[[list]]
+    name   = "Music"   
+    title  = "Music Composition"
+    quote  = "**Composition** for interactive media, games, film, installation, galleries."
+
+[[list]]
+    name   = "Production"   
+    title  = "Project Management"
+    quote  = "**Project Management** for arts projects, events, development, media."
+
+[[list]]
+    name   = "Production"   
+    title  = "Consultation"
+    quote  = "**Consulting** for audio and music in software, spaces, for events, and for use in projects."
