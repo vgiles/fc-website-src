@@ -1,0 +1,7 @@
+# Section title
+title = "Clients"
+
+[[list]]
+    name   = "Scott Summers"
+    title  = "Director of Design, OnToText Ind."
+    quote  = "**While we all felt that Travis was a great** asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often."
