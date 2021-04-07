@@ -3,28 +3,28 @@ title = "Services"
 
 [[list]]
     name   = "Production Services"
-    title  = "About"
-    quote  = "**Faulty Cat Productions** offers a range of services across audio and production including **Editing**, **Mixing**, **Sound Design**, **Composition**, **Project Management**, and **Consultation**. Use the left and right arrows to scroll through summaries of these services."
+    title  = "Overview"
+    quote  = "**Faulty Cat Productions** offers a range of services across audio and production including **Editing**, **Mixing**, **Sound Design**, **Composition**, **Project Management**, and **Consultation**. Desktop users can click the left and right arrows, while mobile users get little navigation circles to navigate for short descriptions of services."
 
 [[list]]
     name   = "Audio"
-    title  = "Production"
-    quote  = "**Audio Editing** and refinement for software, voiceover, podcasts, media. **Mixing** projects focusing on exploratory techniques that add unique character to your project."
+    title  = "Post-production"
+    quote  = "**Audio Asset Editing** and refinement for software, voiceover, podcasts, media. **Post-Production Mixing** for audio projects and sessions, focussing on exploratory techniques to give your work uniqueness."
 
 [[list]]
     name   = "Audio"
     title  = "Sound Design"
-    quote  = "**Sound Design** for interactive media, games, film, installation, galleries."
+    quote  = "**Sound Design** for interactive/new media, games, film, installation, galleries."
 
 [[list]]
     name   = "Music"   
     title  = "Music Composition"
-    quote  = "**Composition** for interactive media, games, film, installation, galleries."
+    quote  = "**Composition** for interactive/new media, games, film, installation, galleries."
 
 [[list]]
     name   = "Production"   
     title  = "Project Management"
-    quote  = "**Project Management** for arts projects, events, development, media."
+    quote  = "**Project Management** for arts projects, events, development, media. **Music Production** services to creatively guide your music and help you reach your goals to the best quality possible."
 
 [[list]]
     name   = "Production"   
