@@ -11,8 +11,8 @@ theme = "hugo-artists-theme"
 
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Faulty Cat Productions: About"
-	description = "Exploratory music composer, producer, sound designer, for games, film, new media, installation, and interactivity."
+	name = "Faulty Cat Productions"
+	description = "Melbourne, Victoria. Exploratory music composition, producuction, sound design, and project management, for games, film, new media, installation, and interactivity."
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
