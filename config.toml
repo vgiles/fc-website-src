@@ -95,6 +95,10 @@ theme = "hugo-artists-theme"
 
 		[[params.contact.social]]
 			icon = "instagram"
+			link = "//instagram.com/faultycatproductions"
+
+		[[params.contact.social]]
+			icon = "instagram"
 			link = "//instagram.com/composervince"
 
 		[[params.contact.social]]
