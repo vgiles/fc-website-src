@@ -107,7 +107,7 @@ theme = "hugo-artists-theme"
 
 		[[params.contact.social]]
 			icon = "youtube"
-			link = "//www.youtube.com/composervince"
+			link = "//youtube.com/channel/UCetK4sSbDcRIc8_xTSyHv6Q/videos"
 
 		# [[params.contact.social]]
 		# 	icon = "linkedin"
