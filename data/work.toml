@@ -13,9 +13,9 @@ title = "Work"
     name = "Blorbs: Interactive Music Concrete Experience (2020)"
     folder = "proj-10"
 
-[[projects]]
-    name = "Filtered Noise: Electronic Music Podcast"
-    folder = "proj-0"
+# [[projects]]
+#     name = "Filtered Noise: Electronic Music Podcast"
+#     folder = "proj-0"
 
 [[projects]]
     name = "Community Art: Let Me Count The Ways (Portland, 2014)"
