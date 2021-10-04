@@ -45,37 +45,37 @@ theme = "hugo-artists-theme"
 		title = "About"
 		bio = "**Faulty Cat Productions** is based in Melbourne, and is a way of discovering creative ways to do music and production, while valuing connection, community, and rigour. Faulty Cat Productions works to understand the values and experiences that underpin your needs, and to respond innovatively with integrity and expressiveness through audio, sound design, composition, and project management. **Vincent Giles** is a [composer](https://www.vgiles.net), sound designer, and [producer](https://www.tilde.net.au) of exploratory music."
 
-		[[params.about.skills]]
-			name = "Composition"
-			value = 9
+		# [[params.about.skills]]
+		# 	name = "Composition"
+		# 	value = 9
 
-		[[params.about.skills]]
-			name = "Sound Design"
-			value = 8
+		# [[params.about.skills]]
+		# 	name = "Sound Design"
+		# 	value = 8
 
-		[[params.about.skills]]
-			name = "Production"
-			value = 9
+		# [[params.about.skills]]
+		# 	name = "Production"
+		# 	value = 9
 
-		[[params.about.skills]]
-			name = "Project Management"
-			value = 8
+		# [[params.about.skills]]
+		# 	name = "Project Management"
+		# 	value = 8
 
-		[[params.about.skills]]
-			name = "Empathy"
-			value = 9
+		# [[params.about.skills]]
+		# 	name = "Empathy"
+		# 	value = 9
 
-		[[params.about.skills]]
-			name = "Communication"
-			value = 8
+		# [[params.about.skills]]
+		# 	name = "Communication"
+		# 	value = 8
 
-		[[params.about.skills]]
-			name = "Grant-Writing"
-			value = 7
+		# [[params.about.skills]]
+		# 	name = "Grant-Writing"
+		# 	value = 7
 
-		[[params.about.skills]]
-			name = "New Media Technologies"
-			value = 7
+		# [[params.about.skills]]
+		# 	name = "New Media Technologies"
+		# 	value = 7
 
 	# # Podcast
 	# [params.podcast]
