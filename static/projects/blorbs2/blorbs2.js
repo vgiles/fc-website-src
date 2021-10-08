@@ -19,8 +19,7 @@ function preload() {
 function setup() {
     createCanvas(720, 400);
     frameRate(25);
-    env = new p5.Envelope(t1, l1, t2, l2);
-    osc = new p5.Oscillator('triangle');
+    // env = new p5.Envelope(t1, l1, t2, l2)
     for (i = 0; i <= totalBlorbs; i++) {
         let x = random(width);
         let y = random(height);
@@ -31,9 +30,9 @@ function setup() {
         let randStart = Math.floor(Math.random() * startingNoteSet.length);
         let randInt = Math.floor(Math.random() * icSetMinor.length);
         let oscFreq = midiToFreq(startingNoteSet[randStart] + icSetMinor[randInt]);
-        let s = osc.freq(oscFreq);
-        env.play(osc);
-        blorb = new Blorb(x, y, r);
+        let o = new p5.Oscillator('triangle');
+        let s = new p5.Envelope(t1,l1,t2,l2);
+        blorb = new Blorb(x, y, r, s, o);
         blorbs.push(blorb);
     }
     console.log(blorbs);
@@ -61,12 +60,13 @@ function mouseMoved() {
 // Constructor
 
 class Blorb {
-    constructor(x, y, r, s) {
+    constructor(x, y, r, s, o) {
         this.x = x;
         this.y = y;
         this.r = r;
         this.f = random(255);
         this.s = s;
+        this.o = o;
     }
 
     display() {
@@ -102,7 +102,8 @@ class Blorb {
             // if (randNum > 1) {
             //     this.s.reverseBuffer();
             // }
-            // this.s.play();
+            this.o.start();
+            this.s.play(this.o);
         }
     }
 }
