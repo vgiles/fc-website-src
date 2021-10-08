@@ -7,7 +7,11 @@ let osc;
 let totalBlorbs = 10;
 let icSetMinor = [2, 3, 5, 7, 8, 10];
 let startingNoteSet = [58, 60, 62, 63, 64, 67];
-let t1 = 0.1;
+let transPos = [-12, 0, 12];
+let filter;
+let reverb;
+let delay;
+let t1 = 0.4;
 let l1 = 0.7;
 let t2 = 0.8;
 let l2 = 0.1;
@@ -19,6 +23,10 @@ function preload() {
 function setup() {
     createCanvas(720, 400);
     frameRate(25);
+    filter = new p5.BandPass();
+    filter.freq(400);
+    reverb = new p5.Reverb();
+    delay = new p5.Delay();
     // env = new p5.Envelope(t1, l1, t2, l2)
     for (i = 0; i <= totalBlorbs; i++) {
         let x = random(width);
@@ -27,11 +35,12 @@ function setup() {
         // this could assign a random pitch to each blorb...
         // let randSound = Math.ceil(Math.random() * 10);
         // console.log(randSound);
-        let randStart = Math.floor(Math.random() * startingNoteSet.length);
-        let randInt = Math.floor(Math.random() * icSetMinor.length);
-        let oscFreq = midiToFreq(startingNoteSet[randStart] + icSetMinor[randInt]);
         let o = new p5.Oscillator('triangle');
         let s = new p5.Envelope(t1,l1,t2,l2);
+        delay.process(o, 0.200, 0.7, 700);
+        delay.connect(reverb);
+        // reverb.process(o, 3, 2);
+        // reverb.drywet(0.5);
         blorb = new Blorb(x, y, r, s, o);
         blorbs.push(blorb);
     }
@@ -85,24 +94,32 @@ class Blorb {
             this.x = this.x + random(-50, 50);
             this.y = this.y + random(-50, 50);
             // Sound playback per blorb.
-
-            // this.s.setVolume(Math.random());
-            // if (this.x < width - width/2)
-            // {
-            //     this.s.pan(random(0,1));
-            // } else {
-            //     this.s.pan(random(0,-1));
-            // }
-            // if (this.y < height - height/2)
-            // {
-            //     this.s.rate(random(0, 1));
-            // } else {
+            let randStart = Math.floor(Math.random() * startingNoteSet.length);
+            let randInt = Math.floor(Math.random() * icSetMinor.length);
+            let randTrans = Math.floor(Math.random() * transPos.length);
+            let oscFreq = midiToFreq(startingNoteSet[randStart] + icSetMinor[randInt] + transPos[randTrans]);
+            if (this.x < width - width/2)
+             {
+                this.o.pan(random(0,1));
+             } else {
+                 this.o.pan(random(-1,0));
+             }
+            if (this.y < height - height/2)
+            {
+                 this.s.setADSR(this.y/height, this.x/width, 0.6, 0.1);
+             } 
+            //  else {
             //     this.s.rate(random(1, 8));
             // }
             // if (randNum > 1) {
             //     this.s.reverseBuffer();
             // }
             this.o.start();
+            // this.o.disconnect();
+            this.o.freq(oscFreq);
+            this.o.connect(filter);
+            // this.s.disconnect();
+            // this.s.connect(reverb);
             this.s.play(this.o);
         }
     }
