@@ -45,6 +45,8 @@ theme = "hugo-artists-theme"
 		title = "About"
 		bio = "**Faulty Cat Productions** is based in Melbourne, and is a way of discovering creative ways to do music and production, while valuing connection, community, and rigour. Faulty Cat Productions works to understand the values and experiences that underpin your needs, and to respond innovatively with integrity and expressiveness through audio, sound design, composition, and project management. **Vincent Giles** is a [composer](https://www.vgiles.net), sound designer, and producer of exploratory music."
 
+		# "Vincent Giles of Faulty Cat Productions is a composer and producer creating exploratory music and sound for interactive and immersive experiences. "
+
 		# [[params.about.skills]]
 		# 	name = "Composition"
 		# 	value = 9
