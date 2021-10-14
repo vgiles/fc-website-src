@@ -107,6 +107,7 @@ class Blorb {
         stroke(20);
         fill(this.f);
         ellipse(this.x, this.y, this.r * 2);
+        lerp(this.x, this.y, 0.2);
     }
     
     playAudio() {
@@ -185,7 +186,7 @@ class Blorb {
             this.history.splice(0,1);
         }
 
-        console.log(this.notehistory);
+        // console.log(this.notehistory);
     }
     
     
