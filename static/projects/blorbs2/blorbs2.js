@@ -4,7 +4,7 @@ let value;
 let blorbs = [];
 let env;
 let osc;
-let totalBlorbs = 4;
+let totalBlorbs = 15;
 let icSetMinor = [2, 3, 5, 7, 8, 10];
 let startingNoteSet = [58, 60, 62, 63, 64, 67];
 let transPos = [-24, -12, 0, 12, +24];
