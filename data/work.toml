@@ -10,7 +10,7 @@ title = "Work"
     folder = "proj-6"
 
 [[projects]]
-    name = "Blorbs: Interactive Music Concrete Experience (2020)"
+    name = "Blorbs: Interactive Music Concrete Experience (2021)"
     folder = "proj-10"
 
 # [[projects]]
@@ -22,7 +22,7 @@ title = "Work"
     folder = "proj-7"
 
 [[projects]]
-    name = "Concrete Squares: Interactive music concrete experience (2020)"
+    name = "Concrete Squares: Interactive music concrete experience (2021)"
     folder = "proj-3"
 
 [[projects]]
@@ -30,8 +30,8 @@ title = "Work"
     folder = "proj-4"
 
 [[projects]]
-    name = "How ought one live? Generative score with javascript"
-    folder = "proj-5"
+    name = "Stop, Listen. Public Sound Art."
+    folder = "proj-15"
 
 [[projects]]
     name = "Public Art: Heard/Unheard:Flux (Portland, 2013)"
