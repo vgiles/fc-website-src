@@ -3,20 +3,20 @@ title = "Services"
 
 [[service]]
     name = "Project Management"
-    folder = "serv-0"
+    folder = "project-0"
 
 [[service]]
     name = "Audio Post-Production"
-    folder = "serv-2"
+    folder = "project-2"
 
 [[service]]
     name = "Sound Design"
-    folder = "serv-3"
+    folder = "project-3"
 
 [[service]]
     name = "Composition"
-    folder = "serv-4"
+    folder = "project-4"
 
 [[service]]
     name = "Consultation"
-    folder = "serv-1"
+    folder = "project-1"
