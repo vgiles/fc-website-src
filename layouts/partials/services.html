@@ -1,0 +1,42 @@
+{{ "<!-- Clients section -->" | safeHTML }}
+<section class="section-work">
+    {{ with .Site.Data.services.title }}<h3 id="services">{{ . }}</h3>{{ end }}
+
+    <div class="clients-mobile-nav">
+        {{ range .Site.Data.services.service }}
+        <input type="radio" name="service-trigger" class="trigger" id="{{ .folder }}" />
+        {{ end }}
+        <input type="radio" name="service-trigger" id="return" class="return" />
+        <div class="service-belt">
+            <div class="thumb-wrap">
+                <div class="service-thumb-container">
+                    {{ range .Site.Data.services.service }}
+                    <label for="{{ .folder }}">
+                        <div class="thumb-unit" data-folder="{{ .folder }}">
+                            <img src="img/services/{{.folder}}/thumb.jpg" alt="{{ .name }}" />
+                        </div>
+                        <div class="thumb-overlay">
+                            <strong>{{ .name }}</strong>
+                        </div>
+                    </label>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="service-wrap">
+                <div class="service-container">
+                    <label for="return">
+                        <div class="service-return">{{ partial "icons/icon-back.html" . }}</div>
+                    </label>
+                    <h4 class="project-title"></h4>
+                    <div class="project-load"></div>
+                    <noscript>
+                        {{ range .Site.Data.services.service }}
+                        <div class="noscript" id="content-{{ .folder }}">
+                            <h4 class="project-title">{{ .name }}</h4>
+                        </div>
+                        {{ end }}
+                    </noscript>
+                </div>
+            </div>
+        </div>
+    </section>  

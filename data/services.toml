@@ -1,0 +1,22 @@
+# Section title
+title = "Services"
+
+[[service]]
+    name = "Project Management"
+    folder = "proj-0"
+
+[[service]]
+    name = "Audio Post-Production"
+    folder = "proj-2"
+
+[[service]]
+    name = "Sound Design"
+    folder = "proj-3"
+
+[[service]]
+    name = "Composition"
+    folder = "proj-4"
+
+[[service]]
+    name = "Consultation"
+    folder = "proj-1"
