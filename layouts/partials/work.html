@@ -1,0 +1,43 @@
+<section class="alt-section section-work">
+    {{ with .Site.Data.work.title }}<h3 id="work">{{ . }}</h3>{{ end }}
+
+    {{ range .Site.Data.work.projects }}
+    <input type="radio" name="trigger" class="trigger" id="{{ .folder }}" />
+    {{ end }}
+    <input type="radio" name="trigger" id="return" class="return" />
+    <div class="work-belt">
+        <div class="thumb-wrap">
+            <div class="thumb-container">
+                {{ range .Site.Data.work.projects }}
+                <label for="{{ .folder }}">
+                    <div class="thumb-unit" data-folder="{{ .folder }}">
+                        <img src="img/work/{{.folder}}/thumb.jpg" alt="{{ .name }}" />
+                    </div>
+                    <div class="thumb-overlay">
+                        <strong>{{ .name }}</strong>
+                    </div>
+                </label>
+                {{ end }}
+            </div>
+        </div>
+        <div class="work-wrap">
+            <div class="work-container">
+                <label for="return">
+                    <div class="work-return">{{ partial "icons/icon-back.html" . }}</div>
+                </label>
+                <h4 class="project-title"></h4>
+                <div class="project-load"></div>
+                <noscript>
+                    {{ range .Site.Data.work.projects }}
+                    <div class="noscript" id="content-{{ .folder }}">
+                        <h4 class="project-title">{{ .name }}</h4>
+                    </div>
+                    {{ end }}
+                </noscript>
+            </div>
+        </div>
+    </div>
+</section>  
+
+
+<!-- <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1383778492&color=%23e0982c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vince-giles" title="Faulty Cat Productions" target="_blank" style="color: #cccccc; text-decoration: none;">Faulty Cat Productions</a> · <a href="https://soundcloud.com/vince-giles/sets/fcp_playlist" title="FCP_Playlist" target="_blank" style="color: #cccccc; text-decoration: none;">FCP_Playlist</a></div> -->
