@@ -48,8 +48,8 @@ function workBelt() {
 
 function serviceBelt() {
 
-  $(".service-trigger").remove();
-  $(".service-return").remove();
+  $(".trigger").remove();
+  $(".return").remove();
 
   $('.service-thumb-container service-label').click(function() {
     $('.service-belt').addClass("slided");
@@ -85,7 +85,7 @@ function  serviceLoad() {
 
   $.ajaxSetup({ cache: true });
 
-  $('.service-thumb-container service-label').click(function() {
+  $('.service-thumb-container label').click(function() {
     var $this = $(this),
         newTitle = $this.find('strong').text(),
         newfolder = $this.find('.thumb-unit').data('folder'),
