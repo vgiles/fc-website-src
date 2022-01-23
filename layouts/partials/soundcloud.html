@@ -1,6 +1,6 @@
-<section class="alt-section">
-    <!-- {{ with .Site.Data.sc.playlist }}<h3 id="soundcloud">{{ . }}</h3>{{ end }} -->
-    {{ with .Site.Data.sc.playlist.desc }}
+<section class="alt-section section-work">
+    {{ with .Site.Data.sc.playlist.title }}<h3 id="soundcloud">{{ . }}</h3>{{ end }}
+     {{ with .Site.Data.sc.playlist.desc }}
     <div class="blurb">
         <p>{{ . | markdownify }}</p>
     </div>
