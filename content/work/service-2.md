@@ -1,3 +1,3 @@
 ---
 ---
-**Audio Asset Editing** and refinement for software, voiceover, podcasts, media. **Post-Production Mixing** for audio projects and sessions, focussing on exploratory techniques to give your work uniqueness.
+**Audio Post-Production** including asset editing and refinement for software, voiceover, podcasts, media. **Mixing** and select mastering for audio projects and sessions, especially where unique approaches to this process are desirable. For example, ambisonic/binaural encoding. I use a number of specialist pieces of software including analogue emulation plugins to sculpt the final output to the needs of the project.

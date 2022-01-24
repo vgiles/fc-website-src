@@ -1,3 +1,3 @@
 ---
 ---
-**Sound Design** for interactive/new media, games, film, installation, galleries.
+**Sound Design and Foley** for interactive/new media, games, film, installation, galleries. My work in this field includes [theatre](https://www.stagewhispers.com.au/reviews/wittenberg), [podcasts](https://teaandaac.com), [installation](https://umsu.unimelb.edu.au/troika/), [galleries](https://www.australianmusiccentre.com.au/event/for-i-have-learned-to-look-on-nature), and [a lot of compositions](https://www.vgiles.net/works/). 
