@@ -126,7 +126,7 @@ theme = "hugo-artists-theme"
 
 
 	[params.footer]
-		copyright = "Content © 2022 Faulty Cat Productions except where noted. Design published under the Unlicense License. Portrait by Emily Churchill. <br />I acknowledge the Wurundjeri Woi-wurrung people as the true and rightful custodians of the Country on which I live and work. As an uninvited guest on this Country, I acknowledge the great loss of people and knowledge caused by the European colonial project(s). <br>I pay respect to Elders past, present, and emerging, and extend that respect to all First Nations peoples "
+		copyright = "Content © 2022 Faulty Cat Productions except where noted. Design published under the Unlicense License. Portrait by Emily Churchill. I acknowledge the Wurundjeri Woi-wurrung people as the true and rightful custodians of the Country on which I live and work. As an uninvited guest on this Country, I acknowledge the great loss of people and knowledge caused by the European colonial project(s). I pay respect to Elders past, present, and emerging, and extend that respect to all First Nations peoples "
 
 
 # {{ < soundcloud 1383778492 >
