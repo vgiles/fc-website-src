@@ -43,7 +43,7 @@ theme = "hugo-artists-theme"
 	# Replace the 'avatar.jpg' under 'static/img' with your own image.
 	[params.about]
 		title = "About"
-		bio = "**Faulty Cat Productions** is an exploratory music production, composition, and sound design business based in Naarm (Melbourne) that is informed by [permaculture principles](https://permacultureprinciples.com/principles/), including sustainability and [diversity](https://www.permaculture.org.uk/principle/10-use-and-value-diversity) within music and sound practices, community, and [radical re-imagining of the present and future](https://www.youtube.com/watch?v=j4UfEMLykyI). With these ideals and tools, Faulty Cat Productions approaches every project with the goal of offering new ways of experiencing and engaging with the world, while working to improve it. **Vincent Giles** is the creator of Faulty Cat Productions, and is a [composer](https://www.vgiles.net), sound designer, and producer of exploratory music and sound, offering these [services](/#services) along with project management and education within the Australian arts sector. Let's connect to explore and collaborate to create a hopeful and optimistic future. I acknowledge the Wurundjeri Woi-wurrung people as the true and rightful custodians of the Country on which I live and work. As an uninvited guest on this Country, I acknowledge the great loss of people and knowledge caused by the European colonial project(s). I pay respect to Elders past, present, and emerging, and extend that respect to all First Nations peoples "
+		bio = "**Faulty Cat Productions** is an exploratory music production, composition, and sound design business based in Naarm (Melbourne) that is informed by [permaculture principles](https://permacultureprinciples.com/principles/), including sustainability and [diversity](https://www.permaculture.org.uk/principle/10-use-and-value-diversity) within music and sound practices, community, and [radical re-imagining of the present and future](https://www.youtube.com/watch?v=j4UfEMLykyI). With these ideals and tools, Faulty Cat Productions approaches every project with the goal of offering new ways of experiencing and engaging with the world, while working to improve it. **Vincent Giles** is the creator of Faulty Cat Productions, and is a [composer](https://www.vgiles.net), sound designer, and producer of exploratory music and sound, offering these [services](/#services) along with project management and education within the Australian arts sector. Let's connect to explore and collaborate to create a hopeful and optimistic future."
 
 		# "Vincent Giles of Faulty Cat Productions is a composer and producer creating exploratory music and sound for interactive and immersive experiences. "
 
@@ -126,7 +126,7 @@ theme = "hugo-artists-theme"
 
 
 	[params.footer]
-		copyright = "Content © 2022 Faulty Cat Productions except where noted. Design published under the Unlicense License. Portrait by Emily Churchill."
+		copyright = "Content © 2022 Faulty Cat Productions except where noted. Design published under the Unlicense License. Portrait by Emily Churchill. <br />I acknowledge the Wurundjeri Woi-wurrung people as the true and rightful custodians of the Country on which I live and work. As an uninvited guest on this Country, I acknowledge the great loss of people and knowledge caused by the European colonial project(s). <br>I pay respect to Elders past, present, and emerging, and extend that respect to all First Nations peoples "
 
 
 # {{ < soundcloud 1383778492 >
