@@ -3,11 +3,14 @@
 {{ with .Site.Params.about.title }}<h3 id="about-me">{{ . }}</h3>{{ end }}
 
 <div class="face-lockup">
-    <div class="face-img"></div>
-    {{ range slice "pencil" "mouse" "browser" "video" }}
-        <div class="icon-{{ . }}">{{ partial "icons/icon-wave.html" }}</div>
-    {{ end }}
-</div>
+    <div class="face-img-square">
+      <img src="img/giles_promo.jpg" alt="Profile" />
+    </div>
+    <div class="glitch-icons">
+      {{ partial "icons/icon-wave.html" }}
+      <!-- Repeat for other icons -->
+    </div>
+  </div>
 
 {{ with .Site.Params.about.bio }}
     <div class="blurb">{{ . | markdownify }}</div>
