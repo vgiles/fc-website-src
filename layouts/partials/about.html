@@ -1,0 +1,43 @@
+{{ "<!-- About section -->" | safeHTML }}
+<section>
+    {{ with .Site.Params.about.title }}<h3 id="about-me">{{ . }}</h3>{{ end }}
+
+    <div class="face-lockup">
+        <div class="face-img"></div>
+        <div class="icon-pencil">
+            {{ partial "icons/icon-wave.html"}}
+        </div>
+        <div class="icon-mouse">
+            {{ partial "icons/icon-wave.html"}}
+        </div>
+        <div class="icon-browser">
+            {{ partial "icons/icon-wave.html"}}
+        </div>
+        <div class="icon-video">
+            {{ partial "icons/icon-wave.html"}}
+        </div>
+    </div>
+    
+    {{ with .Site.Params.about.bio }}
+    <div class="blurb">
+      {{ range (split . "\n\n") }}
+        {{ if trim . " " }}<p>{{ . | markdownify }}</p>{{ end }}
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ with .Site.Params.about.skills }}
+    <div class="skill-lockup">
+        {{ range . }}
+        <div class="skill-unit">
+            <div class="skill-label">{{ .name }}</div>
+            <div class="skill-icons skill-{{ .value }}">
+                {{ range (seq 10) }}
+                    <span></span>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>

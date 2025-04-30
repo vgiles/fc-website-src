@@ -43,8 +43,16 @@ theme = "hugo-artists-theme"
 	# Replace the 'avatar.jpg' under 'static/img' with your own image.
 	[params.about]
 		title = "About"
-		bio = "**Faulty Cat Productions** is an exploratory music production, composition, and sound design business based in Naarm (Melbourne) that is informed by [permaculture principles](https://permacultureprinciples.com/principles/), including sustainability and [diversity](https://www.permaculture.org.uk/principle/10-use-and-value-diversity) within music and sound practices, community, and [radical re-imagining of the present and future](https://www.youtube.com/watch?v=j4UfEMLykyI). With these ideals and tools, Faulty Cat Productions approaches every project with the goal of offering new ways of experiencing and engaging with the world, while working to improve it. **Vincent Giles** is the creator of Faulty Cat Productions, and is a [composer](https://www.vgiles.net), sound designer, and producer of exploratory music and sound, offering these [services](/#services) along with project management and education within the Australian arts sector. Let's connect to explore and collaborate to create a hopeful and optimistic future."
+		bio = '''
+		I partner with artists, councils, and galleries to create sound that reveals new layers in its medium—whether for concert halls, games, installations, or public spaces. Sometimes, projects can falter or lack clarity from technical hurdles or mismatched visions, wasting chances to connect deeply with new and existing audiences.\n\n
 
+		With 20 years of experience in exploratory sound practice—from composing concert works (published by Wirripang, Edition Resonance, and Move Records) to producing ambisonic public art and directing Tilde New Music & Sound Art—I ensure your project thrives through:
+
+		- End-to-end vision: Guiding from concept to post-production, with technical rigour meeting creative ambition.
+        - Site-specific innovation: Transforming spaces (physical/virtual) through acoustic intelligence and conceptual rigour.
+		- Permaculture-driven process: Systems-first design, iterative feedback, resilience over waste.
+		Let’s turn your idea into a quietly transformative experience that is creatively uncompromising.
+		'''
 		# "Vincent Giles of Faulty Cat Productions is a composer and producer creating exploratory music and sound for interactive and immersive experiences. "
 
 		# [[params.about.skills]]
@@ -92,24 +100,12 @@ theme = "hugo-artists-theme"
 		# 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin'
 		# 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
 		[[params.contact.social]]
-			icon = "twitter"
-			link = "//twitter.com/VincentGiles"
-
-		[[params.contact.social]]
-			icon = "instagram"
-			link = "//instagram.com/faultycatproductions"
-
-		[[params.contact.social]]
 			icon = "instagram"
 			link = "//instagram.com/composervince"
 
 		[[params.contact.social]]
 			icon = "soundcloud"
 			link = "//www.soundcloud.com/vince-giles"
-
-		[[params.contact.social]]
-			icon = "youtube"
-			link = "//youtube.com/channel/UCetK4sSbDcRIc8_xTSyHv6Q/videos"
 
 		# [[params.contact.social]]
 		# 	icon = "linkedin"
@@ -126,7 +122,7 @@ theme = "hugo-artists-theme"
 
 
 	[params.footer]
-		copyright = "Content © 2022 Faulty Cat Productions except where noted. Design published under the Unlicense License. Portrait by Emily Churchill. I acknowledge the Wurundjeri Woi-wurrung people as the true and rightful custodians of the Country on which I live and work. As an uninvited guest on this Country, I acknowledge the great loss of people and knowledge caused by the European colonial project(s). I pay respect to Elders past, present, and emerging, and extend that respect to all First Nations peoples "
+		copyright = "I live and work on unceded Wurundjeri Country in Naarm (Melbourne). As an uninvited guest, I acknowledge the great and ongoing loss of people and knowledge caused by the European colonial project(s). This website is built using free and open source software and hosted in a cloud-based system that reduces environmental impact by serving content on-demand. As such, users may rarely encounter up to a one-minute delay in access as the servers dynamically power-up for service.  "
 
 
 # {{ < soundcloud 1383778492 >
