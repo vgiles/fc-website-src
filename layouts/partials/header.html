@@ -1,4 +1,3 @@
-{{ "<!-- Header section -->" | safeHTML }}
 <header id="header">
     <nav>
         {{ with .Site.Data.work.title }}<a href="#work">{{ . }}</a>{{ end }}
@@ -6,6 +5,10 @@
         {{ with .Site.Data.clients.title }}<a href="#services">{{ . }}</a>{{ end }}
         {{ with .Site.Params.contact.title }}<a href="#contact">{{ . }}</a>{{ end }}
     </nav>
-    {{ with .Site.Params.header.title }}<h1><span>{{ . }}</span></h1>{{ end }}
-    {{ with .Site.Params.header.subHeading }}<p class="kicker">{{ . }}</p>{{ end }}
+    
+    <div class="title-container">
+        {{ with .Site.Params.header.title }}<h1><span>{{ . }}</span></h1>{{ end }}
+        {{ with .Site.Params.header.heading }}<h2><span>{{ . }}</span></h2>{{ end }}
+        {{ with .Site.Params.header.subHeading }}<p class="kicker">{{ . }}</p>{{ end }}
+    </div>
 </header>
