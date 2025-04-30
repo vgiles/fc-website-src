@@ -31,22 +31,27 @@
 		<script src="http://localhost:1313/js/functions.js"></script>
 
 		<header id="header">
+    <img class="logo" src="../img/logo.svg" alt="Logo">
+    
     <nav>
-        <a href="#work">Work</a>
+        <a href="#work">Creative Examples</a>
         <a href="#about-me">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Connect</a>
     </nav>
     
+    <h2>Vincent Giles</h2>
+    
     <div class="title-container">
-        <h1><span>Vincent Giles</span></h1>
-        <h2><span>Faulty Cat Productions</span></h2>
+        <h1><span>Faulty Cat Productions</span></h1>
         <p class="kicker">Uncompromising sound and music for exploratory art projects</p>
     </div>
 </header> 
 		
-
+<section class="section about-section">
 <h3 id="about-me">About</h3>
+<hr class="bar">
+
 
 <div class="face-lockup">
     <div class="face-img"></div>
@@ -134,9 +139,10 @@
 
 
 
+</section>
 		<section class="alt-section section-work">
-    <h3 id="work">Services</h3>
-
+    <h3 id="services">Services</h3>
+    <hr class="bar">
     
     <input type="radio" name="trigger" class="trigger" id="service-0" />
     
@@ -234,9 +240,9 @@
         </div>
     </div>
 </section>  
-		<section class="section-work">
-    <h3 id="work">Work</h3>
-
+		<section class="section section-work">
+    <h3 id="work">Creative Examples</h3>
+    <hr class="bar">
     
     <input type="radio" name="trigger" class="trigger" id="proj-9" />
     
@@ -382,26 +388,24 @@
 
 
 
-		<section class="alt-section section-work">
-    <h3 id="soundcloud">Audio Samples</h3>
-     
-    <div class="blurb">
-        <p>Diversity in musical practice</p>
-    </div>
-    
-        <div style="text-align: center;">
-            <iframe 
+		<section class="alt-section">
+    <h3 id="soundcloud">Audio Examples</h3>
+    <hr class="bar">
+    <div style="text-align: center;">
+        
+        <iframe 
             width="70%"
             height="450"
             scrolling="no"
             frameborder="no"
             allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1383778492&color=%23e0982c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-        </div>
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1383778492&color=%23e0982c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+        </iframe>
+        
+    </div>
 </section>
 		<!-- Contact section -->
-<section class="alt-section section-contact">
+<section class="section section-contact">
     <h3 id="contact">Connect</h3>
     <div class="social-links">
         
@@ -415,8 +419,9 @@
 </section>
 
 		<!-- Form section -->
-<section>
+<section class="alt-section">
     <h3 id="form-title">Let&#39;s make something together</h3>
+    <hr class="bar">
     <form action="https://formspree.io/f/mqkgwavr" method="POST">
         <fieldset class="contact-info-group">
             <label><span>Your Name</span>
@@ -440,12 +445,16 @@
     <div class="lockup">
         <div class="content-wrap">
             <nav>
-                <a href="#work">Work</a>
+                <a href="#work">Creative Examples</a>
                 <a href="#about-me">About</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Connect</a>
             </nav>
-            <p class="copyright">I live and work on unceded Wurundjeri Country in Naarm (Melbourne). As an uninvited guest, I acknowledge the great and ongoing loss of people and knowledge caused by the European colonial project(s). This website is built using free and open source software and hosted in a cloud-based system that reduces environmental impact by serving content on-demand. As such, users may rarely encounter up to a one-minute delay in access as the servers dynamically power-up for service.  </p>
+            <p class="copyright"><p>I live and work on unceded Wurundjeri Country in Naarm (Melbourne).</p>
+<p>As an uninvited guest, I acknowledge the great and ongoing loss of people and knowledge caused by the European colonial project(s).</p>
+<p>This website is built using free and open source software and hosted in a cloud-based system that reduces environmental impact by serving content on-demand.</p>
+<p>As such, users may rarely encounter up to a one-minute delay in access as the servers dynamically power-up for service.</p>
+</p>
         </div>
     </div>
 </footer>

@@ -1,6 +1,8 @@
 <!-- {{ "About section" | safeHTML }} -->
-
+<section class="section about-section">
 {{ with .Site.Params.about.title }}<h3 id="about-me">{{ . }}</h3>{{ end }}
+<hr class="bar">
+
 
 <div class="face-lockup">
     <div class="face-img"></div>
@@ -23,7 +25,7 @@
     <div class="blurb">{{ . | markdownify }}</div>
 {{ end }}
 
-{{ with .Site.Params.about.skills }}
+<!-- {{ with .Site.Params.about.skills }}
     <div class="skill-lockup">
         {{ range . }}
             <div class="skill-unit">
@@ -34,4 +36,5 @@
             </div>
         {{ end }}
     </div>
-{{ end }}
+{{ end }} -->
+</section>

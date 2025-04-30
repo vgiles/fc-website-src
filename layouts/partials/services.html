@@ -1,6 +1,6 @@
 <section class="alt-section section-work">
-    {{ with .Site.Data.services.title }}<h3 id="work">{{ . }}</h3>{{ end }}
-
+    {{ with .Site.Data.services.title }}<h3 id="services">{{ . }}</h3>{{ end }}
+    <hr class="bar">
     {{ range .Site.Data.services.service }}
     <input type="radio" name="trigger" class="trigger" id="{{ .folder }}" />
     {{ end }}

@@ -1,6 +1,6 @@
-<section class="section-work">
+<section class="section section-work">
     {{ with .Site.Data.work.title }}<h3 id="work">{{ . }}</h3>{{ end }}
-
+    <hr class="bar">
     {{ range .Site.Data.work.projects }}
     <input type="radio" name="trigger" class="trigger" id="{{ .folder }}" />
     {{ end }}

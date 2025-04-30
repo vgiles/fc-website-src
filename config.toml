@@ -34,10 +34,11 @@ theme = "hugo-artists-theme"
 	# Do the same with the logo ('logo.svg').
 	# But keep the original filename!
 	[params.header]
-		title = "Vincent Giles"
-		heading = "Faulty Cat Productions"
+		title = "Faulty Cat Productions"
+		heading = "Vincent Giles"
 		subHeading = "Uncompromising sound and music for exploratory art projects"
 		webTag = "Values-driven sonic innovation, together."
+		logo = "../img/logo.svg"
 
 
 
@@ -127,7 +128,15 @@ Let’s turn your idea into a quietly transformative experience that is creative
 
 
 	[params.footer]
-		copyright = "I live and work on unceded Wurundjeri Country in Naarm (Melbourne). As an uninvited guest, I acknowledge the great and ongoing loss of people and knowledge caused by the European colonial project(s). This website is built using free and open source software and hosted in a cloud-based system that reduces environmental impact by serving content on-demand. As such, users may rarely encounter up to a one-minute delay in access as the servers dynamically power-up for service.  "
+		copyright = '''
+I live and work on unceded Wurundjeri Country in Naarm (Melbourne).
+
+As an uninvited guest, I acknowledge the great and ongoing loss of people and knowledge caused by the European colonial project(s).
+
+This website is built using free and open source software and hosted in a cloud-based system that reduces environmental impact by serving content on-demand.
+
+As such, users may rarely encounter up to a one-minute delay in access as the servers dynamically power-up for service.
+'''
 
 
 # {{ < soundcloud 1383778492 >
