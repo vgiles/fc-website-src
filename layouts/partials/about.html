@@ -3,14 +3,22 @@
 {{ with .Site.Params.about.title }}<h3 id="about-me">{{ . }}</h3>{{ end }}
 
 <div class="face-lockup">
-    <div class="face-img-square">
-      <img src="img/giles_promo.jpg" alt="Profile" />
+    <!-- Glitch Container -->
+    <div class="glitch-avatar">
+      <!-- Base Image -->
+      <div class="glitch-base" style="background-image: url('{{ .Site.Params.about.face_img }}');"></div>
+      
+      <!-- Glitch Layers (pure CSS) -->
+      <div class="glitch-layer"></div>
+      <div class="glitch-layer"></div>
+      <div class="glitch-layer"></div>
     </div>
-    <div class="glitch-icons">
-      {{ partial "icons/icon-wave.html" }}
-      <!-- Repeat for other icons -->
-    </div>
+  
+    <!-- Keep your existing icons if desired -->
+    <!-- <div class="icon-pencil">{{ partial "icons/icon-wave.html" }}</div> -->
+    <!-- ... other icons ... -->
   </div>
+ 
 
 {{ with .Site.Params.about.bio }}
     <div class="blurb">{{ . | markdownify }}</div>

@@ -34,8 +34,11 @@ theme = "hugo-artists-theme"
 	# Do the same with the logo ('logo.svg').
 	# But keep the original filename!
 	[params.header]
-		title = "Faulty Cat Productions"
-		shortBio = "Exploratory music and sound design for games, new media, and interactive experiences"
+		title = "Vincent Giles"
+		heading = "Faulty Cat Productions"
+		subHeading = "Uncompromising sound and music for exploratory art projects"
+		webTag = "Values-driven sonic innovation, together."
+
 
 
 	# About section
@@ -54,6 +57,7 @@ With 20 years of experience in exploratory sound practice—from composing conce
 
 Let’s turn your idea into a quietly transformative experience that is creatively uncompromising.
 '''
+		face_img = "img/giles_promo.jpg"
 		# "Vincent Giles of Faulty Cat Productions is a composer and producer creating exploratory music and sound for interactive and immersive experiences. "
 
 		# [[params.about.skills]]
