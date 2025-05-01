@@ -1,0 +1,66 @@
+/* ====================== */
+/* TYPOGRAPHY RESET       */
+/* ====================== */
+
+/* Base text elements */
+:where(b, strong) { font-weight: bolder; } /* Semantic rather than fixed 700 */
+:where(dfn) { font-style: italic; }
+:where(small) { font-size: 0.875em; } /* More precise than 80% */
+:where(mark) {
+  background: var(--mark-bg, #ff0); /* CSS variable fallback */
+  color: var(--mark-text, #000);
+}
+
+/* Headings */
+:where(h1) {
+  font-size: clamp(2rem, 5vw, 2.5rem); /* Responsive sizing */
+  margin: 0.67em 0;
+}
+
+/* Links */
+:where(a) {
+  background: transparent;
+  text-decoration-skip-ink: auto; /* Better underline legibility */
+}
+:where(a:focus-visible) { /* Modern focus state */
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Code & preformatted */
+:where(code, kbd, pre, samp) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; /* Better monospace stack */
+  font-size: 1em;
+}
+:where(pre) {
+  overflow: auto;
+  tab-size: 2; /* Standardized indentation */
+}
+
+/* Forms */
+:where(button, input, select, textarea) {
+  font: inherit;
+  margin: 0;
+}
+:where(button, [type='button'], [type='reset'], [type='submit']) {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
+}
+
+/* Tables */
+:where(table) {
+  border-collapse: collapse;
+}
+:where(th, td) {
+  padding: 0.25rem 0.5rem;
+  text-align: start; /* Logical property for RTL support */
+}
+
+/* ====================== */
+/* MODERN ENHANCEMENTS    */
+/* ====================== */
+@media (prefers-reduced-motion: no-preference) {
+  :where(html:focus-within) {
+    scroll-behavior: smooth; /* Optional smooth scroll */
+  }
+}

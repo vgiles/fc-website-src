@@ -1,0 +1,16 @@
+/* this file is for all global CSS variables */
+:root {
+    /* use this to define ALL colour variables throughout */
+    --bg-color: rgb(72, 66, 66);
+    --bg-color-rgb: 72, 66, 66; /* Same color without 'rgb()' for rgba() use */
+    --angle-height: 60px;
+    --bg-color: rgb(72, 66, 66);
+    --alt-bg-color: rgba(18, 18, 18, 0.7);
+  }
+  
+  /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+  html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
