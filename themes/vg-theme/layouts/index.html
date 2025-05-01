@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+	<head>
+		{{ partial "head.html" . }}
+	</head>
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="{{ .Site.BaseURL }}js/functions.js"></script>
+
+		{{ partial "header.html"  . }} 
+		{{ partial "about.html"   . }}
+		{{ partial "services.html" . }}
+		{{ partial "work.html"    . }}
+		{{ partial "soundcloud.html"	. }}
+		{{ partial "contact.html" . }}
+		{{ partial "form.html"    . }}
+		{{ partial "footer.html"  . }}
+	</body>
+</html>

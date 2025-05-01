@@ -2,12 +2,15 @@
 baseurl = "https://www.faultycat.com.au/"
 languageCode = "en-us"
 title = "Faulty Cat Productions"
-theme = "hugo-artists-theme"
+theme = "vg-theme"
 
 [module]
   [[module.mounts]]
-    source = "static/css"
-    target = "static/css"
+    source = "assets"
+    target = "assets"
+#   [[module.mounts]]
+#     source = "static"
+#     target = "static"
 
 [params]
 
