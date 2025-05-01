@@ -4,6 +4,9 @@
   /* New color variables */
   --bg-color: rgb(72, 66, 66);
   --bg-color-rgb: 72, 66, 66; /* Same color without 'rgb()' for rgba() use */
+  --angle-height: 60px;
+  --bg-color: rgb(72, 66, 66);
+  --alt-bg-color: rgba(18, 18, 18, 0.7);
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -985,6 +988,10 @@ header {
   padding-top: 30px;
 }
 
+
+
+
+
 /* Bigger Logo */
 header .logo {
   grid-area: logo;
@@ -1144,6 +1151,7 @@ header h1 span {
 
 footer {
   position: relative;
+  padding-top: var(--angle-size);
   z-index: 1;
   background-image: url(../img/logo.svg);
   background-position: 30px 50%;
@@ -1151,6 +1159,20 @@ footer {
   background-size: auto;
   backdrop-filter: blur(12px);
   box-shadow: inset 0 0 0 1000px rgba(41, 36, 36, 0.2);
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--angle-size);
+  background: linear-gradient(
+    to right top,
+    var(--angle-color) 49.5%,
+    transparent 50%
+  );
 }
 
 footer .lockup {
@@ -2277,5 +2299,60 @@ form label span {
   top: 30%;
   animation-delay: 0.2s;
 }
+/* ====================== */
+/* ANGLE SYSTEM */
+/* ====================== */
+:root {
+  --angle-height: 60px;
+  --bg-color: rgb(72, 66, 66);
+  --alt-bg-color: rgba(18, 18, 18, 0.7);
+}
 
-/* Position other icons similarly */
+/* Base Section */
+section {
+  position: relative;
+  padding: 100px 0;
+  background-color: var(--bg-color);
+}
+
+/* Alt Section */
+.alt-section {
+  background-color: var(--alt-bg-color);
+  backdrop-filter: blur(12px);
+  z-index: 1;
+}
+
+/* ====================== */
+/* ANGLES (USING PSEUDO-ELEMENTS) */
+/* ====================== */
+
+/* Angle pointing DOWN (for sections BEFORE alt-sections) */
+section:not(.alt-section)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--angle-height);
+  background: linear-gradient(
+    to right bottom,
+    var(--bg-color) 49.9%,
+    transparent 50%
+  );
+  z-index: 2;
+}
+
+/* Angle pointing UP (for alt-sections) */
+.alt-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--angle-height);
+  background: linear-gradient(
+    to right top,
+    var(--alt-bg-color) 49.9%,
+    transparent 50%
+  );
+}
