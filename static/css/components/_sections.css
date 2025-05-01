@@ -1,0 +1,106 @@
+/* ====================== */
+/* SECTION DIAGONAL LINES */
+/* ====================== */
+
+/* Base section styles (keep your existing properties) */
+section {
+    background-color: var(--bg-color);
+    position: relative;
+    padding-bottom: 100px;
+    /* Add these new properties: */
+    padding-top: 60px; /* Space for diagonal */
+    margin-top: +20px; /* Overlap adjustment */
+    clip-path: polygon(
+      0 50px, /* Start diagonal */
+      100% 0, 
+      100% 100%, 
+      0 100%
+    );
+  }
+  
+  /* Alt-section with glass effect */
+  .alt-section {
+    background-color: rgba(18, 18, 18, 0.7);
+    backdrop-filter: blur(12px);
+    padding-bottom: 100px;
+    /* New properties: */
+    padding-top: 60px;
+    margin-top: +20px;
+    clip-path: polygon(
+      0 0, 
+      100% 30px, /* Opposite diagonal */
+      100% 100%, 
+      0 100%
+    );
+    z-index: 1; /* Ensure glass effect stays on top */
+  }
+  
+  /* First section shouldn't have top clip */
+  section:first-of-type {
+    clip-path: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  
+  .alt-section h3 {
+    color: #cdacc5;
+  }
+
+  /* ====================== */
+/* ANGLE SYSTEM */
+/* ====================== */
+:root {
+  --angle-height: 60px;
+  --bg-color: rgb(72, 66, 66);
+  --alt-bg-color: rgba(18, 18, 18, 0.7);
+}
+
+/* Base Section */
+section {
+  position: relative;
+  padding: 100px 0;
+  background-color: var(--bg-color);
+}
+
+/* Alt Section */
+.alt-section {
+  background-color: var(--alt-bg-color);
+  backdrop-filter: blur(12px);
+  z-index: 1;
+}
+
+/* ====================== */
+/* ANGLES (USING PSEUDO-ELEMENTS) */
+/* ====================== */
+
+/* Angle pointing DOWN (for sections BEFORE alt-sections) */
+section:not(.alt-section)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--angle-height);
+  background: linear-gradient(
+    to right bottom,
+    var(--bg-color) 49.9%,
+    transparent 50%
+  );
+  z-index: 2;
+}
+
+/* Angle pointing UP (for alt-sections) */
+.alt-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--angle-height);
+  background: linear-gradient(
+    to right top,
+    var(--alt-bg-color) 49.9%,
+    transparent 50%
+  );
+}

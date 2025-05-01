@@ -1,0 +1,185 @@
+
+h3,
+header nav a,
+header .kicker,
+footer .lockup .content-wrap a {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* Header Structure */
+header {
+  background-image: none; /* We'll handle logo differently */
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-areas:
+    "logo nav"
+    "title title"
+    "kicker kicker";
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding-top: 30px;
+}
+
+
+
+
+
+/* Bigger Logo */
+header .logo {
+  grid-area: logo;
+  height: 80px; /* Increased from 50px */
+  width: 80px;
+  margin: 0 0 0 30px;
+  z-index: 3;
+}
+
+/* Navigation */
+header nav {
+  grid-area: nav;
+  text-align: right;
+  padding: 0 30px;
+}
+
+/* Heading (h2) positioned next to logo */
+header h2 {
+  grid-area: logo;
+  display: inline-block;
+  margin-left: 100px; /* Adjust based on logo size */
+  padding-left: 20px;
+  color: rgb(255, 222, 115);
+  font-size: 1.5rem;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+/* Title Container */
+header .title-container {
+  grid-area: title;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Kicker Text */
+header .kicker {
+  grid-area: kicker;
+}
+
+/* Link Styles (keep your existing) */
+header nav a {
+  display: inline-block;
+  margin-left: 20px;
+  color: rgba(255, 168, 55, 0.856);
+}
+header nav a:hover {
+  color: rgb(238, 164, 245);
+}
+
+/* Main Title (h1) - keep your existing styles */
+header h1 {
+  font-size: 72px;
+  color: rgb(255, 222, 115);
+}
+
+header h1 span {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border: white solid 10px;
+  border-radius: 12px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header {
+    grid-template-areas:
+      "logo"
+      "nav"
+      "title"
+      "kicker";
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  header .logo {
+    margin: 0 auto 20px;
+  }
+  
+  header h2 {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  header nav {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header nav a {
+    margin: 0 10px;
+  }
+}
+
+/* Add these rules below your existing .site-header styles */
+.header-border {
+  border: 2px solid var(--border-color);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle-border {
+  position: relative;
+  padding-top: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.subtitle-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.site-subtitle {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+/* Ensure existing nav styles remain unchanged */
+.site-nav {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  header {
+    background-position: 50% 20px, 50% 50%;
+  }
+
+  header nav {
+    float: none;
+    text-align: center;
+    padding-top: 90px;
+  }
+
+  header h1 {
+    padding-top: 0px;
+  }
+}

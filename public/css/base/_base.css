@@ -13,6 +13,24 @@
   
   /* Typography */
   --font-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --heading-color: rgb(255, 222, 115);
+  --link-color: #c99065;
+  --link-hover: #e3c6b1;
+  --text-spacing: 20px;
+  
+  /* Type scale (modular scale) */
+  --text-gigantic: clamp(5rem, 9vw, 110px); 
+  --text-huge: clamp(3rem, 6vw, 68px);
+  --text-large: clamp(2.25rem, 4vw, 50px);
+  --text-bigger: clamp(1.75rem, 3vw, 36px);
+  --text-big: clamp(1.25rem, 2vw, 22px);
+  --text-small: 0.625rem;
+
+  --text-ratio: 1.25; /* Minor third */
+  --text-base: 1rem;
+  --text-big: calc(var(--text-base) * var(--text-ratio));
+  --text-bigger: calc(var(--text-big) * var(--text-ratio));
 }
 
 /* ====================== */

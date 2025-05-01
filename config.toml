@@ -4,6 +4,11 @@ languageCode = "en-us"
 title = "Faulty Cat Productions"
 theme = "hugo-artists-theme"
 
+[module]
+  [[module.mounts]]
+    source = "static/css"
+    target = "static/css"
+
 [params]
 
 	# You can use Markdown syntax for urls [text](//url.to/source) for

@@ -5,8 +5,11 @@
 <meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
 {{ hugo.Generator }}
 <title>{{ .Site.Title }}</title>
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/all.css">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+<!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}css/all.css"> -->
+ <!-- Using Hugo Pipes -->
+{{ $css := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+<!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css"> -->
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/add.css">
 
 <!-- Google tag (gtag.js) -->

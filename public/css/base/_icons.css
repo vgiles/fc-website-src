@@ -1,0 +1,16 @@
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    fill: currentColor;
+    vertical-align: middle;
+  }
+  
+  /* Color variants */
+  .icon--white { fill: white; }
+  .icon--brand {
+    fill: var(--brand-color);
+  }
+  
+  /* Sizes */
+  .icon--small { width: 1em; height: 1em; }
+  .icon--large { width: 2em; height: 2em; }
