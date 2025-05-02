@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="section single-about">
+  <div class="about-container">
+    <h1>{{ .Title }}</h1>
+    
+    <div class="about-image">
+      <div class="face-img" style="background-image: url('{{ .Site.Params.about.image | safeURL }}'); 
+                                  width: {{ .Site.Params.about.image_width }}; 
+                                  height: {{ .Site.Params.about.image_width }};">
+      </div>
+    </div>
+    
+    <div class="about-content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ end }}

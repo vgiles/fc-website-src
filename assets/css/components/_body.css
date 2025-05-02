@@ -93,3 +93,86 @@ h3 {
     padding: 3.125rem 0;
   }
 }
+
+/* ====================== */
+/* ABOUT SECTION LAYOUT */
+/* ====================== */
+.about-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  max-width: var(--width-content);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-blurb {
+  flex: 1;
+  order: 1;
+}
+
+.about-image {
+  flex: 0 0 auto;
+  order: 2;
+}
+
+.face-img {
+  border-radius: 15%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.custom-blurb {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .about-image {
+    order: 1;
+    margin: 0 auto;
+  }
+  
+  .about-blurb {
+    order: 2;
+  }
+  
+  .face-img {
+    width: 250px !important; /* Override config on mobile */
+    height: 250px !important;
+  }
+}
+
+/* About section more link */
+.more-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.more-link:hover {
+  transform: translateX(5px);
+  text-decoration: underline;
+}
+
+/* For the about.html standalone page */
+.single-about .about-container {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.single-about .face-img {
+  float: right;
+  margin: 0 0 2rem 2rem;
+  shape-outside: circle(50%);
+}

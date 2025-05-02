@@ -1,40 +1,33 @@
-<!-- {{ "About section" | safeHTML }} -->
 <section class="section about-section">
-{{ with .Site.Params.about.title }}<h3 id="about-me">{{ . }}</h3>{{ end }}
-<hr class="bar">
-
-
-<div class="face-lockup">
-    <div class="face-img"></div>
-    <div class="icon-pencil">
-        {{ partial "icons/icon-wave.html"}}
-    </div>
-    <div class="icon-mouse">
-        {{ partial "icons/icon-wave.html"}}
-    </div>
-    <div class="icon-browser">
-        {{ partial "icons/icon-wave.html"}}
-    </div>
-    <div class="icon-video">
-        {{ partial "icons/icon-wave.html"}}
-    </div>
-</div>
- 
-
-{{ with .Site.Params.about.bio }}
-    <div class="blurb">{{ . | markdownify }}</div>
-{{ end }}
-
-<!-- {{ with .Site.Params.about.skills }}
-    <div class="skill-lockup">
-        {{ range . }}
-            <div class="skill-unit">
-                <div class="skill-label">{{ .name }}</div>
-                <div class="skill-icons skill-{{ .value }}">
-                    {{ range seq 10 }}<span></span>{{ end }}
-                </div>
-            </div>
+    {{ with .Site.Params.about.title }}<h3 id="about-me">{{ . }}</h3>{{ end }}
+    <hr class="bar">
+  
+    <div class="about-container">
+      <div class="about-blurb">
+        {{ with .Site.Params.about.bio }}
+          <div class="bio">{{ . | markdownify }}</div>
         {{ end }}
+        
+        {{ with .Site.Params.about.blurb }}
+  <div class="custom-blurb" style="{{ $.Site.Params.about.blurb_style | safeCSS }}">
+    {{ . | markdownify }}
+  </div>
+  {{ if $.Site.Params.about.more_link }}
+    <a href="{{ $.Site.Params.about.more_link | relURL }}" 
+       class="more-link"
+       style="{{ $.Site.Params.about.more_style | safeCSS }}">
+      {{ $.Site.Params.about.more_text | default "More information →" }}
+    </a>
+  {{ end }}
+{{ end }}
+      </div>
+  
+      <div class="about-image">
+        <div class="face-img" 
+             style="background-image: url('{{ .Site.Params.about.image | safeURL }}'); 
+                    width: {{ .Site.Params.about.image_width }}; 
+                    height: {{ .Site.Params.about.image_width }};">
+        </div>
+      </div>
     </div>
-{{ end }} -->
-</section>
+  </section>
