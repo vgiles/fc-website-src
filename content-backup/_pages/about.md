@@ -1,7 +1,6 @@
 ---
 title: "About"
 description: "about"
-type: "page"
 draft: false
 ---
 

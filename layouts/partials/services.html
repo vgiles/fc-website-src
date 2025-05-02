@@ -1,40 +1,20 @@
-<section class="alt-section section-work">
-    {{ with .Site.Data.services.title }}<h3 id="services">{{ . }}</h3>{{ end }}
+<section class="alt-section services-section">
+    {{ with .Site.Params.services.title }}<h3 id="services">{{ . }}</h3>{{ end }}
+    {{ with .Site.Params.services.subtitle }}<h4 class="subtitle">{{ . }}</h4>{{ end }}
     <hr class="bar">
-    {{ range .Site.Data.services.service }}
-    <input type="radio" name="trigger" class="trigger" id="{{ .folder }}" />
-    {{ end }}
-    <input type="radio" name="trigger" id="return" class="return" />
-    <div class="work-belt">
-        <div class="thumb-wrap">
-            <div class="thumb-container">
-                {{ range .Site.Data.services.service }}
-                <label for="{{ .folder }}">
-                    <div class="thumb-unit" data-folder="{{ .folder }}">
-                        <img src="img/services/{{.folder}}/thumb.jpg" alt="{{ .name }}" />
-                    </div>
-                    <div class="thumb-overlay">
-                        <strong>{{ .name }}</strong>
-                    </div>
-                </label>
-                {{ end }}
-            </div>
+  
+    <div class="services-grid">
+      {{ range .Site.Params.services.cards }}
+      <div class="service-card">
+        <div class="service-hero">
+          <img src="{{ .image | relURL }}" alt="{{ .title }}" loading="lazy">
         </div>
-        <div class="work-wrap">
-            <div class="work-container">
-                <label for="return">
-                    <div class="work-return">{{ partial "icons/icon-back.html" . }}</div>
-                </label>
-                <h4 class="project-title"></h4>
-                <div class="project-load"></div>
-                <noscript>
-                    {{ range .Site.Data.services.service }}
-                    <div class="noscript" id="content-{{ .folder }}">
-                        <h4 class="project-title">{{ .name }}</h4>
-                    </div>
-                    {{ end }}
-                </noscript>
-            </div>
-        </div>
+        <h4>{{ .title }}</h4>
+        <p>{{ .description }}</p>
+        <a href="{{ .link | relURL }}" class="service-link">
+          {{ .link_text }}
+        </a>
+      </div>
+      {{ end }}
     </div>
-</section>  
+  </section>

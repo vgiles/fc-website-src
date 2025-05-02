@@ -127,3 +127,35 @@ As such, users may rarely encounter up to a one-minute delay in access as the se
 
 
 # {{ < soundcloud 1383778492 >
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]  # Force only HTML for pages
+  section = ["HTML"] # Disable XML for sections
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+[params.services]
+	title = "What I offer"
+	subtitle = "Values-driven sonic innovation, together."
+
+[[params.services.cards]]
+	title = "Composition, Sound Design, and Production"
+	image = "../img/services/composition.png"  # Path to image
+	description = "I compose original music for instrumentalists and ensembles, games, films. I design sound for installation art, games, film (or suggest something!). I do audio production and post-production including editing and mixdown, and other by need/request."
+	link = "/composition"
+	link_text = "View portfolio →"
+
+[[params.services.cards]]
+	title = "Workshops & Public Speaking" 
+	image = "../img/services/workshop.png"
+	description = "I offer workshops, mentoring, and public engagement such as speaking panels on public art, sound art, contemporary music."
+	link = "/sound-design"
+	link_text = "See examples →"
+
+[[params.services.cards]]
+	title = "Consulting"
+	image = "../img/services/consulting.jpg"
+	description = "I offer consultation services relating to audio needs for your business." 
+	link = "/consulting"
+	link_text = "Get in touch →"
