@@ -5,10 +5,10 @@
   /* ===================== */
   /* Color System */
   /* ===================== */
-  --bg-color: rgb(46, 146, 63); /* New dark base */
+  --bg-color: rgba(112, 37, 16, 0.2); /* New dark base */
   --bg-color-rgb: 64, 62, 62;  /* RGB version */
   --text-color: rgb(245, 245, 245); /* Pure white text */
-  --alt-bg-color: rgba(49, 48, 48, 0.85); /* New darker alt */
+  --alt-bg-color: rgba(12, 133, 246, 0.4); /* New darker alt */
   
   /* Accents */
   --primary-accent: rgb(241, 155, 56); /* Vibrant orange */
@@ -21,7 +21,7 @@
   --button-bg: var(--primary-accent);
   
     /* Core Palette */
-    --dark-bg: #171717;
+    --dark-bg: #27243c;
     --gold-accent: #D4AF37;
     --teal-interactive: #5FB0B5;
     --cream-text: #F1E6D2;
@@ -55,7 +55,7 @@
   /* ===================== */
   /* Component Variables */
   /* ===================== */
-  --section-bg: rgba(var(--bg-color), 0.9);
+  --section-bg: rgba(92, 133, 174, 0.8);
   --card-bg: rgba(49, 48, 48, 0.6);
 }
 
@@ -143,13 +143,13 @@ template {
 
 /* Reset any accidental lightening */
 header, footer, section, .alt-section {
-  background-image: none !important;
-  box-shadow: none !important;
+  /* background-image: none !important; */
+  /* box-shadow: none !important; */
 }
 
 /* Ensure dark mode base */
 body {
-  background: #111111 !important; /* Pure black fallback */
+  background: var(--alt-bg-color) !important; /* fallback, but this also controls the overall BG colour */
   transition: background 0.5s ease;
 
 }
