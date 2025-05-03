@@ -1,19 +1,17 @@
 <header id="header">
     <img class="logo" src="{{ .Site.Params.header.logo }}" alt="Logo">
     
-    <!-- Modified Navigation (now uses config.toml) -->
-    <nav class="main-nav">
-      {{ range .Site.Params.header.nav }}
-        <a href="{{ .url }}" {{ if eq $.RelPermalink .url }}class="active"{{ end }}>
-          {{ .name }}
-        </a>
-      {{ end }}
+    {{ with .Site.Params.header.heading }}<div class="heading">{{ . }}</div>{{ end }}
+    
+    <nav>
+        {{ range .Site.Params.header.nav }}
+        <a href="{{ .url }}">{{ .name }}</a>
+        {{ end }}
     </nav>
     
-    {{ with .Site.Params.header.heading }}<h2>{{ . }}</h2>{{ end }}
-    
     <div class="title-container">
-        {{ with .Site.Params.header.title }}<h1><span>{{ . }}</span></h1>{{ end }}
-        {{ with .Site.Params.header.subHeading }}<p class="kicker">{{ . }}</p>{{ end }}
+        {{ with .Site.Params.header.title }}<h1>{{ . }}</h1>{{ end }}
     </div>
+    
+    {{ with .Site.Params.header.subHeading }}<p class="kicker">{{ . }}</p>{{ end }}
 </header>
