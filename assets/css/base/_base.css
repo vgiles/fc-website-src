@@ -5,7 +5,7 @@
   /* ===================== */
   /* Color System */
   /* ===================== */
-  --bg-color: rgb(64, 62, 62); /* New dark base */
+  --bg-color: rgb(46, 146, 63); /* New dark base */
   --bg-color-rgb: 64, 62, 62;  /* RGB version */
   --text-color: rgb(245, 245, 245); /* Pure white text */
   --alt-bg-color: rgba(49, 48, 48, 0.85); /* New darker alt */
@@ -20,6 +20,16 @@
   --link-hover: rgb(241, 179, 86); /* Lighter gold hover */
   --button-bg: var(--primary-accent);
   
+    /* Core Palette */
+    --dark-bg: #171717;
+    --gold-accent: #D4AF37;
+    --teal-interactive: #5FB0B5;
+    --cream-text: #F1E6D2;
+    --rust-border: #B35730;
+  
+    /* Text Contrast */
+    --text-primary: var(--cream-text);
+    --text-secondary: var(--gold-accent);
   /* ===================== */
   /* Spacing & Layout */
   /* ===================== */
@@ -45,7 +55,7 @@
   /* ===================== */
   /* Component Variables */
   /* ===================== */
-  --section-bg: rgba(var(--bg-color-rgb), 0.9);
+  --section-bg: rgba(var(--bg-color), 0.9);
   --card-bg: rgba(49, 48, 48, 0.6);
 }
 
@@ -106,6 +116,7 @@ body {
 html {
   overflow-x: hidden;
   text-size-adjust: 100%; /* From our previous discussion */
+  scroll-behavior: smooth;
 }
 
 /* Image protection */
@@ -139,4 +150,6 @@ header, footer, section, .alt-section {
 /* Ensure dark mode base */
 body {
   background: #111111 !important; /* Pure black fallback */
+  transition: background 0.5s ease;
+
 }

@@ -1,6 +1,8 @@
-{{ "<!-- Footer section -->" | safeHTML }}
-<footer id="footer">
-    <div class="lockup">
-            <p class="copyright">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ else }}All content copyright {{now.Format "2006"}} {{ end }}</p>
+<footer>
+    <div class="footer-content">
+      <div class="footer-text">
+        {{ .Site.Params.footer.copyright | markdownify }}
+      </div>
+      <img class="footer-logo" src="{{ .Site.Params.header.logo }}" alt="Logo">
     </div>
-</footer>
+  </footer>

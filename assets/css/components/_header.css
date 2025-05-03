@@ -112,3 +112,10 @@
       font-size: 1.2rem;
     }
   }
+
+  /* Header */
+
+  
+  #header nav a:hover {
+    color: var(--teal-interactive);
+  }
