@@ -1,8 +1,25 @@
-# Site settings
-baseurl = "https://www.faultycat.com.au/"
-languageCode = "en-us"
-title = "Faulty Cat Productions"
-theme = "vg-theme"
+
+  
+# Navigation links (now uses Hugo's pages)
+[[params.header.nav]]
+	name = "About"
+	url = "/about"  # Links to content/work/_index.md
+
+[[params.header.nav]]
+	name = "Portfolio"
+	url = "/about" # Links to content/about.md
+
+[[params.header.nav]]
+	name = "Publishing"
+	url = "https://www.edition-resonance.xyz"
+
+[[params.header.nav]]
+	name = "Blog"
+	url = "https://www.fcpvg.work"
+
+[[params.header.nav]]
+	name = "Contact"
+	url = "/contact"
 
 [module]
   [[module.mounts]]
@@ -17,7 +34,7 @@ theme = "vg-theme"
 	name = "Faulty Cat Productions || Vincent Giles"
 	description = "Melbourne, Victoria. Exploratory music composition, producuction, sound design, and project management, for games, film, new media, installation, and interactivity."
 
-	email = "hi@faultycat.com.au"
+	# email = "hi@faultycat.com.au"
 
 
 	[params.header]
@@ -25,7 +42,7 @@ theme = "vg-theme"
 		heading = "Vincent Giles"
 		subHeading = "Uncompromising sound and music for exploratory art projects"
 		webTag = "Values-driven sonic innovation, together."
-		logo = "../img/logo.svg"
+		logo = "../logo.svg"
 
 	[params.about]
 		title = "Hello!"
@@ -37,7 +54,7 @@ Artists, makers, and curators often want **boundary-pushing** sound but hit tech
 """
 		blurb_style = "border-right: 3px solid #b89c66; padding-right: 1.5rem;" # Custom CSS
 		more_link = "/about"  # URL for the page
-		more_text = "Read my full story →"  # Link text
+		more_text = "Read more →"  # Link text
 		more_style = "display: inline-block; margin-top: 1rem; color: #b89c66;"  # Optional	
 
 	[params.about-full]
@@ -54,56 +71,26 @@ With 20 years of experience in exploratory sound practice—from composing conce
 Let’s turn your idea into a quietly transformative experience that is creatively uncompromising.
 '''
 		face_img = "img/giles_promo.jpg"
-		# "Vincent Giles of Faulty Cat Productions is a composer and producer creating exploratory music and sound for interactive and immersive experiences. "
 
-		# [[params.about.skills]]
-		# 	name = "Composition"
-		# 	value = 9
 
-		# [[params.about.skills]]
-		# 	name = "Sound Design"
-		# 	value = 8
+[params.contact]
+	title = "Connect with me"
+	email = "hi@faultycat.com.au"
+	instagram_user = "composervince"  # Without @
+	instagram_count = 6            # Posts to show
 
-		# [[params.about.skills]]
-		# 	name = "Production"
-		# 	value = 9
+	[[params.contact.social]]
+		icon = "instagram"  # icon-key (see below)
+		link = "https://instagram.com/composervince"
+		name = "Instagram"  # For alt text
 
-		# [[params.about.skills]]
-		# 	name = "Project Management"
-		# 	value = 8
+	[[params.contact.social]]
+		icon = "bandcamp"
+		link = "https://vincentgiles.bandcamp.com/"
+		name = "Bandcamp"
 
-		# [[params.about.skills]]
-		# 	name = "Empathy"
-		# 	value = 9
+	# Optional Instagram Feed
 
-		# [[params.about.skills]]
-		# 	name = "Communication"
-		# 	value = 8
-
-		# [[params.about.skills]]
-		# 	name = "Grant-Writing"
-		# 	value = 7
-
-		# [[params.about.skills]]
-		# 	name = "New Media Technologies"
-		# 	value = 7
-
-	# # Podcast
-	# [params.podcast]
-	# 	title = "Filtered Noise"
-	# 	bio = ""
-
-	# Contact secion
-	[params.contact]
-		title = "Connect"
-
-		[[params.contact.social]]
-			icon = "instagram"
-			link = "//instagram.com/composervince"
-
-		[[params.contact.social]]
-			icon = "soundcloud"
-			link = "//www.soundcloud.com/vince-giles"
 
 	[params.form]
 		title = "Let's make something together"
@@ -159,3 +146,18 @@ As such, users may rarely encounter up to a one-minute delay in access as the se
 	description = "I offer consultation services relating to audio needs for your business." 
 	link = "/consulting"
 	link_text = "Get in touch →"
+
+[params.showreel]
+	title = "Showreel"
+	subtitle = "Uncompromising sound and music for exploratory projects."
+
+	# Choose ONE of these:
+	vimeo_id = ""  # Just the ID from Vimeo URL
+	youtube_id = "" # Just the ID from YouTube URL
+	# OR for custom embed:
+	custom_embed = '''
+	<iframe title="vimeo-player" src="https://player.vimeo.com/video/950659108?h=33c18b5d7b" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+	'''
+	# SoundCloud section
+	soundcloud_playlist = "1383778492"  # Playlist ID from URL
+	soundcloud_color = "e0982c"         # Matches your accent color

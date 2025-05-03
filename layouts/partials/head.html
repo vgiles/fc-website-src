@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
 <meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
+<meta name="referrer" content="no-referrer-when-downgrade">
 {{ hugo.Generator }}
 <title>{{ .Site.Title }}</title>
 {{/* Define all CSS files in correct order */}}
@@ -34,7 +35,6 @@
 
 {{/* Output the final CSS */}}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/add.css">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJSE0RLWD3"></script>

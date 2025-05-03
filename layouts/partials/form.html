@@ -1,5 +1,5 @@
 {{ "<!-- Form section -->" | safeHTML }}
-<section class="alt-section">
+<section class="section">
     {{ with .Site.Params.form.title }}<h3 id="form-title">{{ . }}</h3>{{ end }}
     <hr class="bar">
     <form action="https://formspree.io/f/mqkgwavr" method="POST">
@@ -17,5 +17,6 @@
         <fieldset class="submit-wrap">
             <input type="submit" value="{{ with .Site.Params.form.buttonText }}{{ . }}{{ end }}">
         </fieldset>
+        <div class="form-alert" id="form-alert"></div>
     </form>
 </section>

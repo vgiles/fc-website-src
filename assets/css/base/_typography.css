@@ -160,3 +160,28 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+h1, h2, h3 {
+  color: var(--secondary-accent);
+  font-weight: 400;
+}
+
+h4, h5, h6 {
+  color: var(--primary-accent);
+}
+
+body {
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+/* Glowing accents */
+a:hover, 
+button:hover {
+  text-shadow: 0 0 8px rgba(241, 155, 56, 0.6);
+}
+
+/* Section borders */
+.alt-section {
+  border-top: 1px solid rgba(222, 200, 147, 0.2);
+}

@@ -1,17 +1,17 @@
 <header id="header">
     <img class="logo" src="{{ .Site.Params.header.logo }}" alt="Logo">
     
+    {{ with .Site.Params.header.heading }}<div class="heading">{{ . }}</div>{{ end }}
+    
     <nav>
-        {{ with .Site.Data.work.title }}<a href="#work">{{ . }}</a>{{ end }}
-        {{ with .Site.Params.about.title }}<a href="#about-me">{{ . }}</a>{{ end }}
-        {{ with .Site.Data.clients.title }}<a href="#services">{{ . }}</a>{{ end }}
-        {{ with .Site.Params.contact.title }}<a href="#contact">{{ . }}</a>{{ end }}
+        {{ range .Site.Params.header.nav }}
+        <a href="{{ .url }}">{{ .name }}</a>
+        {{ end }}
     </nav>
     
-    {{ with .Site.Params.header.heading }}<h2>{{ . }}</h2>{{ end }}
-    
     <div class="title-container">
-        {{ with .Site.Params.header.title }}<h1><span>{{ . }}</span></h1>{{ end }}
-        {{ with .Site.Params.header.subHeading }}<p class="kicker">{{ . }}</p>{{ end }}
+        {{ with .Site.Params.header.title }}<h1>{{ . }}</h1>{{ end }}
     </div>
+    
+    {{ with .Site.Params.header.subHeading }}<p class="kicker">{{ . }}</p>{{ end }}
 </header>

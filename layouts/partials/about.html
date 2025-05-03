@@ -1,12 +1,13 @@
 <section class="section about-section">
     {{ with .Site.Params.about.title }}<h3 id="about-me">{{ . }}</h3>{{ end }}
+    {{ with .Site.Params.about.bio }}
+    <h4>{{ . | markdownify }}</h4>
+  {{ end }}
     <hr class="bar">
   
     <div class="about-container">
       <div class="about-blurb">
-        {{ with .Site.Params.about.bio }}
-          <div class="bio">{{ . | markdownify }}</div>
-        {{ end }}
+
         
         {{ with .Site.Params.about.blurb }}
   <div class="custom-blurb" style="{{ $.Site.Params.about.blurb_style | safeCSS }}">

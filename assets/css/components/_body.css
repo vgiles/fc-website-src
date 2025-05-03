@@ -1,7 +1,7 @@
 /* ===== Body & Core Styles ===== */
 body {
   margin: 0;
-  background: rgb(72, 66, 66);
+  background: var(--alt-bg-color);
   font: 0.875rem/1.6 "Open Sans", sans-serif; /* 14px → rem */
   color: rgb(164, 164, 164);
   -webkit-tap-highlight-color: #f1e2d6;
@@ -9,13 +9,21 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+/* Replace the existing body::before with this */
+/* Hero image (now the ONLY background layer) */
 body::before {
   content: "";
-  position: fixed;
-  inset: 0; /* Modern alternative to top/right/bottom/left */
-  background: url(../img/fc_hero2.png) center/cover local;
+  position: fixed; /* Covers entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    url(../img/fc_hero2.png) center/cover no-repeat,
+    linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.4)); /* Optional subtle overlay */
+  background-size: 110% auto; /* Your original zoom */
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.7; /* Adjust as needed */
 }
 
 /* ===== Typography ===== */
@@ -252,3 +260,231 @@ h3 {
     height: 150px;
   }
 }
+
+/* Showreel Section */
+.showreel-section {
+  background: var(--alt-bg-color);
+  padding-bottom: 4rem;
+}
+
+.media-container {
+  position: relative;
+  aspect-ratio: 16/9; /* Modern aspect ratio control */
+  max-width: min(900px, 90vw);
+  margin: 2rem auto;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.soundcloud-container {
+  aspect-ratio: 540/300; /* SoundCloud's ideal ratio */
+  max-width: min(800px, 85vw);
+}
+
+.media-container iframe {
+  position: absolute;
+  inset: 0; /* top/right/bottom/left = 0 */
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.soundcloud-attribution {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  
+  a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
+/* Social Links */
+/* Social Links Container */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Icon Wrapper (for perfect circles) */
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(228, 169, 51, 0.768);
+  padding: 11px; /* Adjust spacing */
+  transition: all 0.3s ease;
+}
+
+/* Icon Image */
+.social-icon {
+  width: 24px; /* Slightly smaller than container */
+  height: 24px;
+  display: block; /* Remove inline spacing */
+}
+
+/* Hover Effects */
+.social-link:hover {
+  transform: scale(1.1);
+  background: rgba(231, 123, 29, 0.2);
+}
+
+.ig-grid {
+  position: relative;
+  min-height: 200px;
+}
+
+.loading-text {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 2rem;
+}
+
+.ig-grid iframe {
+  width: 100%;
+  border: none;
+}
+
+.ig-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.ig-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Form Styles */
+.section form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.contact-info-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  padding: 0;
+}
+
+@media (min-width: 600px) {
+  .contact-info-group {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+label span {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: var(--text-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(184, 156, 102, 0.2);
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-wrap {
+  border: none;
+  padding: 0;
+  text-align: right;
+}
+
+input[type="submit"] {
+  background: var(--accent-color);
+  color: #111;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #d9b56b;
+  transform: translateY(-2px);
+}
+
+/* Ensure body has proper dimensions */
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Make sure content flows under fixed background */
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* _body.css */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/fc_hero2.png) center/cover no-repeat;
+  background-size: 100% auto; /* Original zoom level */
+  z-index: -1;
+  opacity: 0.7;
+  background-attachment: local;
+}
+
+/* _base.css or _body.css */
+/* body {
+  background: transparent !important; /* Remove any default bg colors
+  margin: 0;
+  min-height: 100vh;
+} */
