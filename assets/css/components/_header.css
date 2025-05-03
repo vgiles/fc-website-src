@@ -12,14 +12,19 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px 30px 20px;
+    --logo-adjust: -12px;
   }
   
   /* Logo (aligned left) */
   #header .logo {
     grid-area: logo;
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     margin-right: 20px;
+    align-self: center;
+    position: relative;
+    /* top: -5px; */
+    transform: translateY(var(--logo-adjust));
   }
   
   /* Name heading (right of logo) */
@@ -62,42 +67,48 @@
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
   
-  /* Navigation (aligned right) */
-  #header nav {
+/* Navigation */
+#header nav {
     grid-area: nav;
     text-align: right;
-    padding-left: 20px;
   }
   
-  /* ===================== */
-  /* Mobile Responsiveness */
-  /* ===================== */
+  #header nav a {
+    display: inline-block;
+    margin-left: 25px;
+    color: var(--link-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #header nav a:hover {
+    color: var(--link-hover);
+  }
   @media (max-width: 768px) {
     #header {
       grid-template-areas:
-        "nav nav nav"
-        "logo heading heading"
-        "title title title"
-        "subheading subheading subheading";
-      padding: 20px 15px;
-      gap: 15px;
+        "logo heading"
+        "nav nav"
+        "title title"
+        "subheading subheading";
     }
-    
-    #header .logo {
-      margin-right: 15px;
+  
+    #header nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 8px;
+      padding: 15px 0;
     }
-    
-    #header .heading {
-      font-size: 1.5rem;
-      white-space: normal;
-    }
-    
-    #header h1 {
-      font-size: clamp(2.5rem, 7vw, 3.5rem);
-      border-width: 8px;
-    }
-    
-    #header .kicker {
-      font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+  
+    #header nav a {
+      display: block;
+      text-align: center;
+      padding: 8px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+      margin: 0 !important;
+      font-size: 1.2rem;
     }
   }

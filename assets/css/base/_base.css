@@ -129,3 +129,14 @@ template {
     height: 120px;
   }
 }
+
+/* Reset any accidental lightening */
+header, footer, section, .alt-section {
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure dark mode base */
+body {
+  background: #111111 !important; /* Pure black fallback */
+}
