@@ -1,7 +1,7 @@
 /* ===== Body & Core Styles ===== */
 body {
   margin: 0;
-  background: var(--alt-bg-color);
+  /* background: var(--alt-bg-color); */
   font: 0.875rem/1.6 "Open Sans", sans-serif; /* 14px → rem */
   color: rgb(164, 164, 164);
   -webkit-tap-highlight-color: #f1e2d6;
@@ -9,22 +9,26 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/* Replace the existing body::before with this */
-/* Hero image (now the ONLY background layer) */
 body::before {
   content: "";
-  position: fixed; /* Covers entire viewport */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    url(../img/fc_hero2.png) center/cover no-repeat,
-    linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.4)); /* Optional subtle overlay */
-  background-size: 110% auto; /* Your original zoom */
+  background: url(../img/fc_hero2.png) center/cover no-repeat;
+  background-size: 100% auto;
   z-index: -1;
-  opacity: 0.7; /* Adjust as needed */
+  opacity: 0.7;
 }
+
+/* Remove any other body background definitions */
+
+/* Replace the existing body::before with this */
+/* Hero image (now the ONLY background layer) */
+
+
+/* Remove any other body background definitions */
 
 /* ===== Typography ===== */
 h3 {
@@ -467,20 +471,7 @@ body {
   z-index: 1;
 }
 
-/* _body.css */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(../img/fc_hero2.png) center/cover no-repeat;
-  background-size: 100% auto; /* Original zoom level */
-  z-index: -1;
-  opacity: 0.7;
-  background-attachment: local;
-}
+/* Remove any other body background definitions */
 
 /* _base.css or _body.css */
 /* body {
