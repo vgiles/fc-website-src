@@ -1,17 +1,23 @@
 <header id="header">
-    <img class="logo" src="{{ .Site.Params.header.logo }}" alt="Logo">
+    <div class="logo-container">
+      <a href="{{ .Site.BaseURL }}" aria-label="Home" class="logo-link">
+        <img class="logo" src="{{ .Site.Params.header.logo }}" alt="{{ .Site.Params.header.title | default "Site Logo" }}">
+      </a>
+    </div>
     
     {{ with .Site.Params.header.heading }}<div class="heading">{{ . }}</div>{{ end }}
     
-    <nav>
-        {{ range .Site.Params.header.nav }}
-        <a href="{{ .url }}">{{ .name }}</a>
-        {{ end }}
+    <nav aria-label="Main navigation">
+      {{ range .Site.Params.header.nav }}
+      <a href="{{ .url }}" {{ if hasPrefix .url "http" }}target="_blank" rel="noopener noreferrer"{{ end }}>
+        {{ .name }}
+      </a>
+      {{ end }}
     </nav>
     
     <div class="title-container">
-        {{ with .Site.Params.header.title }}<h1>{{ . }}</h1>{{ end }}
+      {{ with .Site.Params.header.title }}<h1>{{ . }}</h1>{{ end }}
     </div>
     
     {{ with .Site.Params.header.subHeading }}<p class="kicker">{{ . }}</p>{{ end }}
-</header>
+  </header>

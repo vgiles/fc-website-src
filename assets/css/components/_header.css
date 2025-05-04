@@ -12,7 +12,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px 30px 20px;
-    --logo-adjust: -12px;
+    --logo-adjust: -6px;
   }
   
   /* Logo (aligned left) */
@@ -53,6 +53,26 @@
     margin: 0;
     line-height: 1.1;
   }
+
+  /* Target ONLY the header title, not all h1s */
+#header .title-container h1 {
+  font-size: clamp(3.5rem, 8vw, 5rem) !important; /* Force consistency */
+  color: rgb(255, 222, 115) !important;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border: 10px solid white;
+  border-radius: 12px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+/* Then style article titles differently */
+.main-content article h1 {
+  font-size: 2.5rem; /* Smaller size for content */
+  color: var(--text-primary); /* Use your CSS variable */
+  border: none; /* Remove border */
+  padding: 0;
+}
   
   /* Subheading (more prominent) */
   #header .kicker {
@@ -119,3 +139,4 @@
   #header nav a:hover {
     color: var(--teal-interactive);
   }
+

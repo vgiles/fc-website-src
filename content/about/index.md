@@ -2,6 +2,9 @@
 title: "About"
 description: "about"
 draft: false
+images:
+  - "img/general/about/install.png"
+  - "img/general/about/live_1.jpg"
 ---
 
 I'm Vincent Giles, an Australian composer born in 1985 and based in Naarm (Melbourne). My work explores the fragile boundaries of perception, the beauty in instability, and those fascinating glitches that emerge from both human and machine creativity.

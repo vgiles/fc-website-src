@@ -1,3 +1,7 @@
+#base settings
+baseURL = "https://www.faultycat.com.au/"
+languageCode = "en-us"
+
 # Navigation links (now uses Hugo's pages)
 [[params.header.nav]]
     name = "About"
@@ -17,7 +21,7 @@
 
 [[params.header.nav]]
     name = "Contact"
-    url = "/contact"
+    url = "#contact"
 
 [module]
     [[module.mounts]]
@@ -31,6 +35,7 @@
     name = "Faulty Cat Productions || Vincent Giles"
     description = "Melbourne, Victoria. Exploratory music composition, producuction, sound design, and project management, for games, film, new media, installation, and interactivity."
     # email = "hi@faultycat.com.au"
+
 
     [params.header]
         title = "Faulty Cat Productions"
@@ -94,18 +99,15 @@ Let's turn your idea into a quietly transformative experience that is creatively
             buttonText = "Connect"
 
     [params.footer]
-        copyright = '''
-Copyright 2025 Faulty Cat Productions/Vincent Giles. All Rights Reserved.
-
-I live and work on unceded Wurundjeri Country in Naarm (Melbourne).
+        acknowledgement = """
+I live and work on unceded **Wurundjeri Country** in **Naarm (Melbourne)**.
 
 As an uninvited guest, I acknowledge the great and ongoing loss of people and knowledge caused by the European colonial project(s).
+"""
+		FOSS1 = "and hosted such that it reduces environmental impact by serving content on-demand."
+		FOSS2 = "As such, users may rarely encounter up to a one-minute delay in access as the servers dynamically power-up for service. The theme is derived from the [hugo artists theme](https://github.com/digitalcraftsman/hugo-artists-theme) with very liberal modification."
+		ABN = "ABN: 91 315 232 577"
 
-This website is built using [free and open source software](https://gohugo.io) and hosted in a cloud-based system that reduces environmental impact by serving content on-demand. 
-As such, users may rarely encounter up to a one-minute delay in access as the servers dynamically power-up for service. The theme is derived from the [hugo artists' theme](https://github.com/digitalcraftsman/hugo-artists-theme) with very liberal modification.
-
-ABN: 91 315 232 577
-'''
 
     [params.services]
         title = "What I offer"
@@ -153,6 +155,12 @@ ABN: 91 315 232 577
     section = ["HTML"] # Disable XML for sections
     taxonomy = ["HTML"]
     term = ["HTML"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.link]
+        enableDefault = true
 
 [params.testimonials]
   title = "Testimonials"

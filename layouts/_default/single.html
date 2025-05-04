@@ -9,7 +9,22 @@
     <main class="main-content">
       <article class="article">
         <h1>{{ .Title }}</h1>
-        {{ .Content }}
+        
+        {{ range $index, $paragraph := split .Content "\n\n" }}
+          <div class="paragraph-block {{ if modBool $index 2 }}reverse{{ end }}">
+            <div class="text-content">
+              {{ $paragraph | markdownify }}
+            </div>
+            {{ if .Params.image }}
+              <div class="image-content">
+                <img src="{{ index .Params.images (mod $index (len .Params.images)) }}" 
+                     alt="Paragraph image {{ add $index 1 }}"
+                     class="paragraph-image">
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+        
       </article>
     </main>
 

@@ -1,7 +1,11 @@
 <footer>
     <div class="footer-content">
       <div class="footer-text">
-        {{ .Site.Params.footer.copyright | markdownify | safeHTML }}
+        <p style="font-size:1.0rem; text-align:left;"><strong>Copyright</strong> © {{ now.Format "2006" }} | <a href="https://faultycat.com.au">Faulty Cat Productions</a></p>
+        {{ .Site.Params.footer.acknowledgement | markdownify }}    
+        <p>Built with free and open source software: <a href="https://gohugo.io">Hugo</a> {{ .Site.Params.footer.FOSS1 | markdownify }}</p>
+        {{ .Site.Params.footer.FOSS2 | markdownify }} <br><br>
+        {{ .Site.Params.footer.ABN | markdownify }}
       </div>
       <img class="footer-logo" src="{{ .Site.Params.header.logo }}" alt="Logo">
     </div>
