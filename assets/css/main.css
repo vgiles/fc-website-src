@@ -12,8 +12,6 @@
 @import 'components/_header.css';
 @import 'components/_body.css';
 @import 'components/_sections.css';
-@import 'components/_animation.css';
 @import 'components/_contact.css';
 @import 'components/_footer.css';
-@import 'components/_glitch.css'; /* will probably remove */
-@import 'components/_work_clients.css'; /* probably not in use */
+@import 'components/_single.css';

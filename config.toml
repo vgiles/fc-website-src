@@ -50,7 +50,7 @@ languageCode = "en-us"
         image = "img/giles_promo.jpg"
         image_width = "300px"
         blurb = """
-Artists, makers, and curators often want **boundary-pushing** sound but hit technical walls or mismatched creative priorities. I help amplify their ideas – whether for **concert halls**, **site-specific installations**, or **games and visual media** – through systems-first design and feedback-driven iteration. Let's turn your concept into something **uncompromising** and quietly transformative.
+Artists, makers, and curators often want **boundary-pushing sound and music** or have hit technical walls or mismatched creative priorities. I help amplify their ideas – whether for **concert halls**, **site-specific installations**, or **games and visual media** – through systems-first design and feedback-driven iteration. Let's turn your concept into something **uncompromising** and quietly transformative.
 """
         blurb_style = "border-right: 3px solid #b89c66; padding-right: 1.5rem;" # Custom CSS
         more_link = "/about"  # URL for the page

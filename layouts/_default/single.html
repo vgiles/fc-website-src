@@ -2,29 +2,30 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   {{ partial "head.html" . }}
-  
   <body>
     {{ partial "header.html" . }}
 
     <main class="main-content">
-      <article class="article">
+      <article class="single-article">
         <h1>{{ .Title }}</h1>
         
-        {{ range $index, $paragraph := split .Content "\n\n" }}
-          <div class="paragraph-block {{ if modBool $index 2 }}reverse{{ end }}">
-            <div class="text-content">
-              {{ $paragraph | markdownify }}
-            </div>
-            {{ if .Params.image }}
-              <div class="image-content">
-                <img src="{{ index .Params.images (mod $index (len .Params.images)) }}" 
-                     alt="Paragraph image {{ add $index 1 }}"
-                     class="paragraph-image">
+        {{ $paragraphs := split .Content "\n\n" }}
+        {{ range $index, $paragraph := $paragraphs }}
+          {{ if ne (trim $paragraph " ") "" }}
+            <div class="single-paragraph-block {{ if modBool $index 2 }}reverse{{ end }}">
+              <div class="single-text-content">
+                {{ $paragraph | markdownify }}
               </div>
-            {{ end }}
-          </div>
+              {{ if .Params.images }}
+                <div class="single-image-content">
+                  <img src="{{ index .Params.images (mod $index (len .Params.images)) }}" 
+                       alt="About image {{ add $index 1 }}"
+                       class="single-paragraph-image">
+                </div>
+              {{ end }}
+            </div>
+          {{ end }}
         {{ end }}
-        
       </article>
     </main>
 
