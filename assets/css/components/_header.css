@@ -140,3 +140,8 @@
     color: var(--teal-interactive);
   }
 
+  .logo-link {
+    position: relative; /* Establish stacking context */
+    z-index: 100; /* Higher than ::before pseudo-element */
+    display: inline-block; /* Ensure clickable area matches image */
+  }

@@ -1,35 +1,36 @@
 {{ define "main" }}
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-  {{ partial "head.html" . }}
-  <body>
-    {{ partial "header.html" . }}
-
-    <main class="main-content">
-      <article class="single-article">
-        <h1>{{ .Title }}</h1>
-        
-        {{ $paragraphs := split .Content "\n\n" }}
-        {{ range $index, $paragraph := $paragraphs }}
-          {{ if ne (trim $paragraph " ") "" }}
-            <div class="single-paragraph-block {{ if modBool $index 2 }}reverse{{ end }}">
-              <div class="single-text-content">
-                {{ $paragraph | markdownify }}
-              </div>
-              {{ if .Params.images }}
-                <div class="single-image-content">
-                  <img src="{{ index .Params.images (mod $index (len .Params.images)) }}" 
-                       alt="About image {{ add $index 1 }}"
-                       class="single-paragraph-image">
-                </div>
-              {{ end }}
+  <article class="single-article">
+    <h2>{{ .Title }}</h2>
+    {{ if .Params.subtitle }}
+      <h4>{{ .Params.subtitle }}</h4>
+      <hr class="bar">
+    {{ end }}
+    
+    {{ $paragraphs := split .RawContent "\n\n" }}
+    {{ $imageIndex := 0 }}
+    
+    {{ range $paragraph := $paragraphs }}
+      {{ $trimmed := trim $paragraph " \n" }}
+      {{ if ne $trimmed "" }}
+        <div class="single-paragraph-block">
+          <div class="single-text-content">
+            {{ $trimmed | markdownify }}
+          </div>
+          {{ if $.Params.images }}
+            <div class="single-image-content">
+              <img 
+                src="{{ index $.Params.images $imageIndex | relURL }}" 
+                alt="Content image {{ add $imageIndex 1 }}" 
+                class="single-paragraph-image"
+              >
             </div>
+            {{ $imageIndex = add $imageIndex 1 }}
+            {{ if ge $imageIndex (len $.Params.images) }}
+              {{ $imageIndex = 0 }}
+            {{ end }}
           {{ end }}
-        {{ end }}
-      </article>
-    </main>
-
-    {{ partial "footer.html" . }}
-  </body>
-</html>
+        </div>
+      {{ end }}
+    {{ end }}
+  </article>
 {{ end }}
