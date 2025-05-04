@@ -745,3 +745,13 @@ section {
 .single-text-content ul ul {
   margin-left: 1.5rem;
 }
+
+.single-article.cv-section li {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.95;
+}
+
+.single-article.cv-section li:hover {
+  transform: translateX(5px);
+  opacity: 1;
+}
