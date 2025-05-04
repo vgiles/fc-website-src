@@ -142,10 +142,10 @@ template {
 }
 
 /* Reset any accidental lightening */
-header, footer, section, .alt-section {
+/* header, footer, section, .alt-section { */
   /* background-image: none !important; */
-  /* box-shadow: none !important; */
-}
+  /* box-shadow: none !important; 
+}*/
 
 /* Ensure dark mode base */
 body {

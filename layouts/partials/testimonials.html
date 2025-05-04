@@ -1,0 +1,25 @@
+<section class="alt-section testimonials">
+  {{ with .Site.Params.testimonials.title }}<h3>{{ . }}</h3>{{ end }}
+  {{ with .Site.Params.testimonials.subtitle }}<h4>{{ . }}</h4>{{ end }}
+  <hr class="bar">
+  <div class="testimonial-grid">
+    {{/* Use either data file or config.toml */}}
+    {{ $testimonials := .Site.Data.testimonials | default .Site.Params.testimonials.items }}
+    
+    {{ range $testimonials }}
+    <div class="testimonial-card">
+      {{ if .avatar }}
+      <img src="{{ .avatar }}" alt="{{ .name }}" class="testimonial-avatar">
+      {{ end }}
+      <blockquote class="testimonial-quote">
+        <p>{{ .quote }}</p>
+      </blockquote>
+      <div class="testimonial-meta">
+        <strong>{{ .name }}</strong>
+        <span>{{ .role }}</span>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+

@@ -1,22 +1,47 @@
-{{ "<!-- Form section -->" | safeHTML }}
-<section class="section">
-    {{ with .Site.Params.form.title }}<h3 id="form-title">{{ . }}</h3>{{ end }}
-    <hr class="bar">
-    <form action="https://formspree.io/f/mqkgwavr" method="POST">
+<section class="section-contact-form">
+    <!-- Contact Section -->
+    <div class="contact-block">
+      {{ with .Site.Params.contact.title }}<h3 id="contact">{{ . }}</h3>{{ end }}
+      <hr class="bar">
+      
+      <div class="social-links">
+        {{ range .Site.Params.contact.social }}
+        <a href="{{ .link }}" target="_blank" rel="noopener" class="social-link">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/{{ .icon }}.svg" 
+               alt="{{ .name }}" 
+               class="social-icon">
+        </a>
+        {{ end }}
+      </div>
+  
+      <!-- Permanently Obfuscated Email -->
+      <div>
+        <a href="mailto:{{ replace .Site.Params.contact.email "@" " [at] " }}" class="biglink">
+        {{ replace .Site.Params.contact.email "@" " [at] " }}
+        </a>
+      </div>
+    </div>
+  
+    <!-- Form Section -->
+    <div class="form-block">
+      {{ with .Site.Params.form.title }}<h3 id="form-title">{{ . }}</h3>{{ end }}
+      <hr class="bar">
+      <form action="https://formspree.io/f/mqkgwavr" method="POST">
         <fieldset class="contact-info-group">
-            {{ with .Site.Params.form.name }}<label><span>{{ . }}</span>{{ end }}
-                <input type="text" name="name">
-            </label>
-            {{ with .Site.Params.form.email }}<label><span>{{ . }}</span>{{ end }}
-                <input type="email" name="_replyto">
-            </label>
+          {{ with .Site.Params.form.name }}<label><span>{{ . }}</span>{{ end }}
+            <input type="text" name="name" required>
+          </label>
+          {{ with .Site.Params.form.email }}<label><span>{{ . }}</span>{{ end }}
+            <input type="email" name="_replyto" required>
+          </label>
         </fieldset>
         {{ with .Site.Params.form.message }}<label><span>{{ . }}</span>{{ end }}
-            <textarea name="message"></textarea>
+          <textarea name="message" required></textarea>
         </label>
         <fieldset class="submit-wrap">
-            <input type="submit" value="{{ with .Site.Params.form.buttonText }}{{ . }}{{ end }}">
+          <input type="submit" value="{{ with .Site.Params.form.buttonText }}{{ . }}{{ end }}">
         </fieldset>
-        <div class="form-alert" id="form-alert"></div>
-    </form>
-</section>
+      </form>
+    </div>
+  </section>
+  

@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-content">
       <div class="footer-text">
-        {{ .Site.Params.footer.copyright | markdownify }}
+        {{ .Site.Params.footer.copyright | markdownify | safeHTML }}
       </div>
       <img class="footer-logo" src="{{ .Site.Params.header.logo }}" alt="Logo">
     </div>

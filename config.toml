@@ -91,7 +91,7 @@ Let's turn your idea into a quietly transformative experience that is creatively
             name = "Your Name"
             email = "Your Email"
             message = "Tell me about your project"
-            buttonText = "Send"
+            buttonText = "Connect"
 
     [params.footer]
         copyright = '''
@@ -101,9 +101,8 @@ I live and work on unceded Wurundjeri Country in Naarm (Melbourne).
 
 As an uninvited guest, I acknowledge the great and ongoing loss of people and knowledge caused by the European colonial project(s).
 
-This website is built using free and open source software and hosted in a cloud-based system that reduces environmental impact by serving content on-demand.
-
-As such, users may rarely encounter up to a one-minute delay in access as the servers dynamically power-up for service.
+This website is built using [free and open source software](https://gohugo.io) and hosted in a cloud-based system that reduces environmental impact by serving content on-demand. 
+As such, users may rarely encounter up to a one-minute delay in access as the servers dynamically power-up for service. The theme is derived from the [hugo artists' theme](https://github.com/digitalcraftsman/hugo-artists-theme) with very liberal modification.
 
 ABN: 91 315 232 577
 '''
@@ -154,3 +153,7 @@ ABN: 91 315 232 577
     section = ["HTML"] # Disable XML for sections
     taxonomy = ["HTML"]
     term = ["HTML"]
+
+[params.testimonials]
+  title = "Testimonials"
+  subtitle = "What people think of my work"
