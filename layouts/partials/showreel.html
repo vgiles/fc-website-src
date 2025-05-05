@@ -1,34 +1,37 @@
 <section class="section">
-    {{ with .Site.Params.showreel.title }}<h3 id="showreel">{{ . }}</h3>{{ end }}
-    {{ with .Site.Params.showreel.subtitle }}<h4>{{ . }}</h4>{{ end }}
-    <hr class="bar">
-    
-    <!-- Video Player -->
-    <div class="media-container">
-      {{ if .Site.Params.showreel.vimeo_id }}
-        <iframe src="https://player.vimeo.com/video/{{ .Site.Params.showreel.vimeo_id }}?color={{ .Site.Params.showreel.soundcloud_color }}&title=0&byline=0&portrait=0" 
-                frameborder="0" allowfullscreen>
-        </iframe>
-      {{ else if .Site.Params.showreel.youtube_id }}
-        <iframe src="https://www.youtube.com/embed/{{ .Site.Params.showreel.youtube_id }}?color={{ .Site.Params.showreel.soundcloud_color | replaceRE "^#" "" }}&modestbranding=1" 
-                frameborder="0" allowfullscreen>
-        </iframe>
-      {{ else if .Site.Params.showreel.custom_embed }}
-        {{ .Site.Params.showreel.custom_embed | safeHTML }}
-      {{ end }}
-    </div>
+  {{ with .Site.Params.showreel.title }}<h3 id="showreel">{{ . }}</h3>{{ end }}
+  {{ with .Site.Params.showreel.subtitle }}<h4>{{ . }}</h4>{{ end }}
+  <hr class="bar">
   
-    <!-- SoundCloud Player -->
-    {{ with .Site.Params.showreel.soundcloud_playlist }}
-    <div class="media-container soundcloud-container">
-      <iframe 
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ . }}&color=%23{{ $.Site.Params.showreel.soundcloud_color | default "e0982c" | replaceRE "^#" "" }}&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"
-        frameborder="0" 
-        scrolling="no">
-      </iframe>
-      <div class="soundcloud-attribution">
-        <a href="https://soundcloud.com/vince-giles" target="_blank">More on SoundCloud</a>
+  <!-- Wrapper for side-by-side embeds -->
+  <div class="showreel-embed-container">
+      <!-- Video Player -->
+      <div class="media-container">
+          {{ if .Site.Params.showreel.vimeo_id }}
+          <iframe src="https://player.vimeo.com/video/{{ .Site.Params.showreel.vimeo_id }}?color={{ .Site.Params.showreel.soundcloud_color }}&title=0&byline=0&portrait=0" 
+                  frameborder="0" allowfullscreen>
+          </iframe>
+          {{ else if .Site.Params.showreel.youtube_id }}
+          <iframe src="https://www.youtube.com/embed/{{ .Site.Params.showreel.youtube_id }}?color={{ .Site.Params.showreel.soundcloud_color | replaceRE "^#" "" }}&modestbranding=1" 
+                  frameborder="0" allowfullscreen>
+          </iframe>
+          {{ else if .Site.Params.showreel.custom_embed }}
+          {{ .Site.Params.showreel.custom_embed | safeHTML }}
+          {{ end }}
       </div>
-    </div>
-    {{ end }}
-  </section>
+
+      <!-- SoundCloud Player -->
+      {{ with .Site.Params.showreel.soundcloud_playlist }}
+      <div class="media-container soundcloud-container">
+          <iframe 
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ . }}&color=%23{{ $.Site.Params.showreel.soundcloud_color | default "e0982c" | replaceRE "^#" "" }}&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"
+              frameborder="0" 
+              scrolling="no">
+          </iframe>
+          <div class="soundcloud-attribution">
+              <a href="https://soundcloud.com/vince-giles" target="_blank">More on SoundCloud</a>
+          </div>
+      </div>
+      {{ end }}
+  </div>
+</section>

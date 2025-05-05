@@ -294,6 +294,48 @@ h3 {
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
+/* Showreel Side-by-Side Layout */
+.showreel-embed-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: var(--width-content);
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .showreel-embed-container {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+  
+  .showreel-embed-container .media-container {
+      flex: 1;
+      margin: 0;
+  }
+  
+  .showreel-embed-container .soundcloud-container {
+      flex: 1;
+  }
+}
+
+/* Maintain existing media container styles */
+.media-container {
+  /* Your existing styles remain unchanged */
+  position: relative;
+  aspect-ratio: 16/9;
+  max-width: min(900px, 90vw);
+  margin: 2rem auto;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.soundcloud-container {
+  /* Your existing styles remain unchanged */
+  aspect-ratio: 540/300;
+  max-width: min(800px, 85vw);
+}
 .soundcloud-container {
   aspect-ratio: 540/300; /* SoundCloud's ideal ratio */
   max-width: min(800px, 85vw);
