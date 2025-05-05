@@ -4,7 +4,7 @@
     
     {{ $paragraphs := split .RawContent "\n\n" }}
     {{ $mediaIndex := 0 }}
-    {{ $mediaItems := union $.Params.images $.Params.youtube_videos }}
+    {{ $mediaItems := union $.Params.images (union $.Params.youtube_videos $.Params.vimeo_videos) }}
     
     {{ range $index, $paragraph := $paragraphs }}
       {{ $trimmed := trim $paragraph " \n" }}
@@ -17,7 +17,11 @@
           {{ if $mediaItems }}
             {{ $media := index $mediaItems $mediaIndex }}
             <div class="single-media-content">
-              {{ if in $.Params.youtube_videos $media }}
+              {{ if in $.Params.images $media }}
+                <img src="{{ $media | relURL }}" 
+                     alt="Content image {{ add $mediaIndex 1 }}"
+                     class="single-paragraph-image">
+              {{ else if in $.Params.youtube_videos $media }}
                 <div class="youtube-embed-container">
                   <iframe 
                     src="https://www.youtube-nocookie.com/embed/{{ $media }}?modestbranding=1&rel=0"
@@ -27,10 +31,16 @@
                     sandbox="allow-same-origin allow-scripts allow-popups">
                   </iframe>
                 </div>
-              {{ else }}
-                <img src="{{ $media | relURL }}" 
-                     alt="Content image {{ add $mediaIndex 1 }}"
-                     class="single-paragraph-image">
+              {{ else if in $.Params.vimeo_videos $media }}
+                <div class="vimeo-embed-container">
+                  <iframe 
+                    src="https://player.vimeo.com/video/{{ $media }}?title=0&byline=0&portrait=0" 
+                    frameborder="0"
+                    allowfullscreen
+                    title="Vimeo video: {{ $.Title }}"
+                    loading="lazy">
+                  </iframe>
+                </div>
               {{ end }}
             </div>
             {{ $mediaIndex = add $mediaIndex 1 }}

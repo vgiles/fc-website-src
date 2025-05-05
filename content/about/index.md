@@ -18,10 +18,10 @@ With 20 years of experience in exploratory sound practice—from composing conce
   - Permaculture-driven process: Systems-first design, iterative feedback, resilience over waste.
 
 ## Education
-**Doctor of Philosophy (PhD)** in *Sound Design*
-*University of Melbourne*, 2013-2017
-Thesis: *"Microsound, Spectra, and Objectivity: tracing memetics in organised sound"*
-**Bachelor of Music (Hons)** in *Composition*
+**Doctor of Philosophy (PhD)** in *Sound Design*  
+*University of Melbourne*, 2013-2017  
+Thesis: *"Microsound, Spectra, and Objectivity: tracing memetics in organised sound"*  
+**Bachelor of Music (Hons)** in *Composition*  
 *Monash University*, 2009-2012
 ### Key Skills
 Project Management | Leadership & People Management | Finance, Budgets & Grants | Research | Technology & Creative Arts | Strategic Planning & Implementation

@@ -10,8 +10,8 @@
 @import 'base/_typography.css';
 @import 'base/_icons.css';
 @import 'components/_header.css';
-/* @import 'components/_single.css'; */
 @import 'components/_body.css';
+/* @import 'components/_single.css'; */
 @import 'components/_sections.css';
 @import 'components/_contact.css';
 @import 'components/_footer.css';

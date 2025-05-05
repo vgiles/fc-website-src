@@ -1,131 +1,177 @@
-/* Newspaper Article Container */
-.single-article {
-  max-width: var(--width-content);
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-/* Paragraph Blocks */
+/* Revised Grid Layout */
 .single-paragraph-block {
-  background: rgba(25, 25, 25, 0.8);
-  border-left: 3px solid #b89c66;
-  padding: 2rem;
-  margin: 3rem 0;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* Alternate Block Styling */
-.single-paragraph-block:nth-child(even) {
-  border-left: none;
-  border-right: 3px solid #b89c66;
-}
-
-/* Content Layout */
-.single-text-content {
-  padding: 1rem;
-}
-
-.single-image-content {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.single-paragraph-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-}
-
-/* Responsive Grid */
-@media (min-width: 768px) {
-  .single-paragraph-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
-  }
-  
-  .single-paragraph-block:nth-child(even) .single-text-content {
-    order: 2;
-  }
-  
-  .single-paragraph-block:nth-child(even) .single-image-content {
-    order: 1;
-  }
-}
-
-/* Title Styling */
-.single-article h1 {
-  color: #b89c66;
-  text-align: center;
-  margin-bottom: 3rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #333;
-}
-
-/* Debugging - make these impossible to miss */
-.single-article { border: 3px solid red !important; }
-.single-paragraph-block { border: 3px solid blue !important; }
-.single-image-content { border: 3px solid green !important; }
-
-/* Force stacking context */
-#main-content {
-  position: relative;
-  z-index: 1;
-}
-
-/* Newspaper Styles with Higher Specificity */
-main .single-article {
-  max-width: var(--width-content);
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-main .single-paragraph-block {
-  background: rgba(25, 25, 25, 0.8) !important;
-  border-left: 3px solid #b89c66 !important;
-  padding: 2rem !important;
-  margin: 3rem 0 !important;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 70% 25%; /* 70% text, 25% media (remaining 5% is gap) */
+  gap: 5%; /* Space between columns */
+  align-items: start;
 }
 
-@media (min-width: 768px) {
-  main .single-paragraph-block {
-    grid-template-columns: 1fr 1fr;
-  }
+/* Alternate side layout */
+.single-paragraph-block:nth-child(even) {
+  grid-template-columns: 25% 70%;
 }
 
-/* YouTube Embed Styles */
-.youtube-container {
+/* Content areas */
+.single-text-content {
+  grid-column: 1;
+  padding: 1rem;
+}
+
+.single-media-content {
+  grid-column: 2;
+  width: 100%;
   position: relative;
-  aspect-ratio: 16/9;
-  width: 100%;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-  min-height: 300px; /* Fallback for older browsers */
-  aspect-ratio: 16/9;
-  height: auto; /* Allows aspect-ratio to work */
 }
 
-.youtube-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/* Reverse order for even blocks */
+.single-paragraph-block:nth-child(even) .single-text-content {
+  grid-column: 2;
 }
 
-/* Responsive Adjustments */
+.single-paragraph-block:nth-child(even) .single-media-content {
+  grid-column: 1;
+}
+
+/* Media scaling */
+.single-paragraph-image,
+.youtube-embed-container {
+  width: 75%; /* 75% of the media column width */
+  margin: 0 auto; /* Center in column */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .single-paragraph-block {
     grid-template-columns: 1fr !important;
   }
   
-  .youtube-container {
+  .single-text-content,
+  .single-media-content {
+    grid-column: auto !important;
+    width: 100%;
+  }
+  
+  .single-paragraph-image,
+  .youtube-embed-container {
+    width: 60%; /* Slightly larger on mobile */
+    max-width: 400px;
+  }
+}
+
+/* Revised Grid Layout */
+.single-paragraph-block {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 3fr); /* 70%/30% split */
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem;
+}
+
+/* Media content scaling */
+.single-media-content {
+  width: 75%; /* 75% of the 30% column */
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Alternate side layout */
+.single-paragraph-block:nth-child(even) {
+  grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+}
+
+.single-paragraph-block:nth-child(even) .single-media-content {
+  grid-column: 1;
+}
+
+.single-paragraph-block:nth-child(even) .single-text-content {
+  grid-column: 2;
+}
+
+/* Media elements */
+.single-paragraph-image {
+  width: 50%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.youtube-embed-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .single-paragraph-block {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .single-media-content {
+    width: 85%;
+    grid-column: auto !important;
     margin-top: 1.5rem;
   }
+}
+
+/* Add to _single.css */
+.vimeo-embed-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  width: 75%; /* Matches your media scaling */
+  margin: 0 auto;
+}
+
+.vimeo-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+/* Unified media container rules */
+.single-media-content {
+  width: 100%; /* Take full column width */
+  margin: 0;
+}
+
+/* Images */
+.single-paragraph-image {
+  width: 75%; /* Now 75% of 100% container */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Video embed containers */
+.youtube-embed-container,
+.vimeo-embed-container {
+  position: relative;
+  width: 100%; /* Full container width */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 0 auto;
+}
+
+/* Make videos visually match image width */
+.youtube-embed-container iframe,
+.vimeo-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 12.5%; /* (100% - 75%) / 2 = 12.5% side margins */
+  width: 75%; /* Match image width */
+  height: 100%;
 }
