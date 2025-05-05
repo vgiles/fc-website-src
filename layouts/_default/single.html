@@ -1,33 +1,40 @@
 {{ define "main" }}
   <article class="single-article">
-    <h2>{{ .Title }}</h2>
-    {{ if .Params.subtitle }}
-      <h4>{{ .Params.subtitle }}</h4>
-      <hr class="bar">
-    {{ end }}
+    <h1>{{ .Title }}</h1>
     
     {{ $paragraphs := split .RawContent "\n\n" }}
-    {{ $imageIndex := 0 }}
+    {{ $mediaIndex := 0 }}
+    {{ $mediaItems := union $.Params.images $.Params.youtube_videos }}
     
-    {{ range $paragraph := $paragraphs }}
+    {{ range $index, $paragraph := $paragraphs }}
       {{ $trimmed := trim $paragraph " \n" }}
       {{ if ne $trimmed "" }}
         <div class="single-paragraph-block">
           <div class="single-text-content">
             {{ $trimmed | markdownify }}
           </div>
-          {{ if $.Params.images }}
-            <div class="single-image-content">
-              <img 
-                src="{{ index $.Params.images $imageIndex | relURL }}" 
-                alt="Content image {{ add $imageIndex 1 }}" 
-                class="single-paragraph-image"
-              >
+          
+          {{ if $mediaItems }}
+            {{ $media := index $mediaItems $mediaIndex }}
+            <div class="single-media-content">
+              {{ if in $.Params.youtube_videos $media }}
+                <div class="youtube-embed-container">
+                  <iframe 
+                    src="https://www.youtube-nocookie.com/embed/{{ $media }}?modestbranding=1&rel=0"
+                    loading="lazy"
+                    allowfullscreen
+                    title="YouTube video: {{ $.Title }}"
+                    sandbox="allow-same-origin allow-scripts allow-popups">
+                  </iframe>
+                </div>
+              {{ else }}
+                <img src="{{ $media | relURL }}" 
+                     alt="Content image {{ add $mediaIndex 1 }}"
+                     class="single-paragraph-image">
+              {{ end }}
             </div>
-            {{ $imageIndex = add $imageIndex 1 }}
-            {{ if ge $imageIndex (len $.Params.images) }}
-              {{ $imageIndex = 0 }}
-            {{ end }}
+            {{ $mediaIndex = add $mediaIndex 1 }}
+            {{ if ge $mediaIndex (len $mediaItems) }}{{ $mediaIndex = 0 }}{{ end }}
           {{ end }}
         </div>
       {{ end }}

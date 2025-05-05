@@ -97,3 +97,35 @@ main .single-paragraph-block {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* YouTube Embed Styles */
+.youtube-container {
+  position: relative;
+  aspect-ratio: 16/9;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  min-height: 300px; /* Fallback for older browsers */
+  aspect-ratio: 16/9;
+  height: auto; /* Allows aspect-ratio to work */
+}
+
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .single-paragraph-block {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .youtube-container {
+    margin-top: 1.5rem;
+  }
+}
