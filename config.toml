@@ -3,13 +3,22 @@ baseURL = "https://www.faultycat.com.au/"
 languageCode = "en-us"
 
 # Navigation links (now uses Hugo's pages)
+
+[[params.header.nav]]
+    name = "Home"
+    url = "/"
+
 [[params.header.nav]]
     name = "About"
     url = "/about"  # Links to content/work/_index.md
 
 [[params.header.nav]]
     name = "Portfolio"
-    url = "/about" # Links to content/about.md
+    url = "/composition"
+
+[[params.header.nav]]
+    name = "Workshops"
+    url = "/workshops"
 
 [[params.header.nav]]
     name = "Publishing"
@@ -23,9 +32,6 @@ languageCode = "en-us"
     name = "Contact"
     url = "#contact"
 
-[[params.header.nav]]
-    name = "Home"
-    url = "/"
 
 [module]
     [[module.mounts]]
@@ -120,22 +126,22 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
         [[params.services.cards]]
             title = "Composition, Sound Design, and Production"
             image = "../img/services/composition.png"  # Path to image
-            description = "I compose original music for instrumentalists and ensembles, games, films. I design sound for installation art, games, film (or suggest something!). I do audio production and post-production including editing and mixdown, and other by need/request."
+            description = "I compose original music for instrumentalists and ensembles, games, films. I design sound for installation art, games, film (or suggest something!)"
             link = "/composition"
-            link_text = "View portfolio →"
+            link_text = "More information & portfolio →"
 
         [[params.services.cards]]
             title = "Workshops & Public Speaking" 
             image = "../img/services/workshop.png"
             description = "I offer workshops, mentoring, and public engagement such as speaking panels on public art, sound art, contemporary music."
-            link = "/sound-design"
+            link = "/workshops"
             link_text = "See examples →"
 
         [[params.services.cards]]
-            title = "Consulting"
+            title = "Audio Editing & Post Production"
             image = "../img/services/consulting.jpg"
-            description = "I offer consultation services relating to audio needs for your business." 
-            link = "/consulting"
+            description = "I offer audio editing (for example, for podcasts) and post-production, including mixing, along with general consulting services in this space." 
+            link = "#contact"
             link_text = "Get in touch →"
 
     [params.showreel]
@@ -167,6 +173,7 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
         enableDefault = true
     [markup.goldmark.renderer]
         unsafe = true
+        hardWraps = false
 
 [params.testimonials]
   title = "Testimonials"

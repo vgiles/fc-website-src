@@ -6,8 +6,6 @@
   </url><url>
     <loc>http://localhost:1313/consulting/</loc>
   </url><url>
-    <loc>http://localhost:1313/workshops/</loc>
-  </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -15,5 +13,7 @@
     <loc>http://localhost:1313/composition/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/workshops/</loc>
   </url>
 </urlset>

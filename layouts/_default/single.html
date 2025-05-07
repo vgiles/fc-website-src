@@ -11,7 +11,7 @@
       {{ if ne $trimmed "" }}
         <div class="single-paragraph-block">
           <div class="single-text-content">
-            {{ $trimmed | markdownify }}
+            {{ $trimmed | $.Page.RenderString }}
           </div>
           
           {{ if $mediaItems }}
@@ -49,5 +49,8 @@
         </div>
       {{ end }}
     {{ end }}
+    <div class="text-content" style="text-align: center; margin-top: 1.5em;">
+      <a href="/#contact" class="text-link">Get in touch about your ideas</a>
+    </div>
   </article>
 {{ end }}
