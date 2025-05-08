@@ -280,8 +280,7 @@ h3 {
 
 /* Showreel Section */
 .showreel-section {
-  background: var(--alt-bg-color);
-  padding-bottom: 4rem;
+  padding-bottom: 10rem;
 }
 
 .media-container {
