@@ -145,3 +145,78 @@
     z-index: 100; /* Higher than ::before pseudo-element */
     display: inline-block; /* Ensure clickable area matches image */
   }
+
+  /* Add this at the bottom of your _header.css file */
+
+/* Mobile Header Overflow Fix */
+@media (max-width: 768px) {
+  #header {
+    width: 100%;
+    padding: 20px 15px; /* Reduce padding on mobile */
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  /* Constrain grid layout */
+  #header {
+    grid-template-columns: auto 1fr; /* Simpler column structure */
+    column-gap: 10px; /* Reduce space between logo and heading */
+  }
+
+  /* Adjust logo size */
+  #header .logo {
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+  }
+
+  /* Make heading text wrap */
+  #header .heading {
+    white-space: normal;
+    font-size: 1.5rem;
+    word-break: break-word;
+  }
+
+  /* Ensure title fits */
+  #header .title-container h1 {
+    border-width: 5px; /* Thinner border on mobile */
+    padding: 0.1em 0.3em; /* Less padding */
+  }
+
+  /* Full-width navigation */
+  #header nav {
+    width: 100%;
+    margin: 10px -15px 0; /* Negative margin to stretch */
+    padding: 10px 15px !important; /* Match header padding */
+  }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+  #header {
+    grid-template-areas:
+      "logo heading"
+      "title title"
+      "subheading subheading"
+      "nav nav"; /* Move nav to bottom */
+    padding-top: 15px;
+  }
+
+  #header .logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  #header .heading {
+    font-size: 1.3rem;
+    align-self: center;
+  }
+
+  #header .title-container {
+    margin: 15px 0 5px;
+  }
+
+  #header nav {
+    margin-top: 15px;
+  }
+}
