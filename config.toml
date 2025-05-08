@@ -20,6 +20,10 @@ languageCode = "en-us"
     name = "Workshops"
     url = "/workshops"
 
+# [[params.header.nav]]
+#     name = "Portfolio"
+#     url = "/portfolio"
+
 [[params.header.nav]]
     name = "Publishing"
     url = "https://www.edition-resonance.xyz"
