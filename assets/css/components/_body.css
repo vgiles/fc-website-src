@@ -975,3 +975,63 @@ section {
   width: 75%; /* Match image width */
   height: 100%;
 }
+ 
+/* adding in additional cards support */
+/* Service cards in single articles */
+.single-article .services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.single-article .service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.single-article .service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.single-article .service-hero {
+  height: 180px;
+}
+
+.single-article .service-hero img {
+  transition: transform 0.5s ease;
+}
+
+.single-article .service-card:hover .service-hero img {
+  transform: scale(1.05);
+}
+
+.single-article .service-card h4 {
+  margin: 1.5rem 1.5rem 0.5rem;
+  color: var(--accent-color);
+}
+
+.single-article .service-card p {
+  margin: 0 1.5rem 1.5rem;
+  color: rgba(200, 200, 200, 0.8);
+  font-size: 0.95rem;
+}
+
+.single-article .service-link {
+  display: block;
+  margin: 0 1.5rem 1.5rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .single-article .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

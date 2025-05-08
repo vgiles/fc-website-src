@@ -5,48 +5,73 @@
     {{ $paragraphs := split .RawContent "\n\n" }}
     {{ $mediaIndex := 0 }}
     {{ $mediaItems := union $.Params.images (union $.Params.youtube_videos $.Params.vimeo_videos) }}
+    {{ $cardItems := $.Params.cards | default slice }}
+    {{ $cardIndex := 0 }}
     
     {{ range $index, $paragraph := $paragraphs }}
       {{ $trimmed := trim $paragraph " \n" }}
       {{ if ne $trimmed "" }}
-        <div class="single-paragraph-block">
-          <div class="single-text-content">
-            {{ $trimmed | $.Page.RenderString }}
-          </div>
-          
-          {{ if $mediaItems }}
-            {{ $media := index $mediaItems $mediaIndex }}
-            <div class="single-media-content">
-              {{ if in $.Params.images $media }}
-                <img src="{{ $media | relURL }}" 
-                     alt="Content image {{ add $mediaIndex 1 }}"
-                     class="single-paragraph-image">
-              {{ else if in $.Params.youtube_videos $media }}
-                <div class="youtube-embed-container">
-                  <iframe 
-                    src="https://www.youtube-nocookie.com/embed/{{ $media }}?modestbranding=1&rel=0"
-                    loading="lazy"
-                    allowfullscreen
-                    title="YouTube video: {{ $.Title }}"
-                    sandbox="allow-same-origin allow-scripts allow-popups">
-                  </iframe>
+        {{ if eq $trimmed "<!--cards-->" }}
+          {{ if gt (len $cardItems) 0 }}
+            <div class="single-paragraph-block">
+              <div class="single-text-content" style="grid-column: 1/-1">
+                <div class="services-grid" style="margin: 2rem 0">
+                  {{ range $cardItems }}
+                    <div class="service-card">
+                      <div class="service-hero">
+                        <img src="{{ .image | relURL }}" alt="{{ .title }}" loading="lazy">
+                      </div>
+                      <h4>{{ .title }}</h4>
+                      <p>{{ .description }}</p>
+                      <a href="{{ .link | relURL }}" class="service-link">
+                        {{ .link_text | default "Learn more" }}
+                      </a>
+                    </div>
+                  {{ end }}
                 </div>
-              {{ else if in $.Params.vimeo_videos $media }}
-                <div class="vimeo-embed-container">
-                  <iframe 
-                    src="https://player.vimeo.com/video/{{ $media }}?title=0&byline=0&portrait=0" 
-                    frameborder="0"
-                    allowfullscreen
-                    title="Vimeo video: {{ $.Title }}"
-                    loading="lazy">
-                  </iframe>
-                </div>
-              {{ end }}
+              </div>
             </div>
-            {{ $mediaIndex = add $mediaIndex 1 }}
-            {{ if ge $mediaIndex (len $mediaItems) }}{{ $mediaIndex = 0 }}{{ end }}
           {{ end }}
-        </div>
+        {{ else }}
+          <div class="single-paragraph-block">
+            <div class="single-text-content">
+              {{ $trimmed | $.Page.RenderString }}
+            </div>
+            
+            {{ if $mediaItems }}
+              {{ $media := index $mediaItems $mediaIndex }}
+              <div class="single-media-content">
+                {{ if in $.Params.images $media }}
+                  <img src="{{ $media | relURL }}" 
+                       alt="Content image {{ add $mediaIndex 1 }}"
+                       class="single-paragraph-image">
+                {{ else if in $.Params.youtube_videos $media }}
+                  <div class="youtube-embed-container">
+                    <iframe 
+                      src="https://www.youtube-nocookie.com/embed/{{ $media }}?modestbranding=1&rel=0"
+                      loading="lazy"
+                      allowfullscreen
+                      title="YouTube video: {{ $.Title }}"
+                      sandbox="allow-same-origin allow-scripts allow-popups">
+                    </iframe>
+                  </div>
+                {{ else if in $.Params.vimeo_videos $media }}
+                  <div class="vimeo-embed-container">
+                    <iframe 
+                      src="https://player.vimeo.com/video/{{ $media }}?title=0&byline=0&portrait=0" 
+                      frameborder="0"
+                      allowfullscreen
+                      title="Vimeo video: {{ $.Title }}"
+                      loading="lazy">
+                    </iframe>
+                  </div>
+                {{ end }}
+              </div>
+              {{ $mediaIndex = add $mediaIndex 1 }}
+              {{ if ge $mediaIndex (len $mediaItems) }}{{ $mediaIndex = 0 }}{{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
       {{ end }}
     {{ end }}
     <div class="text-content" style="text-align: center; margin-top: 1.5em;">
