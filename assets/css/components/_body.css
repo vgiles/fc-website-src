@@ -974,3 +974,43 @@ section {
   width: 75%; /* Match image width */
   height: 100%;
 }
+
+/* adding adjusted mobile responsiveness for showreel */
+
+/* Enhanced Showreel Mobile Styles */
+@media (max-width: 1199px) {
+  /* Ensure media containers stay visible */
+  .media-container {
+    width: 100%;
+    min-height: 200px; /* Fallback for aspect-ratio */
+    max-width: 100% !important; /* Override any other max-width */
+    margin: 1rem auto;
+  }
+
+  /* Specific SoundCloud adjustments */
+  .soundcloud-container {
+    aspect-ratio: 1/0.6; /* More mobile-friendly ratio */
+    min-height: 250px; /* Minimum usable height */
+  }
+
+  /* Force iframes to maintain visibility */
+  .media-container iframe {
+    min-height: 200px;
+  }
+}
+
+/* Additional Mobile Tweaks */
+@media (max-width: 480px) {
+  .showreel-section {
+    padding-bottom: 5rem;
+  }
+
+  .soundcloud-container {
+    aspect-ratio: 1/0.8; /* Even taller on very small screens */
+  }
+
+  /* Add some space between stacked elements */
+  .showreel-embed-container {
+    gap: 3rem;
+  }
+}
