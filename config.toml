@@ -54,7 +54,7 @@ languageCode = "en-us"
     [params.header]
         title = "Faulty Cat Productions"
         heading = "Vincent Giles"
-        subHeading = "Uncompromising sound and music for exploratory art projects"
+        subHeading = "sound and music for exploratory art projects"
         webTag = "Values-driven sonic innovation, together."
         logo = "../logo.svg"
 
