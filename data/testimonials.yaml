@@ -1,19 +1,29 @@
 - name: "Jasmine Powell"
   role: "Artistic Director, Silent Revolution"
-  quote: "Vince has aided me in sound in two government-funded projects and was of tremendous support, technically and on a personal level. In the first project Vince assisted with voice recording, sound design and editing, and sound presentation in a public space. In the second project Vince supported three women to voice record us telling our stories of trauma which he then sound edited for a short film. Vince has the technical skills and personal warmth to collaborate with vulnerable people telling difficult stories, and that means the world to me. Thank you, Vince : )"
+  quote: "Vince has aided me in sound in two government-funded projects and was of tremendous support, technically and on a personal level. In the first project Vince assisted with voice recording, sound design and editing, and sound presentation in a public space. In the second project Vince supported three women to voice record us telling our stories of trauma which he then sound edited for a short film. Vince has the technical skills and personal warmth to collaborate with vulnerable people telling difficult stories, and that means the world to me. Thank you, Vince :)"
+  snippet: "Vince has the technical skills and personal warmth to collaborate with vulnerable people telling difficult stories, and that means the world to me. Thank you, Vince :)"
+  category: "audio"
 
 - name: "Nikki Ralston"
   role: "Arts and Cultural Development Office, Banyule City Council"
   quote: "As Arts and Cultural Development Officer for Banyule City Council I engaged Vincent to work on a number of different projects, including as a speaker and panelists in an online forum designed to support local artists to successfully respond to public art opportunities. As a highly skilled composer, producer and sound artist with experience installing work in the public realm, Vincent's contribution was invaluable. He provided insights and advice that were of clear benefit to emerging artists, and also informed my own processes and approach to designing arts projects. Vincent's extensive cross artform knowledge and responsive, contemporary practice provided a new and important perspective to the discussion about public art, and their engaging and inclusive presence was welcomed by other panelists and participants."
+  snippet: "As a highly skilled composer, producer and sound artist with experience installing work in the public realm, Vincent's contribution was invaluable."
+  category: "composition"
 
 - name: "Ian Parsons"
   role: "Host of The Sound Barrier on PBSFM, 106.7"
+  snippet: “For Vincent, truth and, from it, musical authenticity, comes not from the mystical or the subjective but from the search to be informed about the world and about the media with which the musician works.”
   quote: “For Vincent, truth and, from it, musical authenticity, comes not from the mystical or the subjective but from the search to be informed about the world and about the media with which the musician works.”
+  category: "composition"
 
 - name: "Jennifer Hauptman"
   role: "Journalist, Buzzcuts"
+  snippet: “What is clear is that Giles music is often intimately linked to the setting in which it is appreciated – there is an intentional blurring of the distinction between the content of the piece and the ambient noise of the space.”
   quote: “What is clear is that Giles music is often intimately linked to the setting in which it is appreciated – there is an intentional blurring of the distinction between the content of the piece and the ambient noise of the space.”
+  category: "composition"
 
 - name: "Shaun Barlow"
   role: "Flautist and Music Critic"
+  snippet: “Vincent Giles Differing Dialogues is another adventure through the wilder sounds that the low flutes bring to the table … [He] paints an amazing landscape exploiting so many of the wondrous extended techniques offered by the instrumentation.”
   quote: “Vincent Giles Differing Dialogues is another adventure through the wilder sounds that the low flutes bring to the table … [He] paints an amazing landscape exploiting so many of the wondrous extended techniques offered by the instrumentation.”
+  category: "composition"
