@@ -150,7 +150,7 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
 
     [params.showreel]
         title = "Showreel"
-        subtitle = "Uncompromising sound and music for exploratory projects."
+        subtitle = "sound and music for exploratory projects"
 
         # Choose ONE of these:
         vimeo_id = ""  # Just the ID from Vimeo URL
