@@ -6,6 +6,7 @@ images:
 youtube_videos:
   - xj5h_1QNZFo
   - 27ou8HQGOXM
+categories: ["composition"]
 ---
 My music has been performed by collaborators like [Peter Sheridan](https://www.marriedflutes.net/), [Lizzy Welsh](https://www.lizzywelsh.com/), and Fragments Ensemble across North America, Europe, Asia, and Australia, at festivals from *Darmstädter Ferienkurse* to *Tura’s Totally Huge New Music Festival*. The scores themselves are published by [Wirripang](https://www.australiancomposers.com.au/search?q=vincent+giles), [Edition Resonance](https://www.edition-resonance.xyz), and the [Australian Music Centre](https://www.australianmusiccentre.com.au/artist/giles-vincent), and reach new audiences around the world. I'm driven by collaboration, and indeed, have [written about the importance of that](https://www.cambridgescholars.com/product/978-1-5275-0577-3), and whether written for baroque instruments, improvising ensembles, or autonomous computer agents, I believe my best work comes out with other people. It’s why I co-founded Tilde: to create spaces for new collaborations to emerge.  [Click here for a full list of art-music pieces from my main composer website](https://www.vgiles.net/music)  {{< vimeo 364690287 >}}
 

@@ -5,7 +5,22 @@
     {{ $paragraphs := split .RawContent "\n\n" }}
     {{ $mediaIndex := 0 }}
     {{ $mediaItems := union $.Params.images (union $.Params.youtube_videos $.Params.vimeo_videos) }}
+        {{/* NEW: Testimonial logic */}}
+    {{ if .Params.categories }}
+      {{ $matchingTestimonials := where (index .Site.Data "testimonials") "category" "in" .Params.categories }}
+      {{ with $matchingTestimonials }}
+        <div class="testimonial-append">
+          {{ range first 1 . }} {{/* Only show first matching testimonial */}}
+            <blockquote>
+              {{ .quote | $.Page.RenderString }}
+              <footer>— {{ .name }}{{ with .role }}, {{ . }}{{ end }}</footer>
+            </blockquote>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
     
+    {{/* Process paragraphs as before */}}
     {{ range $index, $paragraph := $paragraphs }}
       {{ $trimmed := trim $paragraph " \n" }}
       {{ if ne $trimmed "" }}
@@ -49,6 +64,7 @@
         </div>
       {{ end }}
     {{ end }}
+
     <div class="text-content" style="text-align: center; margin-top: 1.5em;">
       <a href="/#contact" class="text-link">Get in touch about your ideas</a>
     </div>

@@ -4,6 +4,7 @@ subtitle: "Values-driven sonic innovation, together."
 images:
   - "img/general/service-workshop/vg-tilde3.jpg"
   - "img/general/service-workshop/vg-tilde.jpg"
+categories: ["workshops"]
 ---
 With nearly two decades of music education experience—including ten years in tertiary institutions like the Australian Institute of Music, Monash University, and Collarts—I've had the privilege of mentoring emerging artists who now thrive in their own creative careers. My approach blends rigorous training with the kind of real-world insights that only come from active artistic practice. I regularly share my perspective on creative practice through invited talks at:
 - Community arts groups, like MediaLab Melbourne and Banyule City Council's Arts and Culture programme
