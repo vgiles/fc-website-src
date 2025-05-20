@@ -180,7 +180,7 @@ h3 {
 .more-link {
   display: inline-block;
   margin-top: 1rem;
-  color: var(--accent-color);
+  color: #f1e2d6;
   text-decoration: none;
   transition: all 0.3s ease;
 }

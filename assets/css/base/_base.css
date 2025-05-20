@@ -11,7 +11,7 @@
   --alt-bg-color: rgba(12, 133, 246, 0.4); /* New darker alt */
   
   /* Accents */
-  --primary-accent: rgb(241, 155, 56); /* Vibrant orange */
+  --primary-accent: #FFC14D; /* Vibrant orange */
   --secondary-accent: rgb(222, 200, 147); /* Soft gold */
   --heading-color: var(--secondary-accent); /* Gold headings */
   
@@ -23,7 +23,7 @@
     /* Core Palette */
     --dark-bg: #27243c;
     --gold-accent: #D4AF37;
-    --teal-interactive: #5FB0B5;
+    --teal-interactive: #FFD8B1;
     --cream-text: #F1E6D2;
     --rust-border: #B35730;
   

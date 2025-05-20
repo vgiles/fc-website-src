@@ -34,7 +34,7 @@ languageCode = "en-us"
 
 [[params.header.nav]]
     name = "Contact"
-    url = "#contact"
+    url = "https://www.faultycat.com.au/#contact"
 
 
 [module]
@@ -54,8 +54,8 @@ languageCode = "en-us"
     [params.header]
         title = "Faulty Cat Productions"
         heading = "Vincent Giles"
-        subHeading = "sound and music for exploratory art projects"
-        webTag = "Values-driven sonic innovation, together."
+        subHeading = "Sound and music for exploratory art projects"
+        webTag = "together we can build lasting sonic experiences"
         logo = "../logo.svg"
 
     [params.about]
@@ -69,7 +69,7 @@ Artists, makers, and curators often want **boundary-pushing sound and music** or
         blurb_style = "border-right: 3px solid #b89c66; padding-right: 1.5rem;" # Custom CSS
         more_link = "/about"  # URL for the page
         more_text = "Read more →"  # Link text
-        more_style = "display: inline-block; margin-top: 1rem; color: #b89c66;"  # Optional    
+        more_style = "display: inline-block; margin-top: 1rem; color:rgb(242, 246, 216);"  # Optional    
 
     [params.about-full]
         title = "About Vincent & Faulty Cat Productions"
@@ -150,7 +150,7 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
 
     [params.showreel]
         title = "Showreel"
-        subtitle = "sound and music for exploratory projects"
+        subtitle = "Sound and music for exploratory projects."
 
         # Choose ONE of these:
         vimeo_id = ""  # Just the ID from Vimeo URL
@@ -181,4 +181,4 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
 
 [params.testimonials]
   title = "Testimonials & Reviews"
-  subtitle = "What people think of my work"
+  subtitle = "What people think of my work."
