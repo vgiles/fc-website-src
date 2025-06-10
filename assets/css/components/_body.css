@@ -1026,6 +1026,7 @@ section {
 
 .testimonial-append blockquote {
   margin: 0;
+  font-size: 1.2rem;
   font-style: italic;
 }
 

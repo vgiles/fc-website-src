@@ -125,7 +125,7 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
 
     [params.services]
         title = "What I offer"
-        subtitle = "Values-driven sonic innovation, together."
+        subtitle = "Together we can build lasting sonic experiences."
 
         [[params.services.cards]]
             title = "Composition, Sound Design, and Production"
