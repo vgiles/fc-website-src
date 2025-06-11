@@ -9,10 +9,11 @@
       "subheading subheading subheading";
     grid-template-columns: auto auto 1fr;
     align-items: center;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 30px 30px 20px;
     --logo-adjust: -6px;
+    width: 100%;
   }
   
   /* Logo (aligned left) */
@@ -20,7 +21,7 @@
     grid-area: logo;
     height: 100px;
     width: 100px;
-    margin-right: 20px;
+    margin-right: 5px;
     align-self: center;
     position: relative;
     /* top: -5px; */
@@ -59,7 +60,7 @@
   font-size: clamp(3.5rem, 8vw, 5rem) !important; /* Force consistency */
   color: rgb(255, 222, 115) !important;
   display: inline-block;
-  padding: 0.2em 0.5em;
+  padding: 0.2em 0.2em;
   border: 10px solid white;
   border-radius: 12px;
   margin: 0;
@@ -87,10 +88,17 @@
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
   
+#header nav a:hover,
+#header nav a:focus {
+  background: rgba(255, 222, 115, 0.2); /* Light gold highlight */
+  transition: background 0.5s ease;
+}
+
 /* Navigation */
 #header nav {
     grid-area: nav;
     text-align: right;
+    white-space: nowrap;
   }
   
   #header nav a {
@@ -159,7 +167,7 @@
 
   /* Constrain grid layout */
   #header {
-    grid-template-columns: auto 1fr; /* Simpler column structure */
+    grid-template-columns: 100px 0.5fr; /* Simpler column structure */
     column-gap: 10px; /* Reduce space between logo and heading */
   }
 
@@ -180,7 +188,7 @@
   /* Ensure title fits */
   #header .title-container h1 {
     border-width: 5px; /* Thinner border on mobile */
-    padding: 0.1em 0.3em; /* Less padding */
+    padding: 0.1em 0.1em; /* Less padding */
   }
 
   /* Full-width navigation */
@@ -190,7 +198,6 @@
     padding: 10px 15px !important; /* Match header padding */
   }
 }
-
 /* Extra small devices (phones, 480px and down) */
 @media (max-width: 480px) {
   #header {
@@ -198,25 +205,59 @@
       "logo heading"
       "title title"
       "subheading subheading"
-      "nav nav"; /* Move nav to bottom */
+      "nav nav";
+    grid-template-columns: 1fr 1fr; /* Equal columns for logo and heading */
+    justify-items: center; /* Center items within their grid cells */
+    text-align: center; /* Center text */
     padding-top: 15px;
+    gap: 10px;
   }
 
+  /* Center the logo in its grid cell */
   #header .logo {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    transform: none;
+    justify-self: center; /* Center horizontally in grid cell */
   }
 
+  /* Center the heading */
   #header .heading {
     font-size: 1.3rem;
-    align-self: center;
+    white-space: normal;
+    margin: 0;
+    text-align: left; /* Align text to left within centered container */
+    justify-self: start; /* Align to start of grid cell */
+    width: 100%; /* Take full width of grid cell */
   }
 
-  #header .title-container {
-    margin: 15px 0 5px;
+  /* Adjust heading alignment when next to logo */
+  #header .logo + .heading {
+    text-align: left; /* Keep text left-aligned next to logo */
+    justify-self: start; /* Align to start of grid cell */
+  }
+
+  /* Center title and subheading */
+  #header .title-container,
+  #header .kicker {
+    text-align: center;
+    width: 100%;
   }
 
   #header nav {
-    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 8px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  #header nav a {
+    margin: 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
   }
 }
+
