@@ -6,6 +6,6 @@ images:
   - "img/general/service-comp/comp_1.jpg"
 categories: ["audio"]
 ---
-Blah blah blah paragraph 1.
+I can help you with any audio editing task, including podcasts, syncing to video footage, or overdubbing. I have done work editing podcasts, recording voice-overs (and editing to footage), and more.
 
-Blah blah blah paragraph 2.
+If you are looking for a post-production engineer, I can help you work on your final mixdown, mastering for digital or traditional distribution, including experimental strategies such as binaural encoding.
