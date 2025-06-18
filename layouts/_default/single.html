@@ -9,14 +9,16 @@
     {{ if .Params.categories }}
       {{ $matchingTestimonials := where (index .Site.Data "testimonials") "category" "in" .Params.categories }}
       {{ with $matchingTestimonials }}
-        <div class="testimonial-append">
-          {{ range first 1 . }} {{/* Only show first matching testimonial */}}
+      <div class="testimonial-grid">
+        {{ range first 2 . }}
+          <div class="testimonial-item">
             <blockquote>
               {{ .quote | $.Page.RenderString }}
-              <footer>— {{ .name }}{{ with .role }}, {{ . }}{{ end }}</footer>
+              <footer>— <i>{{ .name }}</i>{{ with .role }}, {{ . }}{{ end }}</footer>
             </blockquote>
-          {{ end }}
-        </div>
+          </div>
+        {{ end }}
+      </div>
       {{ end }}
     {{ end }}
     

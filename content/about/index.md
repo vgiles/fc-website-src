@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Vincent"
 subtitle: "Let’s turn your idea into a quietly transformative experience that is creatively uncompromising."
 images:
   - "img/general/about/live_1.jpg"

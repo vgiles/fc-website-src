@@ -701,14 +701,28 @@ section {
   max-width: var(--width-content);
   margin: 2rem auto;
   padding: 0 1rem;
+  /* align-items: center; */
 }
 
 .single-article h1 {
+  margin: 0 auto 3rem;
   color: #b89c66;
   text-align: center;
   margin-bottom: 3rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #333;
+  position: relative; /* Needed for the pseudo-elements */
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between text and lines */
+  max-width: 80%;
+}
+
+/* Create the lines using pseudo-elements */
+.single-article h1::before,
+.single-article h1::after {
+  content: "";
+  flex: 1; /* Makes the lines grow to fill available space */
+  height: 1px;
+  background-color: var(--primary-accent); /* Line color */
 }
 
 .single-paragraph-block {
@@ -1018,10 +1032,14 @@ section {
 .testimonial-append {
   margin: 1em 4em;
   padding: 1em 3em 0em 3em;
-  border-left: 8px solid var(--primary-accent);
+  border-left: 2px solid var(--primary-accent);
+  border-top: 2px solid var(--primary-accent);
+  border-right: 2px solid var(--primary-accent);
+  border-bottom: 2px solid var(--primary-accent);
+  border-radius: 15px 75px 15px 75px;
   background: linear-gradient(to bottom, 
-    rgba(17, 17, 17, 1.0) 0%,
-    rgba(85, 22, 22, 0.6) 100%);
+    rgba(17, 17, 17, 0.7) 0%,
+    rgba(85, 22, 22, 0.1) 100%);
 }
 
 .testimonial-append blockquote {
@@ -1031,7 +1049,54 @@ section {
 }
 
 .testimonial-append footer {
-  margin: 0em 2em;
+  margin: 0em 1em;
   font-style: normal;
   font-weight: bold;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 2em auto; /* Added outer spacing */
+  align-items: center;
+  max-width: fit-content;
+}
+
+/* When only one testimonial exists */
+.testimonial-grid:has(> :only-child) {
+  grid-template-columns: minmax(auto, 600px); /* Single centered column */
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start; /* Prevents uneven height stretching */
+  }
+}
+
+.testimonial-item {
+  padding: 1.5rem;
+  border: 2px solid var(--primary-accent);
+  border-radius: 30px;
+  background: linear-gradient(to bottom, 
+    rgba(17, 17, 17, 0.7) 0%,
+    rgba(85, 22, 22, 0.1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Internal spacing between elements */
+  text-align: left;
+  color: var(--primary-accent);
+}
+
+.testimonial-item blockquote {
+  margin: 0;
+  flex-grow: 1; /* Makes quote take available space */
+}
+
+.testimonial-item footer {
+  margin-top: auto; /* Pushes footer to bottom */
+  padding-top: 1rem; /* Extra space before footer */
+  font-style: normal;
+  padding-bottom: 1rem;
 }
