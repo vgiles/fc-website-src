@@ -1,5 +1,5 @@
 ---
-title: "Audio editing and post-production"
+title: "Audio Editing and Post-Production"
 subtitle: "Let’s turn your idea into a quietly transformative experience that is creatively uncompromising."
 images:
   - "img/general/service-comp/live_1.jpg"
