@@ -8,11 +8,11 @@
   sub: "blah"
   logo: ""
   entries:
-    - entry-one: 
+    - entry_one: 
       blah: ""
-    - entry-two:
+    - entry_two:
       blah: ""
-    - entry-three: ""
+    - entry_three: ""
 
 - category: "origin"
   head: "blah"
@@ -51,9 +51,9 @@
 
 - category: "outcomes"
   head: "What you can look forward to"
-  content-left: "Brief description of outcomes"
-  content-right-head: "Working with me on music or sound is a good fit if:"
-  content-right: |
+  content_left: "Brief description of outcomes"
+  content_right-head: "Working with me on music or sound is a good fit if:"
+  content_right: |
     * You want creative, high quality music that enhances whatever project you're working on. 
     * You want to work with somebody who _gets it_ from a grassroots perspective.
     * You're getting stuck understanding or implementing a technical or technological solution in your project.
@@ -80,35 +80,35 @@
 - category: "how-it-works"
   head: "The basic process"
   process:
-    step-one: "We will have an initial video consultation to discuss your project idea and how I can work best with you."
-    step-two: "We will agree on the terms and negotiate work contracts, and I will begin the work."
-    step-three: "I will provide regular updates and opportunities for feedback throughout (if agreed upon) the process."
-    step-four: "I will deliver the outcome as per the agreement."
+    step_one: "We will have an initial video consultation to discuss your project idea and how I can work best with you."
+    step_two: "We will agree on the terms and negotiate work contracts, and I will begin the work."
+    step_three: "I will provide regular updates and opportunities for feedback throughout (if agreed upon) the process."
+    step_four: "I will deliver the outcome as per the agreement."
   
 - category: "pricing"
   head: "Pricing - Composition or Music Production"
   packages:
-    package-one:
+    package_one:
       title: "Instrumental/vocal composition"
       subtitle: "New music for soloists/ensembles"
       content: "A commissioned composition with score and parts produced (either handwritten or typeset by negotiation)."
       price: "Starts at **$1200** per minute of music (four or fewer independent lines)"
-    package-two:
+    package_two:
       title: "Electronically produced composition"
       subtitle: "Film, games, media"
       content: "A commissioned composition with audio assets delivered as per the needs of your project."
       price: "Starts at **$1200** per minute of music (four or fewer independent lines)"
-    package-three:
+    package_three:
       title: "Music production"
       subtitle: "Let me guide your project"
       content: "I will work with you on your project, as a project manager, drawing on my decades of experience, and potentially contributing composition and/or post-production (as agreed)."
       price: "Starts at **$389** per hour (min three-hour booking)"
-    package-four:
+    package_four:
       title: "Custom"
       subtitle: "I understand..."
       content: "That not all projects fit neatly within these price frames. Please get in touch and we can discuss what might be possible in your budget."
   cta: "Let's talk about your ideas"
-  cta-link: "https://faultycat.com.au/#contact"
+  cta_link: "https://faultycat.com.au/#contact"
 
 
 

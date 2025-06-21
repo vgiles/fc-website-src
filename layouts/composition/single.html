@@ -1,0 +1,74 @@
+{{ define "main" }}
+  <article class="single-article">
+    <h1>{{ .Title }}</h1>
+    
+    {{ $paragraphs := split .RawContent "\n\n" }}
+    {{ $mediaIndex := 0 }}
+    {{ $mediaItems := union $.Params.images (union $.Params.youtube_videos $.Params.vimeo_videos) }}
+        {{/* NEW: Testimonial logic */}}
+    {{ if .Params.categories }}
+      {{ $matchingTestimonials := where (index .Site.Data "testimonials") "category" "in" .Params.categories }}
+      {{ with $matchingTestimonials }}
+      <div class="testimonial-service-grid">
+        {{ range first 2 . }}
+          <div class="testimonial-service-item">
+            <blockquote>
+              {{ .quote | $.Page.RenderString }}
+              <footer>— <i>{{ .name }}</i>{{ with .role }}, {{ . }}{{ end }}</footer>
+            </blockquote>
+          </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    {{ end }}
+       {{/* Load YAML data based on front matter (e.g., data: "service-comp") */}}
+    {{ $data := index .Site.Data .Params.data }}
+    
+    {{/* Process each category in YAML */}}
+    {{ range $data }}
+      <section id="{{ .category }}" class="category-section">
+        <h2>{{ .head }}</h2>
+        
+        {{/* Handle different content structures per category */}}
+        {{ if eq .category "origin" "offer" "story" }}
+          <div class="content-block">
+            {{ .content | $.Page.RenderString }}
+          </div>
+        
+        {{ else if eq .category "outcomes" }}
+          <div class="outcomes-grid">
+            <div class="left">
+              {{ .content_left | $.Page.RenderString }}
+            </div>
+            <div class="right">
+              <h3>{{ .content_right_head }}</h3>
+              {{ .content_right | $.Page.RenderString }}
+            </div>
+          </div>
+        
+        {{ else if eq .category "how-it-works" }}
+          <ol class="process-steps">
+            {{ range .process }}
+              <li>{{ . | $.Page.RenderString }}</li>
+            {{ end }}
+          </ol>
+        
+        {{ else if eq .category "pricing" }}
+          <div class="pricing-packages">
+            {{ range .packages }}
+              <div class="package">
+                <h3>{{ .title }}</h3>
+                <h4>{{ .subtitle }}</h4>
+                <p>{{ .content | $.Page.RenderString }}</p>
+                <div class="price">{{ .price | $.Page.RenderString }}</div>
+              </div>
+            {{ end }}
+            {{ with .cta }}
+              <a href="{{ $.Params.cta_link }}" class="cta-button">{{ . }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </section>
+    {{ end }}
+
+{{ end }}
