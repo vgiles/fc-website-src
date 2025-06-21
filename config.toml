@@ -64,7 +64,7 @@ languageCode = "en-us"
 
     [params.about]
         title = "Hello!"
-        bio = "I'm **Vincent**, a **composer, sound designer, and producer**"
+        bio = "I'm **Vincent**, a biscuit-powerd **composer, sound designer, and producer**, and reformed bass player"
         image = "img/giles_promo.jpg"
         image_width = "300px"
         blurb = """
@@ -72,7 +72,7 @@ Artists, makers, and curators often want **boundary-pushing sound and music** or
 """
         blurb_style = "border-right: 3px solid #b89c66; padding-right: 1.5rem;" # Custom CSS
         more_link = "/about"  # URL for the page
-        more_text = "Read more →"  # Link text
+        more_text = "Read about my story so far →"  # Link text
         more_style = "display: inline-block; margin-top: 1rem; color:rgb(242, 246, 216);"  # Optional    
 
     [params.about-full]
@@ -128,8 +128,8 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
 
 
     [params.services]
-        title = "What I offer"
-        subtitle = "Together we can build lasting sonic experiences."
+        title = "I want to build moving, challenging, and lasting sonic experiences"
+        subtitle = "These are my offerings to the world"
 
         [[params.services.cards]]
             title = "Composition, Sound Design, and Production"
