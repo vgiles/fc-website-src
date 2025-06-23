@@ -1183,3 +1183,103 @@ section {
 .single-page section {
   outline: 3px dashed red !important;
 }
+
+/* ===== Service Page Styles ===== */
+.service-page {
+  all: initial; /* Nuclear reset */
+  clip-path: none !important;
+  /* Other styles */
+  --service-bg: linear-gradient(to bottom, 
+    rgba(52, 51, 51, 0.7) 0%,
+    rgba(85, 22, 22, 0.1) 100%);
+  --service-border: 2px solid var(--primary-accent);
+  --service-radius: 30px;
+  max-width: var(--width-content);
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: var(--service-bg) !important;
+}
+
+/* Base section style (matches testimonials) */
+.service-section {
+  background: var(--service-bg);
+  border: rgba(200, 200, 200, 0.9);
+  border-radius: 5%;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Grid layout for multi-entry sections */
+.service-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Default grid (adjust columns as needed) */
+@media (min-width: 768px) {
+  .service-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* Service cards */
+.service-card {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: calc(var(--service-radius) - 10px);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Pricing specific styles */
+.service-section.pricing .service-card {
+  border-left: 3px solid var(--accent-color);
+}
+
+/* Outcomes split layout */
+.outcomes-split {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .outcomes-split {
+    flex-direction: row;
+  }
+  .outcomes-left { flex: 1; }
+  .outcomes-right { flex: 1; }
+}
+
+/* ===== Single Page Section Overrides ===== */
+.single-page-layout section,
+.single-article section {
+  /* Disable diagonal cuts */
+  clip-path: none !important;
+  margin-top: 0 !important;
+  
+  /* Reset backgrounds */
+  background: 
+    linear-gradient(to bottom, 
+      rgba(53, 37, 118, 0.7) 0%,
+      rgba(37, 8, 41, 0.1) 100%
+    ) !important;
+  
+  /* Reapply desired styling */
+  border: 1px solid rgba(249, 227, 178, 0.9);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .single-page-layout section {
+    padding: 1.5rem !important;
+  }
+}
