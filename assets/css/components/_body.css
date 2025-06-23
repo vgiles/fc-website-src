@@ -662,7 +662,8 @@ section {
 
 .image-content {
   flex: 1;
-  min-width: 200px;
+  min-width: 100px;
+
 }
 
 .paragraph-image {
@@ -1299,6 +1300,8 @@ section {
 .headline-images {
   display: grid;
   gap: 1rem;
+  border-radius: 12px;
+  margin-right: 1rem;
 }
 
 /* Niche Cards */
@@ -1357,14 +1360,108 @@ section {
   background: rgba(62, 67, 1, 0.4);
   color: white;
   border-radius: 20px;
-  transition: all 0.3s ease;
+  transition: transform 0.6s ease;
   text-align: center;
   margin: 0 auto;
   font-size: 1.5rem;
   border: 1px dashed;
+  @media (max-width: 768px) {
+    width: 60%;
+    font-size: 1rem;
+  }
 }
 
 .headline-grid h3 {
   padding-top: 0.5rem;
   font-size: 1.5rem;
+}
+
+/* Content Images - Rounded Corners */
+.content-image {
+  border-radius: 12px; /* Adjust this value for more/less rounding */
+  width: 100%; /* Ensures responsive scaling */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Optional: for better cropping */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional subtle shadow */
+}
+
+/* If you need different rounding per category
+.origin-image .content-image {
+  border-radius: 12px 0 12px 0; /* Diagonal rounding 
+}
+
+.story-image .content-image {
+  border-radius: 50%; /* Circular images 
+} */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-image {
+    border-radius: 8px; /* Slightly less rounding on mobile */
+  }
+}
+
+
+.pricing-card {
+  background: rgba(25, 25, 25, 0.7); /* Semi-transparent dark tint */
+  border: 1px solid var(--primary-accent);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 1.0s ease;
+}
+
+.pricing-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.pricing-card h3 {
+  color: var(--primary-accent);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.pricing-card h4 {
+  color: var(--text-muted);
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.package-content {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1; /* Makes cards equal height */
+}
+
+.price {
+  background: rgba(184, 156, 102, 0.15); /* Gold tint background */
+  color: var(--primary-accent);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: auto; /* Pushes price to bottom */
+  border: 1px solid rgba(184, 156, 102, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pricing-card {
+    padding: 1.25rem;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+  }
 }

@@ -30,13 +30,13 @@
               <h2 class="headline-title">{{ .head }}</h2>
               <h3>{{ .sub | $.Page.RenderString }}</h3>
               {{ with .call }}
-                <a href="#contact" class="cta-button">{{ . }}</a>
+                <a href="#offer" class="cta-button">{{ . }}</a>
               {{ end }}
             </div>
             <div class="headline-col2">
-                {{ with .images }}
+                {{ if isset . "image_desc" }}
                 <div class="headline-images">
-                    <img src="{{ . }}" alt="" class="headline-image">
+                    <img src="{{ .images }}" alt="{{ .image_desc }}" class="headline-images">
                 </div>
               {{ end }}
 
@@ -59,24 +59,26 @@
             {{ end }}
           </div>
 
-        {{/* ORIGIN/STORY LAYOUT */}}
-        {{ else if or (eq .category "origin") (eq .category "story") }}
-          <div class="service-grid {{ .category }}-grid" id="{{ .category | urlize | lower }}">
-            {{ if eq .category "origin" }}
-              <div class="service-image">
-                {{ with .images }}<img src="{{ . }}" alt="">{{ end }}
+          {{/* ORIGIN/STORY LAYOUT */}}
+          {{ else if or (eq .category "origin") (eq .category "story") }}
+            <div class="service-grid {{ .category }}-grid" id="{{ .category | urlize | lower }}">
+              {{ if eq .category "origin" }}
+                <div class="origin-image">
+                  {{ if isset . "image_desc" }}<img src="{{ .image }}" alt="{{ .image_desc }}" class="content-image">{{ end }}
+                </div>
+              {{ end }}
+              
+              <div class="content-text">
+                <h2>{{ .head }}</h2>
+                <div class="single-text-content">{{ .content | $.Page.RenderString }}</div>
               </div>
-            {{ end }}
-            <div class="content-text">
-              <h2 class="content-title">{{ .head }}</h2>
-              <div class="content-body">{{ .content | $.Page.RenderString }}</div>
+              
+              {{ if eq .category "story" }}
+                <div class="story-image">
+                  {{ if isset . "image_desc" }}<img src="{{ .image }}" alt="{{ .image_desc }}" class="content-image">{{ end }}
+                </div>
+              {{ end }}
             </div>
-            {{ if eq .category "story" }}
-              <div class="service-image">
-                {{ with .images }}<img src="{{ . }}" alt="">{{ end }}
-              </div>
-            {{ end }}
-          </div>
 
         {{/* OFFER/OUTCOMES LAYOUT */}}
         {{ else if or (eq .category "offer") (eq .category "outcomes") }}
@@ -101,22 +103,22 @@
 
         {{/* PRICING LAYOUT */}}
         {{ else if eq .category "pricing" }}
-          <h2 class="pricing-title" id="{{ .category | urlize | lower }}">{{ .head }}</h2>
+          <h2 id="{{ .category | urlize | lower }}">{{ .head }}</h2>
           <div class="pricing-grid">
             {{ range .packages }}
               <div class="pricing-card">
                 <h3>{{ .title }}</h3>
                 <h4>{{ .subtitle }}</h4>
-                <div class="price">{{ .price | $.Page.RenderString }}</div>
                 <div class="package-content">{{ .content | $.Page.RenderString }}</div>
+                <div class="price">{{ .price | $.Page.RenderString }}</div>
               </div>
             {{ end }}
           </div>
-          {{ with .cta }}
-            <div class="pricing-cta">
-              <a href="{{ $.Params.cta_link }}" class="cta-button">{{ . }}</a>
-            </div>
-          {{ end }}
+              {{ if isset . "cta_link" }}
+                <div class="pricing-cta">
+                  <a href="{{ .cta_link }}" class="cta-button">{{ .cta }}</a>
+                </div>
+              {{ end }}
 
         {{/* HOW-IT-WORKS LAYOUT */}}
         {{ else if eq .category "how-it-works" }}

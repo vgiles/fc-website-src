@@ -3,8 +3,8 @@ title: "About Vincent"
 subtitle: "Let’s turn your idea into a quietly transformative experience that is creatively uncompromising."
 images:
   - "img/general/about/live_1.jpg"
+  - "img/general/ec_portrait_1.png"
   - "img/general/about/live_2.JPG"
-  - "img/general/about/install.png"
 ---
 ## Intro
 I'm Vincent Giles, an Australian composer born in 1985 and based in Naarm (Melbourne). My work explores the fragile boundaries of perception, the beauty in instability, and those fascinating glitches that emerge from both human and machine creativity.
