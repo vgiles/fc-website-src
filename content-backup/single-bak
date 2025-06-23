@@ -1,6 +1,5 @@
-
-{{ define "main" }}
-<div class="single-page">  <!-- New wrapper -->
+<!-- {{ define "main" }}
+<div class="single-page">  New wrapper
     <article class="single-article">
         <h1>{{ .Title }}</h1>
         
@@ -23,10 +22,12 @@
         </div>
         {{ end }}
         {{ end }}
-        
+        {{/* Load YAML data based on front matter (e.g., data: "service-comp") */}}
         {{ $data := index .Site.Data .Params.data }}
+        
+        {{/* Process each category in YAML */}}
         {{ range $data }}
-        <section id="{{ .category }}" class="content-section">  <!-- Changed class -->
+        <section id="{{ .category }}" class="content-section">
             <h2>{{ .head }}</h2>
             
             {{/* Handle different content structures per category */}}
@@ -70,6 +71,5 @@
             {{ end }}
         </section>
         {{ end }}
-    </article>
-</div>
-{{ end }}
+        
+        {{ end }} -->

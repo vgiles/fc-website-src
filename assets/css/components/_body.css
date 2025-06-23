@@ -1100,3 +1100,86 @@ section {
   font-style: normal;
   padding-bottom: 1rem;
 }
+/* ===== Single Page Section Overrides ===== */
+.single-section {
+  /* Reset/override global section styles */
+  background: none !important;
+  border: none !important;
+  padding: 1rem 0 !important;
+  margin: 0 auto !important;
+  max-width: var(--width-content);
+  
+  /* Add new single-page specific styles */
+  border-left: 3px solid var(--primary-accent);
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Alternate section styling */
+.single-section:nth-child(even) {
+  border-left: none;
+  border-right: 3px solid var(--primary-accent);
+  padding-left: 0;
+  padding-right: 2rem;
+}
+
+/* Headings */
+.single-section h2 {
+  color: var(--text-secondary);
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+/* Preserve existing article styles */
+
+.content-block {
+  /* @extend .single-paragraph-block; /* If using SCSS 
+  OR manually replicate those styles  */
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.single-section {
+  outline: 2px dashed red !important; /* Visual debug */
+}
+
+/* ===== Single Page Isolation ===== */
+.single-page {
+  /* Reset inherited section styles */
+  section {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 2rem 0 !important;
+    margin: 0 auto !important;
+    max-width: var(--width-content);
+  }
+
+  /* Custom section styling */
+  .content-section {
+    border-left: 3px solid var(--primary-accent);
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+    
+    &:nth-child(even) {
+      border-left: none;
+      border-right: 3px solid var(--primary-accent);
+      padding-left: 0;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Preserve your article styles */
+  .single-article {
+    /* Your existing .single-article styles */
+    max-width: var(--width-content);
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+}
+
+.single-page section {
+  outline: 3px dashed red !important;
+}
