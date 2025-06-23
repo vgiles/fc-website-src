@@ -28,17 +28,20 @@
 
     Two decades across performing, composing, producing, and education have shown me the sector's full spectrum. Not just the people in it, but my own experiences from stage to studio and classroom. Whether you need technical solutions, creative development, or just a sounding board, I bring both grassroots perspective and professional rigor to our work.
 
-- category: "offer"
-  head: "Composition & music production for your project"
-  cta: "Booyah"
-  content: |
-    I can compose music for your project, design sound for your installation or game, or produce your record. 
+# - category: "offer"
+#   head: "Composition & music production for your project"
+#   cta: "Booyah"
+#   content: |
+#     I can compose music for your project, design sound for your installation or game, or produce your record. 
 
-    Feeling stuck or not sure where or how to start? I can also step in to help lead your project, either through project management, or through limited 1:1 mentoring slots.
+#     Feeling stuck or not sure where or how to start? I can also step in to help lead your project, either through project management, or through limited 1:1 mentoring slots.
 
 - category: "outcomes"
   head: "What you can look forward to"
-  content_left: "Brief description of outcomes"
+  content_left: |
+    I can compose music for your project, design sound for your installation or game, or produce your record. 
+
+    Feeling stuck or not sure where or how to start? I can also step in to help lead your project, either through project management, or through limited 1:1 mentoring slots.
   content_right-head: "Working with me on music or sound is a good fit if:"
   content_right: |
     * You want creative, high quality music that enhances whatever project you're working on. 
@@ -47,6 +50,27 @@
     * You've dabbled in music production but are unsure where to go next.
     * You've got a great song or piece, but need to develop it further or add additional layers. 
     * You need somebody to bounce ideas off in a supportive (but constructively critical) way.
+
+# - category: "offer-outcomes"  # New combined category
+#   # head: "My Services"  # Optional main heading
+#   offer:
+#     title: "Composition & music production for your project"
+#     cta: "Booyah"
+#     content: |
+#       I can compose music for your project, design sound for your installation or game, or produce your record. 
+
+#       Feeling stuck or not sure where or how to start? I can also step in to help lead your project, either through project management, or through limited 1:1 mentoring slots.
+#   outcomes:
+#     title: "What you can look forward to"
+#     left_content: "Brief description of outcomes"
+#     right_title: "Working with me is a good fit if:"
+#     right_content: |
+#       * You want creative, high quality music that enhances whatever project you're working on. 
+#       * You want to work with somebody who _gets it_ from a grassroots perspective.
+#       * You're getting stuck understanding or implementing a technical or technological solution in your project.
+#       * You've dabbled in music production but are unsure where to go next.
+#       * You've got a great song or piece, but need to develop it further or add additional layers. 
+#       * You need somebody to bounce ideas off in a supportive (but constructively critical) way.
 
 - category: "story"
   head: "How I got here"
