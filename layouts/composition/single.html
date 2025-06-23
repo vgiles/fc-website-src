@@ -1,9 +1,9 @@
 {{ define "main" }}
-<div class="single-page-layout"> <!-- New wrapper class -->
+<div class="single-page-layout">
   <article class="single-article">
-    <h1>{{ .Title }}</h1>
+    <h1 class="page-title">{{ .Title }}</h1>
     
-    {{/* Testimonial logic (preserved) */}}
+    {{/* Testimonials */}}
     {{ if .Params.categories }}
       {{ $matchingTestimonials := where (index .Site.Data "testimonials") "category" "in" .Params.categories }}
       {{ with $matchingTestimonials }}
@@ -21,48 +21,113 @@
     {{/* Process YAML data */}}
     {{ $data := index .Site.Data .Params.data }}
     {{ range $data }}
-      <section class="service-section {{ .category }}"> <!-- Added category class -->
-        <h4>{{ .head }}</h4>
+      <section class="service-section {{ .category }}">
+        
+        {{/* HEADLINE LAYOUT */}}
+        {{ if eq .category "headline" }}
+          <div class="headline-grid">
+            <div class="headline-col1">
+              <h2 class="headline-title">{{ .head }}</h2>
+              <h3>{{ .sub | $.Page.RenderString }}</h3>
+              {{ with .call }}
+                <a href="#contact" class="cta-button">{{ . }}</a>
+              {{ end }}
+            </div>
+            <div class="headline-col2">
+                {{ with .images }}
+                <div class="headline-images">
+                    <img src="{{ . }}" alt="" class="headline-image">
+                </div>
+              {{ end }}
 
-        {{/* Standard content blocks */}}
-        {{ if eq .category "origin" "offer" "story" }}
-          <div class="service-content">
-            {{ .content | $.Page.RenderString }}
+            </div>
           </div>
 
-        {{/* Grid layout for multi-entry sections */}}
+        {{/* NICHE LAYOUT */}}
         {{ else if eq .category "niche" }}
+          <h2 class="niche-title" id="{{ .category | urlize | lower }}">{{ .head }}</h2>
+          {{ with .sub }}<p class="niche-subtitle">{{ . | $.Page.RenderString }}</p>{{ end }}
           <div class="service-grid">
             {{ range .entries }}
               <div class="service-card">
-                <h4>{{ .entry_one }}</h4>
-                <p>{{ .blah | $.Page.RenderString }}</p>
+                {{ with $.Site.Params.logo }}
+                  <img src="{{ . }}" class="card-logo">
+                {{ end }}
+                <h3 class="card-title">{{ .entry_one }}</h3>
+                <p class="card-content">{{ .blah | $.Page.RenderString }}</p>
               </div>
             {{ end }}
           </div>
 
-        {{ else if eq .category "pricing" }}
-          <div class="service-grid">
-            {{ range .packages }}
-              <div class="service-card">
-                <h4>{{ .title }}</h4>
-                <h4>{{ .subtitle }}</h4>
-                <p>{{ .content | $.Page.RenderString }}</p>
-                <div class="price">{{ .price | $.Page.RenderString }}</div>
+        {{/* ORIGIN/STORY LAYOUT */}}
+        {{ else if or (eq .category "origin") (eq .category "story") }}
+          <div class="service-grid {{ .category }}-grid" id="{{ .category | urlize | lower }}">
+            {{ if eq .category "origin" }}
+              <div class="service-image">
+                {{ with .images }}<img src="{{ . }}" alt="">{{ end }}
+              </div>
+            {{ end }}
+            <div class="content-text">
+              <h2 class="content-title">{{ .head }}</h2>
+              <div class="content-body">{{ .content | $.Page.RenderString }}</div>
+            </div>
+            {{ if eq .category "story" }}
+              <div class="service-image">
+                {{ with .images }}<img src="{{ . }}" alt="">{{ end }}
               </div>
             {{ end }}
           </div>
 
-        {{/* Other layouts */}}
-        {{ else if eq .category "outcomes" }}
-          <div class="outcomes-split">
-            <div class="outcomes-left">{{ .content_left | $.Page.RenderString }}</div>
-            <div class="outcomes-right">
-              <h4>{{ .content_right_head }}</h4>
-              {{ .content_right | $.Page.RenderString }}
+        {{/* OFFER/OUTCOMES LAYOUT */}}
+        {{ else if or (eq .category "offer") (eq .category "outcomes") }}
+          <div class="offer-grid" id="{{ .category | urlize | lower }}">
+            <div class="offer-header">
+              <h2>{{ .head }}</h2>
+            </div>
+            <div class="offer-left">
+              {{ if eq .category "offer" }}
+                {{ .content | $.Page.RenderString }}
+              {{ else }}
+                {{ .content_left | $.Page.RenderString }}
+              {{ end }}
+            </div>
+            <div class="offer-right">
+              {{ if eq .category "outcomes" }}
+                <h3>{{ .content_right_head }}</h3>
+                {{ .content_right | $.Page.RenderString }}
+              {{ end }}
             </div>
           </div>
+
+        {{/* PRICING LAYOUT */}}
+        {{ else if eq .category "pricing" }}
+          <h2 class="pricing-title" id="{{ .category | urlize | lower }}">{{ .head }}</h2>
+          <div class="pricing-grid">
+            {{ range .packages }}
+              <div class="pricing-card">
+                <h3>{{ .title }}</h3>
+                <h4>{{ .subtitle }}</h4>
+                <div class="price">{{ .price | $.Page.RenderString }}</div>
+                <div class="package-content">{{ .content | $.Page.RenderString }}</div>
+              </div>
+            {{ end }}
+          </div>
+          {{ with .cta }}
+            <div class="pricing-cta">
+              <a href="{{ $.Params.cta_link }}" class="cta-button">{{ . }}</a>
+            </div>
+          {{ end }}
+
+        {{/* HOW-IT-WORKS LAYOUT */}}
+        {{ else if eq .category "how-it-works" }}
+          <h2 class="process-title" id="{{ .category | urlize | lower }}">{{ .head }}</h2>
+          <ol class="process-steps">
+            {{ range .process }}
+              <li class="process-step">{{ . | $.Page.RenderString }}</li>
+            {{ end }}
+          </ol>
         {{ end }}
+        
       </section>
     {{ end }}
   </article>

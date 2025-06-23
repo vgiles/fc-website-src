@@ -185,3 +185,15 @@ button:hover {
 .alt-section {
   border-top: 1px solid rgba(222, 200, 147, 0.2);
 }
+
+.single-page-layout {
+  --base-font: "Open Sans", sans-serif; /* Default */
+  --heading-font: "arial", serif;
+  
+  font-family: var(--base-font);
+}
+
+/* Category-specific font overrides */
+.single-page-layout .headline {
+  --base-font: "arial", sans-serif;
+}

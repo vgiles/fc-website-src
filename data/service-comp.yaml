@@ -2,24 +2,22 @@
   head: "Your source of high quality custom exploratory music and audio"
   sub: "Bring your project to the next level through music, sound design, and production, knowing that it will be on-time and in-budget, with composer Vincent Giles."
   call: "find out more"
-
+  images: "/img/general/service-comp/live_1.jpg"
 - category: "niche"
   head: "niche call-out & challenges"
   sub: "blah"
-  logo: ""
+  logo: "logo.svg"
   entries:
     - entry_one: 
       blah: ""
     - entry_two:
       blah: ""
     - entry_three: ""
-
+      content: ""
 - category: "origin"
   head: "blah"
-  image: ""
-  content: >
-    If you've already read my story, then some of this will not be news to you. But if not, strap in.
-
+  image: "/img/general/service-comp/comp_1.jpg"
+  content: |
     Sometimes we find that the arts is largely full of [insert link] people rich enough to be artists. And it is [insert link] increasingly well documented
     that the working class is being squeezed out of the arts, both through access to funding (I have had what I would 
     call more than my "fair" share of rejections!) and through the general cost of staying alive. 
@@ -44,7 +42,7 @@
 
 - category: "offer"
   head: "Composition & music production for your project"
-  cta: ""
+  cta: "Booyah"
   content: >
     I can compose music for your project, design sound for your installation or game, or produce your record. Feeling stuck or not sure where or how to start? 
     I can also step in to help lead your project, either through project management, or through limited 1:1 mentoring slots.
@@ -63,7 +61,8 @@
 
 - category: "story"
   head: "How I got here"
-  content: >
+  images: "/img/general/service-comp/cestmoi.png"
+  content: |
     Faulty Cat Productions is my way of acknowledging my quirks and access needs, whilst enveloping all of my special interests, including
     music composition.
     It has been a slow-burn build since 2022, with the focus on developing ethical and sustainable practices
@@ -89,21 +88,16 @@
   head: "Pricing - Composition or Music Production"
   packages:
     package_one:
-      title: "Instrumental/vocal composition"
-      subtitle: "New music for soloists/ensembles"
-      content: "A commissioned composition with score and parts produced (either handwritten or typeset by negotiation)."
-      price: "Starts at **$1200** per minute of music (four or fewer independent lines)"
+      title: "Composition"
+      subtitle: "soloist, ensemble, games, film"
+      content: "A commissioned composition with either (by negotiation) score and parts or electronic audio assets."
+      price: "Starts at **$1200** per minute of music"
     package_two:
-      title: "Electronically produced composition"
-      subtitle: "Film, games, media"
-      content: "A commissioned composition with audio assets delivered as per the needs of your project."
-      price: "Starts at **$1200** per minute of music (four or fewer independent lines)"
-    package_three:
       title: "Music production"
       subtitle: "Let me guide your project"
       content: "I will work with you on your project, as a project manager, drawing on my decades of experience, and potentially contributing composition and/or post-production (as agreed)."
       price: "Starts at **$389** per hour (min three-hour booking)"
-    package_four:
+    package_three:
       title: "Custom"
       subtitle: "I understand..."
       content: "That not all projects fit neatly within these price frames. Please get in touch and we can discuss what might be possible in your budget."
