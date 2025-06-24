@@ -38,18 +38,33 @@
 
 - category: "outcomes"
   head: "What you can look forward to"
+  image: "/img/general/service-comp/cestmoi2.png"
+  image_desc: "A 3D model of Vincent, degrading only slightly, to a backdrop of music notation."
   content_left: |
     I can compose music for your project, design sound for your installation or game, or produce your record. 
 
     Feeling stuck or not sure where or how to start? I can also step in to help lead your project, either through project management, or through limited 1:1 mentoring slots.
-  content_right-head: "Working with me on music or sound is a good fit if:"
+  content_right_head: "Working with me is a good fit if:"
   content_right: |
-    * You want creative, high quality music that enhances whatever project you're working on. 
-    * You want to work with somebody who _gets it_ from a grassroots perspective.
-    * You're getting stuck understanding or implementing a technical or technological solution in your project.
-    * You've dabbled in music production but are unsure where to go next.
-    * You've got a great song or piece, but need to develop it further or add additional layers. 
-    * You need somebody to bounce ideas off in a supportive (but constructively critical) way.
+    ️✔ You want creative, high quality music that enhances whatever project you're working on. 
+
+    ️✔ You want to work with somebody who _gets it_ from a grassroots perspective.
+
+    ️✔ You're getting stuck understanding or implementing a technical or technological solution in your project.
+
+    ️✔ You've dabbled in music production but are unsure where to go next.
+
+    ️✔ You've got a great song or piece, but need to develop it further or add additional layers. 
+
+    ️✔ You need somebody to bounce ideas off in a supportive (but constructively critical) way.
+
+    **But might not be a great fit if...**
+
+    ✖ You're looking for 'typical' sounds like a Disney movie.
+
+    ✖ You want somebody who is only there to create pastiches of existing temp tracks.
+
+    ✖ You're not really interested in collaborating.
 
 # - category: "offer-outcomes"  # New combined category
 #   # head: "My Services"  # Optional main heading
@@ -91,7 +106,7 @@
     Ultimately, I want to build and model processes and business structures to inspire more people to create work in sustainable and meaningful ways.
 
 - category: "how-it-works"
-  head: "The basic process"
+  head: "How it all works"
   process:
     step_one: "We will have an initial video consultation to discuss your project idea and how I can work best with you."
     step_two: "We will agree on the terms and negotiate work contracts, and I will begin the work."
@@ -110,7 +125,7 @@
       title: "Music production"
       subtitle: "Let me guide your project"
       content: "I will work with you on your project, as a project manager, drawing on my decades of experience, and potentially contributing composition and/or post-production (as agreed)."
-      price: "Starts at **$389** per hour (min three-hour booking)"
+      price: "Starts at **$389** per hour (min 3-hr call)"
     package_four:
       title: "Sound Design"
       subtitle: "Let's bring your project to life"

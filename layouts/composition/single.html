@@ -82,18 +82,24 @@
       
       {{ else if eq .category "outcomes" }}
       <div class="outcomes-section" id="{{ .category | urlize | lower }}">
-        <h2 class="section-title">{{ .head }}</h2>
+        <h2>{{ .head }}</h2> 
         
         <div class="outcomes-columns">
           <!-- Left Column -->
           <div class="outcomes-left">
-            {{ .content_left | $.Page.RenderString }}
+            <h4>{{ .content_left | $.Page.RenderString }}</h4>
+            {{ if .image }} <!-- Check if image exists -->
+            <div class="story-image">
+              <img src="{{ .image }}" alt="{{ .image_desc }}" class="content-image">
+            </div>
+            {{ end }}
           </div>
+
           
           <!-- Right Column -->
           <div class="outcomes-right">
             <h3>{{ .content_right_head }}</h3>
-            {{ .content_right | $.Page.RenderString }}
+            <div class="single-text-content">{{ .content_right | $.Page.RenderString }}</div>
           </div>
         </div>
       </div>
@@ -119,7 +125,7 @@
       {{ end }}
       
       {{/* HOW-IT-WORKS LAYOUT */}}
-      {{ else if eq .category "how-it-works" }}
+      {{/* {{ else if eq .category "how-it-works" }}
       <h2 class="process-title" id="{{ .category | urlize | lower }}">{{ .head }}</h2>
       <ol class="process-steps">
         {{ range .process }}
@@ -127,7 +133,46 @@
         {{ end }}
       </ol>
       {{ end }}
-      
+      */}}
+
+        {{/* HOW-IT-WORKS LAYOUT */}}
+        {{/* {{ else if eq .category "how-it-works" }}
+        <div class="process-container" id="{{ .category | urlize | lower }}">
+          <h2 class="process-title">{{ .head }}</h2>
+          <div class="process-cards">
+            {{ with .process.step_one }}<div class="process-card">{{ . | $.Page.RenderString }}</div>{{ end }}
+            {{ with .process.step_two }}<div class="process-card">{{ . | $.Page.RenderString }}</div>{{ end }}
+            {{ with .process.step_three }}<div class="process-card">{{ . | $.Page.RenderString }}</div>{{ end }}
+            {{ with .process.step_four }}<div class="process-card">{{ . | $.Page.RenderString }}</div>{{ end }}
+          </div>
+        </div>
+        */}}
+        {{/* HOW-IT-WORKS LAYOUT WITH ARROWS */}}
+        {{ else if eq .category "how-it-works" }}
+        <div class="process-container" id="{{ .category | urlize | lower }}">
+          <h2 class="process-title">{{ .head }}</h2>
+          <div class="process-flow">
+            {{ with .process.step_one }}
+            <div class="process-card">{{ . | $.Page.RenderString }}</div>
+            <div class="process-arrow">→</div>
+            {{ end }}
+            
+            {{ with .process.step_two }}
+            <div class="process-card">{{ . | $.Page.RenderString }}</div>
+            <div class="process-arrow">→</div>
+            {{ end }}
+            
+            {{ with .process.step_three }}
+            <div class="process-card">{{ . | $.Page.RenderString }}</div>
+            <div class="process-arrow">→</div>
+            {{ end }}
+            
+            {{ with .process.step_four }}
+            <div class="process-card">{{ . | $.Page.RenderString }}</div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
     </section>
     {{ end }}
   </article>

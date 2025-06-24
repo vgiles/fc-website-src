@@ -1265,10 +1265,10 @@ section {
   margin-top: 0 !important;
   
   /* Reset backgrounds */
-  background: 
+    background: 
     linear-gradient(to bottom, 
-      rgba(53, 37, 118, 0.7) 0%,
-      rgba(37, 8, 41, 0.1) 100%
+      rgba(241, 155, 56, 0.2) 0%,
+      rgba(48, 15, 139, 0.9) 100%
     ) !important;
   
   /* Reapply desired styling */
@@ -1334,10 +1334,16 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
 }
 .pricing-cta {
   text-align: center;
   margin-top: 2rem;
+}
+
+.pricing-grid h2 {
+  margin-top: -2rem;
 }
 
 /* ===== Responsive Overrides ===== */
@@ -1401,53 +1407,52 @@ section {
   }
 }
 
-
 .pricing-card {
-  background: rgba(25, 25, 25, 0.7); /* Semi-transparent dark tint */
+  background: rgba(25, 25, 25, 0.7);
   border: 1px solid var(--primary-accent);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 0.5rem 1.5rem 1.5rem; /* Top, sides, bottom */
   display: flex;
   flex-direction: column;
-  transition: all 1.0s ease;
-}
-
-.pricing-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  gap: 0.5rem; /* Consistent spacing between elements */
 }
 
 .pricing-card h3 {
   color: var(--primary-accent);
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin: 0; /* Remove all margins */
+  padding: 1.5rem 0 0; /* Small top padding only */
   font-size: 1.5rem;
 }
 
 .pricing-card h4 {
   color: var(--text-muted);
   text-align: center;
-  font-weight: normal;
-  margin-bottom: 1rem;
+  font-weight: heavy;
+  margin: 0; /* Remove margins */
+  padding: 0 0 0.5rem; /* Small bottom padding only */
   font-size: 1.1rem;
 }
 
+/* Rest of your existing CSS remains the same */
 .package-content {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* Slightly reduced */
   line-height: 1.6;
-  flex-grow: 1; /* Makes cards equal height */
+  flex-grow: 1;
+  font-size: 0.9rem;
 }
 
 .price {
-  background: rgba(184, 156, 102, 0.15); /* Gold tint background */
+  background: rgba(184, 156, 102, 0.15);
   color: var(--primary-accent);
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
-  margin-top: auto; /* Pushes price to bottom */
+  margin-top: auto;
   border: 1px solid rgba(184, 156, 102, 0.3);
 }
 
@@ -1465,6 +1470,101 @@ section {
     font-size: 1.2rem;
   }
 }
+
+/* THREE COL */
+/* Replace existing three-col-layout styles with this */
+.three-col-layout {
+  max-width: var(--width-content);
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.layout-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.layout-main {
+  flex: 1;
+  min-width: 300px;
+}
+
+.layout-aside {
+  flex: 1;
+  min-width: 300px;
+}
+
+.layout-divider {
+  width: 1px;
+  background: var(--primary-accent);
+  opacity: 0.3;
+  margin: 0 1rem;
+}
+
+/* For offer section only */
+.three-col-layout.offer .layout-columns {
+  display: block;
+}
+
+.offer-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .layout-divider {
+    display: none;
+  }
+  
+  .layout-columns {
+    flex-direction: column;
+  }
+  
+  .layout-main, 
+  .layout-aside {
+    width: 100%;
+  }
+}
+
+.combined-offer-outcomes {
+  max-width: var(--width-content);
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.offer-outcomes-grid {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  gap: 3rem;
+  align-items: start;
+}
+
+.offer-column, 
+.outcomes-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.outcomes-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .offer-outcomes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .outcomes-content {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Outcomes Section */
 .outcomes-section {
   max-width: var(--width-content);
@@ -1474,7 +1574,7 @@ section {
 
 .section-title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--primary-accent);
 }
 
@@ -1490,9 +1590,29 @@ section {
   border-right: 1px solid rgba(184, 156, 102, 0.3);
 }
 
+.outcomes-left h4 {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
 .outcomes-right h3 {
   color: var(--primary-accent);
-  margin-top: 0;
+  margin-top: -1rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+.outcomes-right h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust to position the wave */
+  width: 100%;
+  height: 15px; /* Wave height */
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg"><path d="M0,5 C20,10 30,0 50,5 S80,0 100,5" fill="none" stroke="%23b89c66" stroke-width="1"/></svg>') repeat-x;
 }
 
 /* Responsive */
@@ -1506,5 +1626,72 @@ section {
     border-right: none;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(184, 156, 102, 0.3);
+  }
+}
+.process-container {
+  max-width: var(--width-content);
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.process-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.process-card {
+  background: rgba(25, 25, 25, 0.4);
+  border: 1px dashed rgba(212, 39, 203, 0.6);
+  border-radius: 30px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  font-size: 1.1rem;             /* Slightly larger than body text */
+  line-height: 1.7;              /* Improved readability */
+  color: rgba(200, 200, 200, 0.9); /* Soft white */
+  text-align: center;           /* Clean edges */
+  hyphens: auto;                 /* Better word breaks */
+  width: 200px;
+  min-height: 150px;
+}
+
+.process-card:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .process-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.process-flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+.process-arrow {
+  color: var(--primary-accent);
+  font-size: 3rem;
+  padding: 0 1rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .process-flow {
+    flex-direction: column;
+  }
+  .process-arrow {
+    transform: rotate(90deg);
+    padding: 1rem 0;
+  }
+  .process-card {
+    width: 100%;
+    max-width: 300px;
   }
 }
