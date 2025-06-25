@@ -4,17 +4,22 @@
   call: "find out more"
   images: "/img/general/service-comp/live_1.jpg"
   image_desc: "A photo of Vincent performing live in an art gallery."
+
 - category: "niche"
-  head: "niche call-out & challenges"
-  sub: "blah"
-  logo: "logo.svg"
+  head: "Niche Call-out & Challenges"
+  sub: "Key focus areas"
+  logo: "/logo.svg"
   entries:
-    - entry_one: 
-      blah: ""
-    - entry_two:
-      blah: ""
-    - entry_three: ""
-      content: ""
+    - title: "Composition"
+      content: "Custom music tailored to your project"
+      icon: "/logo.svg" # Optional per-item icon
+    - title: "Sound Design" 
+      content: "Immersive audio experiences"
+      icon: "/logo.svg" # Optional per-item icon
+    - title: "Production"
+      icon: "/logo.svg" # Optional per-item icon
+      content: "Professional recording and mixing"
+
 - category: "origin"
   head: "Do your best work with somebody who gets it."
   image: "/img/general/service-comp/comp_1.jpg"
