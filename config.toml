@@ -186,3 +186,6 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
 [params.testimonials]
   title = "Testimonials & Reviews"
   subtitle = "What people think of my work."
+
+[markup.goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
