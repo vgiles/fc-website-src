@@ -149,7 +149,7 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
             title = "Audio Editing & Post Production"
             image = "../img/services/consulting.jpg"
             description = "I offer audio editing (for example, for podcasts) and post-production, including mixing, along with general consulting services in this space." 
-            link = "/post"
+            link = "/post-prod"
             link_text = "Check it out →"
 
     [params.showreel]
