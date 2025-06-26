@@ -1,0 +1,187 @@
+{{ define "main" }}
+<div class="single-page-layout">
+  <article class="single-article">
+    <h1 class="page-title">{{ .Title }}</h1>
+    
+    {{/* Testimonials */}}
+    {{ if .Params.categories }}
+    {{ $matchingTestimonials := where (index .Site.Data "testimonials") "category" "in" .Params.categories }}
+    {{ with $matchingTestimonials }}
+    <div class="testimonial-service-grid">
+      {{ range first 2 . }}
+      <div class="testimonial-service-item">
+        <blockquote>{{ .quote | $.Page.RenderString }}</blockquote>
+        <footer>— <i>{{ .name }}</i>{{ with .role }}, {{ . }}{{ end }}</footer>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+    
+    {{/* Process YAML data */}}
+    {{ $data := index .Site.Data .Params.data }}
+    {{ range $data }}
+    <section class="service-section {{ .category }}">
+      
+      {{/* HEADLINE LAYOUT */}}
+      {{ if eq .category "headline" }}
+      <div class="headline-grid">
+        <div class="headline-col1">
+          <h2 class="headline-title">{{ .head }}</h2>
+          <h3>{{ .sub | $.Page.RenderString }}</h3>
+          {{ with .call }}
+          <a href="#offer" class="cta-button">{{ . }}</a>
+          {{ end }}
+        </div>
+        <div class="headline-col2">
+          {{ if isset . "image_desc" }}
+          <div class="headline-images">
+            <img src="{{ .images }}" alt="{{ .image_desc }}" class="headline-images">
+          </div>
+          {{ end }}
+          
+        </div>
+      </div>
+      
+      {{/* NICHE LAYOUT */}}
+      {{ else if eq .category "niche" }}
+      <div class="niche-section" id="{{ .category | urlize | lower }}">
+        <h2 class="niche-title">{{ .head }}</h2>
+        {{ with .sub }}<p class="niche-subtitle">{{ . | $.Page.RenderString }}</p>{{ end }}
+        
+        <div class="pricing-grid">
+          {{ range .entries }}
+          <div class="pricing-card">
+            {{ with .icon }}
+            <img src="{{ . }}" class="card-icon" alt="">
+            {{ else }}
+            <img src="{{ $.Site.Params.logo }}" class="card-logo" alt="">
+            {{ end }}
+            <h3 class="card-title">{{ .title }}</h3>
+            <div class="single-text-content">
+              {{ .content | $.Page.RenderString }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      
+      {{/* ORIGIN/STORY LAYOUT */}}
+      {{ else if or (eq .category "origin") (eq .category "story") }}
+      <div class="service-grid {{ .category }}-grid" id="{{ .category | urlize | lower }}">
+        {{ if eq .category "origin" }}
+        <div class="origin-image">
+          {{ if isset . "image_desc" }}<img src="{{ .image }}" alt="{{ .image_desc }}" class="content-image">{{ end }}
+        </div>
+        {{ end }}
+        
+        <div class="content-text">
+          <h2>{{ .head }}</h2>
+          <div class="single-text-content">{{ .content | $.Page.RenderString }}</div>
+        </div>
+        
+        {{ if eq .category "story" }}
+        <div class="story-image">
+          {{ if isset . "image_desc" }}<img src="{{ .image }}" alt="{{ .image_desc }}" class="content-image">{{ end }}
+        </div>
+        {{ end }}
+      </div>
+      
+      {{ else if eq .category "outcomes" }}
+      <div class="outcomes-section" id="{{ .category | urlize | lower }}">
+        <h2>{{ .head }}</h2> 
+        
+        <div class="outcomes-columns">
+          <!-- Left Column -->
+          <div class="outcomes-left">
+            <h4>{{ .content_left | $.Page.RenderString }}</h4>
+            {{ if .image }} <!-- Check if image exists -->
+            <div class="story-image">
+              <img src="{{ .image }}" alt="{{ .image_desc }}" class="content-image">
+            </div>
+            {{ end }}
+          </div>
+          
+          
+          <!-- Right Column -->
+          <div class="outcomes-right">
+            <h3>{{ .content_right_head }}</h3>
+            <div class="single-text-content">{{ .content_right | $.Page.RenderString }}</div>
+          </div>
+        </div>
+      </div>
+      
+      
+      {{/* PRICING LAYOUT */}}
+      {{ else if eq .category "pricing" }}
+      <h2 id="{{ .category | urlize | lower }}">{{ .head }}</h2>
+      <div class="pricing-grid">
+        {{ range .packages }}
+        <div class="pricing-card">
+          <h3>{{ .title }}</h3>
+          <h4>{{ .subtitle }}</h4>
+          <div class="package-content">{{ .content | $.Page.RenderString }}</div>
+          <div class="price">{{ .price | $.Page.RenderString }}</div>
+        </div>
+        {{ end }}
+      </div>
+      {{ if isset . "cta_link" }}
+      <div class="pricing-cta">
+        <a href="{{ .cta_link }}" class="cta-button">{{ .cta }}</a>
+      </div>
+      {{ end }}
+      
+      {{/* HOW-IT-WORKS LAYOUT */}}
+      {{/* {{ else if eq .category "how-it-works" }}
+      <h2 class="process-title" id="{{ .category | urlize | lower }}">{{ .head }}</h2>
+      <ol class="process-steps">
+        {{ range .process }}
+        <li class="process-step">{{ . | $.Page.RenderString }}</li>
+        {{ end }}
+      </ol>
+      {{ end }}
+      */}}
+      
+      {{/* HOW-IT-WORKS LAYOUT */}}
+      {{/* {{ else if eq .category "how-it-works" }}
+      <div class="process-container" id="{{ .category | urlize | lower }}">
+        <h2 class="process-title">{{ .head }}</h2>
+        <div class="process-cards">
+          {{ with .process.step_one }}<div class="process-card">{{ . | $.Page.RenderString }}</div>{{ end }}
+          {{ with .process.step_two }}<div class="process-card">{{ . | $.Page.RenderString }}</div>{{ end }}
+          {{ with .process.step_three }}<div class="process-card">{{ . | $.Page.RenderString }}</div>{{ end }}
+          {{ with .process.step_four }}<div class="process-card">{{ . | $.Page.RenderString }}</div>{{ end }}
+        </div>
+      </div>
+      */}}
+      {{/* HOW-IT-WORKS LAYOUT WITH ARROWS */}}
+      {{ else if eq .category "how-it-works" }}
+      <div class="process-container" id="{{ .category | urlize | lower }}">
+        <h2 class="process-title">{{ .head }}</h2>
+        <div class="process-flow">
+          {{ with .process.step_one }}
+          <div class="process-card">{{ . | $.Page.RenderString }}</div>
+          <div class="process-arrow">→</div>
+          {{ end }}
+          
+          {{ with .process.step_two }}
+          <div class="process-card">{{ . | $.Page.RenderString }}</div>
+          <div class="process-arrow">→</div>
+          {{ end }}
+          
+          {{ with .process.step_three }}
+          <div class="process-card">{{ . | $.Page.RenderString }}</div>
+          <div class="process-arrow">→</div>
+          {{ end }}
+          
+          {{ with .process.step_four }}
+          <div class="process-card">{{ . | $.Page.RenderString }}</div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+  </article>
+</div>
+{{ end }}
