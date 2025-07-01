@@ -63,7 +63,7 @@
 - category: "how-it-works"
   head: "How it all works"
   process:
-    step_one: "We will have an initial video consultation to discuss your project idea and how I can work best with you."
+    step_one: "We will have an initial video/phone consultation to discuss your project idea and how I can work best with you."
     step_two: "We will agree on the terms and negotiate work contracts, and I will begin the work."
     step_three: "I will provide regular updates and opportunities for feedback throughout (if agreed upon) the process."
     step_four: "I will deliver the outcome as per the agreement."
@@ -126,7 +126,7 @@
     package_one:
       title: "Composition"
       subtitle: "Let's make music together"
-      content: "A commissioned composition with either (by negotiation) score and parts or electronic audio assets."
+      content: "A commissioned composition (or underscore) with either (by negotiation) score and parts or electronic audio assets."
       price: "Starts at **$1200** per minute of music"
     package_two:
       title: "Music production"

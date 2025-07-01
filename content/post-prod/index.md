@@ -5,7 +5,7 @@ images:
   - "img/general/service-comp/live_1.jpg"
   - "img/general/service-comp/comp_1.jpg"
 categories: ["audio"]
-data: "service-workshops"
+data: "service-post"
 ---
 <!-- I can help you with any audio editing task, including podcasts, syncing to video footage, or overdubbing. I have done work editing podcasts, recording voice-overs (and editing to footage), and more.
 

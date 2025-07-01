@@ -1,6 +1,6 @@
 - category: "headline"
-  head: "Your source of high quality custom exploratory music and audio"
-  sub: "Bring your project to the next level through music, sound design, and production, knowing that it will be on-time and in-budget, with composer Vincent Giles."
+  head: "Your go-to for unique audio post-production for your project"
+  sub: "Add that *je ne sais quoi* to your digital audio assets through post-production services, including editing, mixdown, synchronisation, and mastering, with producer Vincent Giles"
   call: "find out more"
   images: "/img/general/service-comp/live_1.jpg"
   image_desc: "A photo of Vincent performing live in an art gallery."
@@ -10,51 +10,54 @@
   image: "/img/general/service-comp/cestmoi2.png"
   image_desc: "A 3D model of Vincent, degrading only slightly, to a backdrop of music notation."
   content_left: |
-    I can compose music for your project, design sound for your installation or game, or produce your record. 
+    So you've finished your track, podcast, or voice-over recording but want to make it pop? I can help.
 
-    Feeling stuck or not sure where or how to start? I can also step in to help lead your project, either through project management, or through limited 1:1 mentoring slots.
+    I offer audio post-production including mixing, editing, and, if the circumstances call for it, certain audio mastering. I can synchronise your audio to video, and even do some video editing if the need arises. 
+    Whatever the project, I'll sort out your post-production. 
   content_right_head: "Working with me is a good fit if:"
   content_right: |
-    ️✔ You want creative, high quality music that enhances whatever project you're working on. 
+    ️✔ You want creative approaches to post-production that makes your assets stand out. 
 
-    ️✔ You want to work with somebody who _gets it_ from a grassroots perspective.
+    ️✔ You want to work with somebody who understands that many creative projects need treatment that are beyond the ordinary. 
 
-    ️✔ You're getting stuck understanding or implementing a technical or technological solution in your project.
+    ️✔ You need a critical ear to determine the next steps.
 
-    ️✔ You've dabbled in music production but are unsure where to go next.
+    ️✔ You don't have the resources to do it yourself.
 
-    ️✔ You've got a great song or piece, but need to develop it further or add additional layers. 
+    ️✔ You need to demo a prototype to get a project off the ground and want it to be as good as possible.
 
     ️✔ You need somebody to bounce ideas off in a supportive (but constructively critical) way.
 
+    ✔ You want to explore new realms of expression such as binaural encoding for immersion. 
+
     **But might not be a great fit if...**
 
-    ✖ You're looking for 'typical' sounds like a Disney movie.
+    ✖ You just want everything to be loud (fun fact: volume tricks the brain into a false sense of "good").
 
-    ✖ You want somebody who is only there to create pastiches of existing temp tracks.
+    ✖ You don't want a creative approach, only a technical one. 
 
     ✖ You're not really interested in collaborating.
 
 - category: "how-it-works"
   head: "How it all works"
   process:
-    step_one: "We will have an initial video consultation to discuss your project idea and how I can work best with you."
-    step_two: "We will agree on the terms and negotiate work contracts, and I will begin the work."
+    step_one: "We will have an initial video/phone consultation to discuss your project idea and how I can work best with you."
+    step_two: "We will agree on the terms and negotiate work contracts, and you will deliver any required assets."
     step_three: "I will provide regular updates and opportunities for feedback throughout (if agreed upon) the process."
     step_four: "I will deliver the outcome as per the agreement."
     
 - category: "origin"
-  head: "Do your best work with somebody who gets it."
+  head: "Make your work pop with somebody who's probably been there."
   image: "/img/general/service-comp/comp_1.jpg"
   image_desc: "A photo of Vincent field recording near the ocean."
   content: |
-    The arts increasingly favor those with financial privilege, while working-class creators face mounting barriers such as funding access and time restraints. Having weathered my share of rejections, I know this struggle extends beyond artists to everyone in the cultural sector.
+    Post-production is often seen as something that anybody can do. I've had so many conversations with people where they stick a preset on (or, these days, an AI plugin) a track and crank the volume up without understanding the process. 
 
-    My journey began as a bassist (I sold my Nintendo 64 for my first instrument in 1999 (and still have it today)). From session work (2004-2013) to composition, my working-class roots ground my understanding of creative constraints. I've lived the tension between artistic vision and economic reality that artists, arts workers, and everyday people face.
+    I began recording audio in the most lo-fi way possible – no audio interface, just a SoundBlaster soundcard in my PC – around 2002. 
+    While those early attempts were nothing impressive, I went on to refine this process and record professional working bands that I was in, singer-songwriter friends, and my own experimental projects without access to even a basic recording interface (I couldn't afford one). 
+    The results that are possible under such extreme limitations can be incredibly inspiring, and I bring this attitude of paring a process back to its absolute essentials to everything I do. To draw inspiration from restriction and use the tool that is right for the project.
 
-    My late neurodivergence diagnoses (autism/ADHD at 39) only served to re-emphasise how our systems are often not adequate for those who need them. My ongoing professional development and client approach is built on mutual respect, adaptability, and responsiveness. No two people are the same, and I know this. I value honest dialogue and iterative collaboration.
-
-    Two decades across performing, composing, producing, and education have shown me the sector's full spectrum. Not just the people in it, but my own experiences from stage to studio and classroom. Whether you need technical solutions, creative development, or just a sounding board, I bring both grassroots perspective and professional rigor to our work.
+    These days of course the equipment is much better, and computational power on even a mobile phone far exceeds what I was working with back then, but decades of experience in *making things work* has taught me to approach every project with curiosity and ask "what might be possible?"
 
 - category: "story"
   head: "How I got here"
@@ -75,27 +78,27 @@
     Ultimately, I want to build and model processes and business structures to inspire more people to create work in sustainable and meaningful ways.
   
 - category: "pricing"
-  head: "Pricing - Composition or Music Production"
+  head: "Pricing - Post-Production"
   packages:
     package_one:
-      title: "Composition"
-      subtitle: "Let's make music together"
-      content: "A commissioned composition with either (by negotiation) score and parts or electronic audio assets."
-      price: "Starts at **$1200** per minute of music"
+      title: "Mixdown"
+      subtitle: "Let me mix your project"
+      content: "You send me your files, I'll send you a stereo mix and stems!"
+      price: "Get in touch for a price"
     package_two:
-      title: "Music production"
-      subtitle: "Let me guide your project"
-      content: "I will work with you on your project, as a project manager, drawing on my decades of experience, and potentially contributing composition and/or post-production (as agreed)."
-      price: "Starts at **$389** per hour (min 3-hr call)"
+      title: "Audio Editing"
+      subtitle: "I'll stitch and fix your audio"
+      content: "Got raw audio from a podcast, interview, or voice-over? Give me the script and the audio and I'll get it sounding flawless."
+      price: "Get in touch for a price"
     package_four:
-      title: "Sound Design"
-      subtitle: "Let's bring your project to life"
-      content: "I'll get to work crafting idiomatic and unique sounds that bring whatever your project is to life, even if it's the sounds of brewing tea for your podcast."
+      title: "Other post-production"
+      subtitle: "Got something in mind?"
+      content: "Post-production is a very broad term and includes things like mastering, synchronising to visuals, audio repair, analysis, or maybe you just want a consult on your next steps. Got something in mind? Reach out to discuss it."
       price: "Contact to discuss your needs"
-    package_three:
-      title: "Custom"
-      subtitle: "I understand..."
-      content: "That not all projects fit neatly within these price frames. Please get in touch and we can discuss what might be possible in your budget."
-      price: "Contact to discuss your needs"
+    # package_three:
+    #   title: "Custom"
+    #   subtitle: "I understand..."
+    #   content: "That not all projects fit neatly within these price frames. Please get in touch and we can discuss what might be possible in your budget."
+    #   price: "Contact to discuss your needs"
   cta: "Let's talk about your ideas"
   cta_link: "https://faultycat.com.au/#contact"
