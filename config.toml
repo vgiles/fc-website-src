@@ -13,15 +13,15 @@ languageCode = "en-us"
     url = "/about"  # Links to content/work/_index.md
 
 [[params.header.nav]]
-    name = "Composition"
+    name = "Music/Sound"
     url = "/composition"
 
 [[params.header.nav]]
-    name = "Workshops"
+    name = "Mentoring/Education"
     url = "/workshops"
 
 [[params.header.nav]]
-    name = "Post Production"
+    name = "Post-Production"
     url = "/post-prod"
 
 # [[params.header.nav]]
