@@ -64,7 +64,7 @@ languageCode = "en-us"
 
     [params.about]
         title = "Hello!"
-        bio = "I'm **Vincent**, a biscuit-powerd **composer, sound designer, and producer**, and reformed bass player"
+        bio = "I'm **Vincent**, a biscuit-powered **composer, sound designer, and producer**, and reformed bass player"
         image = "img/general/ec_portrait_2.png"
         image_width = "300px"
         blurb = """
