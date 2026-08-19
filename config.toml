@@ -58,17 +58,17 @@ languageCode = "en-us"
     [params.header]
         title = "Faulty Cat Productions"
         heading = "Vincent Giles"
-        subHeading = "Sound and music for exploratory art projects"
+        subHeading = "Exploratory Music and Sound Design"
         webTag = "together we can build lasting sonic experiences"
         logo = "../logo.svg"
 
     [params.about]
         title = "Hello!"
-        bio = "I'm **Vincent**, a biscuit-powered **composer, sound designer, and producer**, and reformed bass player"
+        bio = "I'm **Vincent**, a biscuit-powered **composer, sound designer, and producer**. I started my creative journey in 1998 as a bass player."
         image = "img/general/ec_portrait_2.png"
         image_width = "300px"
         blurb = """
-Artists, makers, and curators often want **boundary-pushing sound and music** or have hit technical walls or mismatched creative priorities. I help amplify their ideas – whether for **concert halls**, **site-specific installations**, or **games and visual media** – through systems-first design and feedback-driven iteration. Let's turn your concept into something **uncompromising** and quietly transformative.
+When working with other people, I respond to their needs merging both the technical and creative to create experiences that are lasting and memorable. I have worked with local government, higher education providers, and individuals on collaborative and artistically exploratory projects with large-scale public outcomes.
 """
         blurb_style = "border-right: 3px solid #b89c66; padding-right: 1.5rem;" # Custom CSS
         more_link = "/about"  # URL for the page
@@ -78,15 +78,15 @@ Artists, makers, and curators often want **boundary-pushing sound and music** or
     [params.about-full]
         title = "About Vincent & Faulty Cat Productions"
         bio = '''
-I partner with artists, councils, and galleries to create sound that reveals new layers in its medium—whether for concert halls, games, installations, or public spaces. Sometimes, projects can falter or lack clarity from technical hurdles or mismatched visions, wasting chances to connect deeply with new and existing audiences.
+I work with artists, councils, and galleries to create sound that reveals new layers in its medium – whether for concert halls, games, installations, or public spaces. 
 
-With 20 years of experience in exploratory sound practice—from composing concert works (published by Wirripang, Edition Resonance, and Move Records) to producing ambisonic public art and directing Tilde New Music & Sound Art—I ensure your project thrives through:
+With 20 years of experience in exploratory sound practice – from composing concert works (published by Wirripang, Edition Resonance, and Move Records) to producing ambisonic public art and directing Tilde New Music & Sound Art Inc. – I ensure your project thrives by:
 
-- End-to-end vision: Guiding from concept to post-production, with technical rigour meeting creative ambition.
-- Site-specific innovation: Transforming spaces (physical/virtual) through acoustic intelligence and conceptual rigour.
-- Permaculture-driven process: Systems-first design, iterative feedback, resilience over waste.
+- Drawing on years of education and production experience, guiding and collaborating from concept to post-production, with technical rigour and uncompromising creativity.
+- Embracing site specificity and transforming spaces (physical/virtual) through deep understanding of acoustics and conceptual pizzazz.
+- Focusing on understanding or building systems to enable a permaculture-informed approach to iteration, monitoring, and project delivery.
 
-Let's turn your idea into a quietly transformative experience that is creatively uncompromising.
+I'd love to hear about _your_ ideas and projects to see what I can do to help.
 '''
         face_img = "img/giles_promo.jpg"
 
@@ -118,7 +118,7 @@ Let's turn your idea into a quietly transformative experience that is creatively
 
     [params.footer]
         acknowledgement = """
-I live and work on unceded **Wurundjeri Country** in **Naarm (Melbourne)**.
+I live and work on unceded **Wurundjeri Country** in **Pullerbopulloke (Bacchus Marsh)**. I can service the Naarm (Melbourne) areas, and love to collaborate using internet technologies for folks further afield.
 
 As an uninvited guest, I acknowledge the great and ongoing loss of people and knowledge caused by the European colonial project(s).
 """
