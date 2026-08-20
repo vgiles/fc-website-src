@@ -64,11 +64,11 @@ languageCode = "en-us"
 
     [params.about]
         title = "Hello!"
-        bio = "I'm **Vincent**, a biscuit-powered **composer, sound designer, and producer**. I started my creative journey in 1998 as a bass player."
+        bio = "I'm **Vincent**, a biscuit-powered **composer, sound designer, and producer**. I build moving, lasting, exploratory sonic experiences for people across media."
         image = "img/general/ec_portrait_2.png"
         image_width = "300px"
         blurb = """
-When working with other people, I respond to their needs merging both the technical and creative to create experiences that are lasting and memorable. I have worked with local government, higher education providers, and individuals on collaborative and artistically exploratory projects with large-scale public outcomes.
+When working with other people, I respond to their needs merging both the technical and creative to create experiences that are lasting and memorable. My clients and creative partners have included Banyule City Council, City of Melbourne, Arts Centre Melbourne, Bio 21 Institute, University of Melbourne, Monash University, Australian Institute of Music and many performers both local and international. I have played in bands around Australia since the mid '00s and collaborated as a performer internationally, and co-founded a small but significant international [experimental music festival](https://web.archive.org/web/20231027011743/https://tilde.net.au/about/).
 """
         blurb_style = "border-right: 3px solid #b89c66; padding-right: 1.5rem;" # Custom CSS
         more_link = "/about"  # URL for the page
@@ -128,8 +128,8 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
 
 
     [params.services]
-        title = "I want to build moving, challenging, and lasting sonic experiences"
-        subtitle = "These are my offerings to the world"
+        title = "Services I Offer"
+        # subtitle = "These are my offerings to the world"
 
         [[params.services.cards]]
             title = "Composition, Sound Design, and Production"
