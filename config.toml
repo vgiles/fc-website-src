@@ -63,12 +63,12 @@ languageCode = "en-us"
         logo = "../logo.svg"
 
     [params.about]
-        title = "Hello! I'm **Vincent**, a biscuit-powered composer, sound designer, and producer."
-        bio = "I build moving, lasting, exploratory sonic experiences for people across media."
+        title = "Hello! I'm Vincent."
+        bio = "I build moving, lasting, exploratory sonic experiences."
         image = "img/general/ec_portrait_2.png"
         image_width = "300px"
         blurb = """
-When working with other people, I respond to their needs merging both the technical and creative to create experiences that are lasting and memorable. My clients and creative partners have included Banyule City Council, City of Melbourne, Arts Centre Melbourne, Bio 21 Institute, University of Melbourne, Monash University, Australian Institute of Music and many performers both local and international. I have played in bands around Australia since the mid '00s and collaborated as a performer internationally, and co-founded a small but significant international [experimental music festival](https://web.archive.org/web/20231027011743/https://tilde.net.au/about/).
+I'm a composer, sound designer, and producer of music, installations, festivals/events, and sound for media. When working with other people, I respond to their needs merging both the technical and creative to create experiences that are lasting and memorable. My clients and creative partners have included Banyule City Council, City of Melbourne, Arts Centre Melbourne, Bio 21 Institute, University of Melbourne, Monash University, Australian Institute of Music and many performers both local and international. I have played in bands around Australia since the mid '00s and collaborated as a performer internationally, and co-founded a small but significant international [experimental music festival](https://web.archive.org/web/20231027011743/https://tilde.net.au/about/).
 """
         blurb_style = "border-right: 3px solid #b89c66; padding-right: 1.5rem;" # Custom CSS
         more_link = "/about"  # URL for the page
