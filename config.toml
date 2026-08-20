@@ -64,7 +64,10 @@ languageCode = "en-us"
 
     [params.about]
         title = "Hello!"
-        bio = "I'm **Vincent**, a biscuit-powered **composer, sound designer, and producer**. I build moving, lasting, exploratory sonic experiences for people across media."
+        bio = """
+        I'm **Vincent**, a biscuit-powered **composer, sound designer, and producer**.
+        I build moving, lasting, exploratory sonic experiences for people across media.
+        """
         image = "img/general/ec_portrait_2.png"
         image_width = "300px"
         blurb = """
