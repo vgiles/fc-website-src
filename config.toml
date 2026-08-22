@@ -161,7 +161,7 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
         youtube_id = "" # Just the ID from YouTube URL
         # OR for custom embed:
         custom_embed = '''
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/950659108?h=33c18b5d7b" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+<iframe title="blorbs demo" src="view-source:https://www.faultycat.com.au/projects/blorbs2/index.html" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 '''
         # SoundCloud section
         soundcloud_playlist = "1383778492"  # Playlist ID from URL
