@@ -153,8 +153,8 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
             link_text = "Check it out →"
 
     [params.showreel]
-        title = "Showreel"
-        subtitle = "Sound and music for exploratory projects."
+        title = "Portfolio"
+        subtitle = "Exploratory sound and music: installation, media, concert"
 
         # Choose ONE of these:
         vimeo_id = ""  # Just the ID from Vimeo URL

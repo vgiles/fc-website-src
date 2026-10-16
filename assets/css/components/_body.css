@@ -305,7 +305,8 @@ h3 {
 @media (min-width: 1200px) {
   .showreel-embed-container {
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
+      justify-content: center;
   }
   
   .showreel-embed-container .media-container {
