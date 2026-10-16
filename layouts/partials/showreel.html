@@ -16,6 +16,8 @@
             </iframe>
             {{ else if .Site.Params.showreel.custom_embed }}
             {{ .Site.Params.showreel.custom_embed | safeHTML }}
+            {{ else if .Site.Params.showreel.custom_embed2 }}
+            {{ .Site.Params.showreel.custom_embed2 | safeHTML }}
             {{ end }}
         </div>
   
