@@ -161,11 +161,9 @@ As an uninvited guest, I acknowledge the great and ongoing loss of people and kn
         youtube_id = "" # Just the ID from YouTube URL
         # OR for custom embed:
         custom_embed = '''
-<iframe title="blorbs demo" src="https://www.faultycat.com.au/projects/blorbs2/index2.html" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+<iframe title="showreel" src="https://folio.faultycat.com.au/showreel/index.html width="100%" height="500" frameborder="0" allowfullscreen></iframe>
 '''
-        custom_embed2 = '''
-<iframe title="blorbs demo" src="https://folio.faultycat.com.au/showreel/index.html" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-'''
+
         # SoundCloud section
         # soundcloud_playlist = "1383778492"  # Playlist ID from URL
         # soundcloud_color = "e0982c"         # Matches your accent color
